@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AndroidTest</string>
+
+    <string-array name="data">
+        <item>全国</item>
+        <item>北京</item>
+        <item>上海</item>
+        <item>深圳</item>
+        <item>广州</item>
+    </string-array>
 </resources>

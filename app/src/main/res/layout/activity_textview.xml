@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--
+    宽高约束:
+    layout_width 宽相对布局,wrap_content宽度随内容变化改变,fill_parent 填充父视图
+    layout_height 高相对布局,wrap_content宽度随内容变化改变,fill_parent 填充父视图
+    width  宽绝对布局  如果设置过layout_width或layout_height为fill_parent,该属性无效
+    height 高绝对布局  如果设置过layout_width或layout_height为fill_parent,该属性无效
+
+    设置文本:
+    text 设置文字内容
+    textColor 设置文本颜色
+    textSize 设置文字大小
+
+    background 设置本经颜色
+    singleLine 设置是否单行
+
+    ellipsize 文字显示不全的时候解决方案
+    marqueeRepeatLimit 文字一直滚动
+    focusable 成为焦点
+
+    -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:width="180dp"
+        android:height="100dp"
+
+        android:text="文本显示框"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+
+        android:gravity="center"
+
+        android:background="#0000ff"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="150dp"
+        android:text="跑马灯paomadeng跑马灯paomadeng"
+        android:background="#00ff00"
+
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        android:singleLine="true"
+
+
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+
+
+
+
+
+</RelativeLayout>

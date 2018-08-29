@@ -22,6 +22,12 @@
         <activity android:name=".UIThreadTestActivity"></activity>
         <activity android:name=".ToastTestActivity"></activity>
         <activity android:name=".NotificationActivity"></activity>
+        <activity android:name=".TextViewActivity"></activity>
+        <activity android:name=".ImageViewActivity"></activity>
+        <activity android:name=".EditTextActivity"></activity>
+        <activity android:name=".OtherButtonsActivity"></activity>
+        <activity android:name=".SpinnerActivity"></activity>
+        <activity android:name=".LinearLayout1Activity"></activity>
     </application>
 
 </manifest>

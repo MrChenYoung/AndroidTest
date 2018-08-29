@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--
+    spinnerMode 弹出模式
+        dialog 弹出框形式
+        dropdown 下拉列表的形式
+    -->
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:entries="@array/data"
+        android:spinnerMode="dialog"
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dialog"/>
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:spinnerMode="dialog"/>
+
+</RelativeLayout>

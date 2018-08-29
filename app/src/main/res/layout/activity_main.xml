@@ -14,7 +14,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:onClick="click1"
-        android:text="点击进入Button用法介绍"/>
+        android:text="Button用法介绍"/>
 
     <Button
         android:id="@+id/button2"
@@ -45,4 +45,64 @@
         android:layout_marginTop="100dp"
         android:onClick="click4"
         android:text="Notification用法"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:onClick="click5"
+        android:text="TextView用法"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="180dp"
+        android:onClick="click6"
+        android:text="ImageView用法"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="220dp"
+        android:onClick="click7"
+        android:text="EditText用法"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="260dp"
+        android:onClick="click8"
+        android:text="其他Button用法"/>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:onClick="click9"
+        android:text="Spinner用法"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:onClick="click10"
+        android:text="配置方式生成线性布局"/>
 </RelativeLayout>

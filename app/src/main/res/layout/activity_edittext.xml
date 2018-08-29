@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--
+    ems 输入框的宽度相当于10个汉字的宽度
+    singleLine 是否是单行输入
+    maxLength 最多输入10个字符
+    hint 占位文字
+    textColorHint 占位文字的颜色
+    digits 输入内容只能是这些文字内的
+    inputType 键盘类型 例如:number 数字键盘
+    -->
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+
+        android:singleLine="true"
+        android:maxLength="10"
+
+        android:hint="请输入内容"
+        android:textColorHint="#ff0000"
+        android:inputType="number"
+
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:hint="请输入内容"/>
+
+    <!--android:digits="02468abcde"-->
+</RelativeLayout>
