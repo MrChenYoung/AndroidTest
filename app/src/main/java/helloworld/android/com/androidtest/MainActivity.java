@@ -83,4 +83,18 @@ public class MainActivity extends AppCompatActivity {
         intent.setClass(this,LinearLayout1Activity.class);
         startActivity(intent);
     }
+
+    // 纯代码生成线性布局
+    public void click11(View view){
+        Intent intent = new Intent();
+        intent.setClass(this,LinearLayout2Activity.class);
+        startActivity(intent);
+    }
+
+    // 代码和xml混合使用
+    public void click12(View view){
+        Intent intent = new Intent();
+        intent.setClass(this,LinearLayout3Activity.class);
+        startActivity(intent);
+    }
 }

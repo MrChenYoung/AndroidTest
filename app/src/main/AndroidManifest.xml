@@ -28,6 +28,8 @@
         <activity android:name=".OtherButtonsActivity"></activity>
         <activity android:name=".SpinnerActivity"></activity>
         <activity android:name=".LinearLayout1Activity"></activity>
+        <activity android:name=".LinearLayout2Activity"></activity>
+        <activity android:name=".LinearLayout3Activity"></activity>
     </application>
 
 </manifest>
