@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="用户名:" />
+
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameTextView"
+        android:layout_toRightOf="@+id/userNameTextView"
+        android:hint="请输入用户名"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/passWorldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameEditText"
+        android:layout_alignLeft="@+id/userNameTextView"
+        android:text="密码:" />
+
+
+
+    <EditText
+        android:id="@+id/passWorldEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passWorldTextView"
+        android:layout_alignLeft="@+id/userNameEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="请输入密码" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passWorldEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/registeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/loginButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:text="注册" />
+</RelativeLayout>

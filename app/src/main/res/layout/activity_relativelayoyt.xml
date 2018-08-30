@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:text="相对布局测试1" />
+
+    <!--
+    位置布局:
+        在textView1的右下方
+    有四种:
+        android:layout_above 在指定视图的上面
+        android:layout_below 在指定视图的下面
+        android:layout_toLeftOf 在指定视图的左边
+        android:layout_toRightOf 在指定视图的右边
+    -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="#00ff00"
+        android:textColor="#ffffff"
+        android:text="相对布局测试2" />
+
+    <!--
+    位置布局:
+          在textView2的右上方
+    -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#0000ff"
+        android:textColor="#ffffff"
+        android:text="相对布局测试3" />
+
+    <!--
+    边距布局:
+        上边距textView2 10dp
+    有四种：
+        android:layout_marginTop 上边距指定视图距离
+        android:layout_marginRight 右边距指定视图距离
+        android:layout_marginBottom 下边距指定视图的距离
+        android:layout_marginLeft 左边距指定视图的距离
+    -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:text="相对布局测试4" />
+    <!--
+    控件之间的对齐方式:
+        在textView2的右边，并且上边对齐
+    有五种:
+        android:layout_alignTop 和指定控件上边对齐
+        android:layout_alignBottom 和指定控件下边对齐
+        android:layout_alignRight 和指定控件右边对齐
+        android:layout_alignLeft 和指定控件的左边对齐
+        android:layout_alignBaseline 和指定控件中线对齐
+    -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#00ff00"
+        android:textColor="#ffffff"
+        android:text="相对布局测试5" />
+
+    <!--
+    和父控件的对齐方式:
+        在textView4的下面，并且右边和父视图对齐
+    有四种：
+        android:layout_alignParentRight 是否和俯视图的右边对齐
+        android:layout_alignParentLeft 是否和俯视图的左边对齐
+        android:layout_alignParentTop 是否和俯视图的上边对齐
+        android:layout_alignParentBottom 是否和俯视图的下边对齐
+    -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:background="#0000ff"
+        android:textColor="#ffffff"
+        android:text="相对布局测试6" />
+
+    <!--
+    设置控件的方向:
+        水平垂直居中
+    有三种：
+        android:layout_centerHorizontal 水平居中
+        android:layout_centerVertical 垂直居中
+        android:layout_centerInParent 在父控件中心
+    -->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#ff0000"
+        android:textColor="#ffffff"
+        android:text="相对布局测试7" />
+
+</RelativeLayout>

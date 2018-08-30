@@ -30,6 +30,12 @@
         <activity android:name=".LinearLayout1Activity"></activity>
         <activity android:name=".LinearLayout2Activity"></activity>
         <activity android:name=".LinearLayout3Activity"></activity>
+        <activity android:name=".RelativeLayoutActivity"></activity>
+        <activity android:name=".FrameLayoutActivity"></activity>
+        <activity android:name=".ListViewActivity"></activity>
+        <activity android:name=".TableLayoutActivity"></activity>
+        <activity android:name=".AlertDialogActivity"></activity>
+        <activity android:name=".ScrollViewActivity"></activity>
     </application>
 
 </manifest>
