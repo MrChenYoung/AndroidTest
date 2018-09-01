@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/minus"
+        android:background="#ffffff"
+        android:onClick="minus"
+        />
+
+    <!--条形进度条-->
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/imageButton1"
+        android:layout_alignTop="@+id/imageButton1"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:max="100"
+        android:progress="30"
+        />
+
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/progressbar"
+        android:layout_alignTop="@id/imageButton1"
+        android:src="@drawable/add"
+        android:background="#ffffff"
+        android:onClick="add"
+        />
+
+    <!--环形进度条-->
+    <ProgressBar
+        android:id="@+id/progressbar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton1"
+        android:layout_alignLeft="@id/imageButton1"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示环形进度条"
+        android:layout_alignLeft="@+id/progressbar2"
+        android:layout_below="@+id/progressbar2"
+        android:onClick="showProgressDialog1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示条形进度条"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:onClick="showProgressDialog2"
+        />
+
+
+
+</RelativeLayout>

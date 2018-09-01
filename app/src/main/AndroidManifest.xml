@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="helloworld.android.com.androidtest">
 
+    <!--读取联系人权限-->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,26 +18,54 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ButtonTestActivity">
+        <activity android:name=".ButtonTestActivity" />
+        <activity android:name=".UIThreadTestActivity" />
+        <activity android:name=".ToastTestActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".TextViewActivity" />
+        <activity android:name=".ImageViewActivity" />
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".OtherButtonsActivity" />
+        <activity android:name=".SpinnerActivity" />
+        <activity android:name=".LinearLayout1Activity" />
+        <activity android:name=".LinearLayout2Activity" />
+        <activity android:name=".LinearLayout3Activity" />
+        <activity android:name=".RelativeLayoutActivity" />
+        <activity android:name=".FrameLayoutActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".TableLayoutActivity" />
+        <activity android:name=".AlertDialogActivity" />
+        <activity android:name=".ScrollViewActivity" />
+        <activity android:name=".GridViewActivity" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".DatePickerActivity" />
+        <activity android:name=".TimePickerActivity" />
+        <activity android:name=".ProgressBarActivity" />
+        <activity android:name=".MyActivity1" />
+        <activity android:name=".MyActivity2" android:label="@string/title_activity_my2" />
+        <activity android:name=".ServiceActivity"/>
+        <activity android:name=".BroadcastActivity"/>
+        <activity android:name=".ContentProviderActivity"/>
+        <activity android:name=".IntentActivity"/>
+        <activity android:name=".Intent1Activity">
+            <intent-filter>
+                <action android:name="helloworld.android.com.androidtest.MyIntent"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
         </activity>
-        <activity android:name=".UIThreadTestActivity"></activity>
-        <activity android:name=".ToastTestActivity"></activity>
-        <activity android:name=".NotificationActivity"></activity>
-        <activity android:name=".TextViewActivity"></activity>
-        <activity android:name=".ImageViewActivity"></activity>
-        <activity android:name=".EditTextActivity"></activity>
-        <activity android:name=".OtherButtonsActivity"></activity>
-        <activity android:name=".SpinnerActivity"></activity>
-        <activity android:name=".LinearLayout1Activity"></activity>
-        <activity android:name=".LinearLayout2Activity"></activity>
-        <activity android:name=".LinearLayout3Activity"></activity>
-        <activity android:name=".RelativeLayoutActivity"></activity>
-        <activity android:name=".FrameLayoutActivity"></activity>
-        <activity android:name=".ListViewActivity"></activity>
-        <activity android:name=".TableLayoutActivity"></activity>
-        <activity android:name=".AlertDialogActivity"></activity>
-        <activity android:name=".ScrollViewActivity"></activity>
+        <activity android:name=".IntentCustomImageView">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*" android:scheme="file"/>
+            </intent-filter>
+        </activity>
+
+        <!--配置服务-->
+        <service android:name=".ServiceTestActivity"/>
+
+        <!--配置广播-->
+        <receiver android:name=".BroadcastReceiverTest"/>
     </application>
 
 </manifest>

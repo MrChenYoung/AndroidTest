@@ -1,10 +1,8 @@
 package helloworld.android.com.androidtest;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,13 +10,13 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     // 列表数据
     private String[] list = {
             "Button用法介绍",
             "listView用法",
+            "GridView用法",
             "Toast用法",
             "TextView用法",
             "ImageView用法",
@@ -27,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
             "Spinner用法",
             "AlertDialog用法",
             "ScrollView用法",
+            "Gallery用法",
+            "DatePicker用法",
+            "TimePicker用法",
+            "ProgressBar用法",
+
+
 
             "UI线程阻塞解决方案",
             "Notification用法",
@@ -36,7 +40,16 @@ public class MainActivity extends AppCompatActivity {
             "代码和xml混合使用",
             "相对布局使用",
             "帧布局使用",
-            "表格布局使用"
+            "表格布局使用",
+
+            "Service用法",
+            "BroadCast用法",
+            "ContentProvider用法",
+            "Activity用法",
+
+            "Intent用法"
+
+
     };
 
     @Override
@@ -155,15 +168,41 @@ public class MainActivity extends AppCompatActivity {
                     case "ScrollView用法":
                         intent.setClass(MainActivity.this,ScrollViewActivity.class);
                         break;
+                    case "GridView用法":
+                        intent.setClass(MainActivity.this,GridViewActivity.class);
+                        break;
+                    case "Gallery用法":
+                        intent.setClass(MainActivity.this,GalleryActivity.class);
+                        break;
+                    case "DatePicker用法":
+                        intent.setClass(MainActivity.this,DatePickerActivity.class);
+                        break;
+                    case "TimePicker用法":
+                        intent.setClass(MainActivity.this, TimePickerActivity.class);
+                        break;
+                    case "ProgressBar用法":
+                        intent.setClass(MainActivity.this,ProgressBarActivity.class);
+                        break;
+                    case "Activity用法":
+                        intent.setClass(MainActivity.this,MyActivity1.class);
+                        break;
+                    case "Service用法":
+                        intent.setClass(MainActivity.this,ServiceActivity.class);
+                        break;
+                    case "BroadCast用法":
+                        intent.setClass(MainActivity.this,BroadcastActivity.class);
+                        break;
+                    case "ContentProvider用法":
+                        intent.setClass(MainActivity.this,ContentProviderActivity.class);
+                        break;
+                    case "Intent用法":
+                        intent.setClass(MainActivity.this,IntentActivity.class);
+                        break;
                 }
 
                 startActivity(intent);
             }
         });
-
-        // 跳转到指定的页面
-
-
     }
 
 }

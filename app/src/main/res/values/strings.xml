@@ -8,4 +8,5 @@
         <item>深圳</item>
         <item>广州</item>
     </string-array>
+    <string name="title_activity_my2">MyActivity2</string>
 </resources>
