@@ -34,7 +34,7 @@ public class IntentActivity extends Activity {
 
     // 打开图片浏览器
     public void click2(View view){
-        File file = new File("/mnt/sdcard/Download/swiper1.jpg");
+        File file = new File("/mnt/sdcard/Download/a1.png");
 
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setDataAndType(Uri.fromFile(file),"image/*");
