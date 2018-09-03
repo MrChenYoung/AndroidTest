@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageSwitcher;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -29,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
             "DatePicker用法",
             "TimePicker用法",
             "ProgressBar用法",
+            "AutoCompleteTextView用法",
+            "SeekBar用法",
+            "RatingBar用法",
+            "ImageSwitcher用法",
 
 
 
@@ -197,6 +202,18 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "Intent用法":
                         intent.setClass(MainActivity.this,IntentActivity.class);
+                        break;
+                    case "AutoCompleteTextView用法":
+                        intent.setClass(MainActivity.this,AutoCompleteTextViewActivity.class);
+                        break;
+                    case "SeekBar用法":
+                        intent.setClass(MainActivity.this,SeekBarActivity.class);
+                        break;
+                    case "RatingBar用法":
+                        intent.setClass(MainActivity.this,RatingBarActivity.class);
+                        break;
+                    case "ImageSwitcher用法":
+                        intent.setClass(MainActivity.this, ImageSwitcherActivity.class);
                         break;
                 }
 

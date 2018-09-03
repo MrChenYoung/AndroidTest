@@ -46,6 +46,10 @@
         <activity android:name=".ServiceActivity"/>
         <activity android:name=".BroadcastActivity"/>
         <activity android:name=".ContentProviderActivity"/>
+        <activity android:name=".AutoCompleteTextViewActivity"/>
+        <activity android:name=".SeekBarActivity"/>
+        <activity android:name=".RatingBarActivity"/>
+        <activity android:name=".ImageSwitcherActivity"/>
         <activity android:name=".IntentActivity"/>
         <activity android:name=".Intent1Activity">
             <intent-filter>
