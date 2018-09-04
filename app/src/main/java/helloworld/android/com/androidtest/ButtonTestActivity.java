@@ -9,6 +9,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class ButtonTestActivity extends Activity implements View.OnClickListener {
@@ -54,7 +55,9 @@ public class ButtonTestActivity extends Activity implements View.OnClickListener
                 if (action == MotionEvent.ACTION_DOWN){
                     Toast.makeText(ButtonTestActivity.this,"按钮被按下",Toast.LENGTH_SHORT).show();
                 }else if (action == MotionEvent.ACTION_MOVE){
-                    Toast.makeText(ButtonTestActivity.this,"手势移动了",Toast.LENGTH_SHORT).show();
+                    // 获取手势个数
+                    int eventNumber = event.getPointerCount();
+                    Toast.makeText(ButtonTestActivity.this,"手势移动了,有" + eventNumber + "个手指",Toast.LENGTH_SHORT).show();
                 }else if (action==MotionEvent.ACTION_UP){
                     Toast.makeText(ButtonTestActivity.this,"按钮被松开",Toast.LENGTH_SHORT).show();
                 }else {

@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
             "Intent用法"
 
-
     };
 
     @Override
