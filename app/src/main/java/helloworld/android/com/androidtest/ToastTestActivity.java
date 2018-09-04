@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class ToastTestActivity extends Activity {
@@ -46,6 +48,17 @@ public class ToastTestActivity extends Activity {
     public void click5(View view){
         Toast toast = Toast.makeText(this,"偏右Toast",Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.RIGHT,0,0);
+        toast.show();
+    }
+
+    // 带有图片的Toast(自定义Toast)
+    public void click6(View view){
+
+        Toast toast = new Toast(this);
+
+        ImageView imageView = new ImageView(this);
+        imageView.setImageResource(R.drawable.book);
+        toast.setView(imageView);
         toast.show();
     }
 }

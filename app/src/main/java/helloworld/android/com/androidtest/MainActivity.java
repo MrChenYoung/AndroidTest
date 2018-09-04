@@ -1,6 +1,8 @@
 package helloworld.android.com.androidtest;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -222,4 +224,23 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    // 手机后退按键被点击
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("温馨提示");
+        builder.setMessage("确定退出应用吗？");
+        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                MainActivity.super.onBackPressed();
+            }
+        });
+        builder.setNegativeButton("取消",null);
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+    }
 }

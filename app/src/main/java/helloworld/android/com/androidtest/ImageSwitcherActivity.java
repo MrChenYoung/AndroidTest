@@ -3,6 +3,7 @@ package helloworld.android.com.androidtest;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -14,6 +15,7 @@ import android.widget.ViewSwitcher;
 public class ImageSwitcherActivity extends Activity {
     private boolean showFirstImage = true;
     private ImageSwitcher imageSwitcher;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
