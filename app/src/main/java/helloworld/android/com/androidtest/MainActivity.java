@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
             "SeekBar用法",
             "RatingBar用法",
             "ImageSwitcher用法",
+            "SurfaceView用法",
+            "Sensor用法",
 
 
 
@@ -215,6 +217,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "ImageSwitcher用法":
                         intent.setClass(MainActivity.this, ImageSwitcherActivity.class);
+                        break;
+                    case "SurfaceView用法":
+                        intent.setClass(MainActivity.this,SurfaceViewActivity.class);
+                        break;
+                    case "Sensor用法":
+                        intent.setClass(MainActivity.this,SensorActivity.class);
                         break;
                 }
 
