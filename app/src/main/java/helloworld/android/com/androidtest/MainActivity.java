@@ -37,8 +37,17 @@ public class MainActivity extends AppCompatActivity {
             "RatingBar用法",
             "ImageSwitcher用法",
             "SurfaceView用法",
+            "Menu用法",
+
             "Sensor用法",
 
+            "XML解析",
+            "assets用法",
+
+            "SharedPreferences存储数据",
+            "内部存储数据",
+            "外部(sd卡)存储数据",
+            "Sqlite存储数据",
 
 
             "UI线程阻塞解决方案",
@@ -223,6 +232,27 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "Sensor用法":
                         intent.setClass(MainActivity.this,SensorActivity.class);
+                        break;
+                    case "Menu用法":
+                        intent.setClass(MainActivity.this,MenuActivity.class);
+                        break;
+                    case "XML解析":
+                        intent.setClass(MainActivity.this,XmlResoveActivity.class);
+                        break;
+                    case "assets用法":
+                        intent.setClass(MainActivity.this,AssetsActivity.class);
+                        break;
+                    case "SharedPreferences存储数据":
+                        intent.setClass(MainActivity.this,SharedPreferencesActivity.class);
+                        break;
+                    case "内部存储数据":
+                        intent.setClass(MainActivity.this,InsideSaveDataActivity.class);
+                        break;
+                    case "外部(sd卡)存储数据":
+                        intent.setClass(MainActivity.this,SdCardSaveDataActivity.class);
+                        break;
+                    case "Sqlite存储数据":
+                        intent.setClass(MainActivity.this,SqliteActivity.class);
                         break;
                 }
 

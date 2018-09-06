@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Users>
+    <user name="张三" age="20"/>
+    <user name="李四" age="18"/>
+</Users>

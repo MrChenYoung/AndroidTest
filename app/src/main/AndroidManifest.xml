@@ -4,6 +4,11 @@
 
     <!--读取联系人权限-->
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <!--sd卡读写文件权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -51,7 +56,14 @@
         <activity android:name=".RatingBarActivity"/>
         <activity android:name=".SurfaceViewActivity"/>
         <activity android:name=".SensorActivity"/>
+        <activity android:name=".MenuActivity"/>
+        <activity android:name=".AssetsActivity"/>
+        <activity android:name=".SharedPreferencesActivity"/>
+        <activity android:name=".InsideSaveDataActivity"/>
+        <activity android:name=".SdCardSaveDataActivity"/>
+        <activity android:name=".XmlResoveActivity"/>
         <activity android:name=".ImageSwitcherActivity"/>
+        <activity android:name=".SqliteActivity"/>
         <activity android:name=".IntentActivity"/>
         <activity android:name=".Intent1Activity">
             <intent-filter>
