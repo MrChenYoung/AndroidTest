@@ -14,7 +14,6 @@ public class ContentProviderActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contentprovider);
-
     }
 
     // 获取联系人列表

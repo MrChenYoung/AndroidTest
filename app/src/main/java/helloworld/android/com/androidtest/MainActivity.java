@@ -14,6 +14,8 @@ import android.widget.ImageSwitcher;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
     // 列表数据
     private String[] list = {
@@ -48,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
             "内部存储数据",
             "外部(sd卡)存储数据",
             "Sqlite存储数据",
+
+            "音频播放",
+            "视频播放",
 
 
             "UI线程阻塞解决方案",
@@ -253,6 +258,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "Sqlite存储数据":
                         intent.setClass(MainActivity.this,SqliteActivity.class);
+                        break;
+                    case "音频播放":
+                        intent.setClass(MainActivity.this,AudioPlayActivity.class);
+                        break;
+                    case "视频播放":
+                        intent.setClass(MainActivity.this,VideoPlayActivity.class);
                         break;
                 }
 
