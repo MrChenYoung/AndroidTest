@@ -89,6 +89,7 @@
                 <data android:mimeType="image/*" android:scheme="file"/>
             </intent-filter>
         </activity>
+        <activity android:name=".OtherActivity"/>
 
         <!--配置服务-->
         <service android:name=".ServiceTestActivity"/>

@@ -70,7 +70,8 @@ public class MainActivity extends AppCompatActivity {
             "ContentProvider用法",
             "Activity用法",
 
-            "Intent用法"
+            "Intent用法",
+            "其他"
 
     };
 
@@ -264,6 +265,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "视频播放":
                         intent.setClass(MainActivity.this,VideoPlayActivity.class);
+                        break;
+                    case "其他":
+                        intent.setClass(MainActivity.this,OtherActivity.class);
                         break;
                 }
 
