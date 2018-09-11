@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
             "音频播放",
             "视频播放",
+            "录音",
 
 
             "UI线程阻塞解决方案",
@@ -268,6 +269,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "其他":
                         intent.setClass(MainActivity.this,OtherActivity.class);
+                        break;
+                    case "录音":
+                        intent.setClass(MainActivity.this,RecordActivity.class);
                         break;
                 }
 

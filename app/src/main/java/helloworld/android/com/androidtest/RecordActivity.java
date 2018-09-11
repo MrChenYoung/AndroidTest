@@ -44,14 +44,15 @@ public class RecordActivity extends Activity {
             mediaRecorder = new MediaRecorder();
             mediaRecorder.setOutputFile(desPath.getAbsolutePath());
             mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);
             mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);
-            try {
-                mediaRecorder.prepare();
-                mediaRecorder.start();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);
+
+//            try {
+//                mediaRecorder.prepare();
+//                mediaRecorder.start();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
 
         }
 
