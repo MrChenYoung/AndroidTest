@@ -14,6 +14,8 @@ import android.widget.ImageSwitcher;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.androidtest.thirdlib.SlidingmenuActivity;
+
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
@@ -72,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
             "Activity用法",
 
             "Intent用法",
-            "其他"
+            "其他",
+            "Slidingmenu用法"
 
     };
 
@@ -272,6 +275,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "录音":
                         intent.setClass(MainActivity.this,RecordActivity.class);
+                        break;
+                    case "Slidingmenu用法":
+                        intent.setClass(MainActivity.this, SlidingmenuActivity.class);
                         break;
                 }
 
