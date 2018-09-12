@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.Toast;
 import android.widget.VideoView;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.cert.Extension;
 
 public class RecordActivity extends Activity {
 
@@ -40,6 +42,7 @@ public class RecordActivity extends Activity {
             }
         }
 
+
         if (mediaRecorder == null){
             mediaRecorder = new MediaRecorder();
             mediaRecorder.setOutputFile(desPath.getAbsolutePath());
@@ -47,12 +50,17 @@ public class RecordActivity extends Activity {
             mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);
             mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);
 
-//            try {
-//                mediaRecorder.prepare();
-//                mediaRecorder.start();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
+//            mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+//            mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);
+//            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);
+//            mediaRecorder.setOutputFile(desPath.getAbsolutePath());
+
+            try {
+                mediaRecorder.prepare();
+                mediaRecorder.start();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
         }
 
@@ -60,10 +68,15 @@ public class RecordActivity extends Activity {
 
     // 停止录音
     public void stopRecord(View view){
-        if (mediaRecorder !=null){
-            mediaRecorder.stop();
-            mediaRecorder.release();
+        if (mediaRecorder != null){
+            try {
+                mediaRecorder.stop();
+            }catch (Exception e){
+                mediaRecorder = null;
+                mediaRecorder = new MediaRecorder();
+            }
 
+            mediaRecorder.release();
             mediaRecorder = null;
         }
     }

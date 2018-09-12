@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
             "Sensor用法",
 
-            "XML解析",
+            "XML存储与解析",
             "assets用法",
 
             "SharedPreferences存储数据",
@@ -243,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
                     case "Menu用法":
                         intent.setClass(MainActivity.this,MenuActivity.class);
                         break;
-                    case "XML解析":
+                    case "XML存储与解析":
                         intent.setClass(MainActivity.this,XmlResoveActivity.class);
                         break;
                     case "assets用法":
