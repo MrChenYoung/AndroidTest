@@ -14,6 +14,7 @@ import android.widget.ImageSwitcher;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.androidtest.thirdlib.AndroidPullToRefreshActivity;
 import com.androidtest.thirdlib.SlidingmenuActivity;
 
 import java.util.Map;
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             "音频播放",
             "视频播放",
             "录音",
+            "动画",
 
 
             "UI线程阻塞解决方案",
@@ -75,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
 
             "Intent用法",
             "其他",
-            "Slidingmenu用法"
+            "Slidingmenu用法",
+            "Android-PullToRefresh用法"
 
     };
 
@@ -278,6 +281,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "Slidingmenu用法":
                         intent.setClass(MainActivity.this, SlidingmenuActivity.class);
+                        break;
+                    case "Android-PullToRefresh用法":
+                        intent.setClass(MainActivity.this, AndroidPullToRefreshActivity.class);
+                        break;
+                    case "动画":
+                        intent.setClass(MainActivity.this,AnimationActivity.class);
                         break;
                 }
 

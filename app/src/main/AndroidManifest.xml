@@ -84,7 +84,9 @@
         <activity android:name=".SqliteActivity"/>
         <activity android:name=".IntentActivity"/>
         <activity android:name=".RecordActivity"/>
-        <activity android:name="com.androidtest.thirdlib.SlidingmenuActivity"/>
+        <activity android:name=".AnimationActivity"/>
+        <activity android:name=".AnimationListView"/>
+
         <activity android:name=".Intent1Activity">
             <intent-filter>
                 <action android:name="helloworld.android.com.androidtest.MyIntent"/>
@@ -105,6 +107,9 @@
 
         <!--配置广播-->
         <receiver android:name=".BroadcastReceiverTest"/>
+
+        <activity android:name="com.androidtest.thirdlib.SlidingmenuActivity"/>
+        <activity android:name="com.androidtest.thirdlib.AndroidPullToRefreshActivity"/>
     </application>
 
 </manifest>

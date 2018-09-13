@@ -5,7 +5,8 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="测试按钮"
+        android:layout_height="wrap_content"
+        android:text="弹出菜单"
+        android:onClick="showSlidingmenu"
         android:textColor="#ff0000"/>
 </LinearLayout>
