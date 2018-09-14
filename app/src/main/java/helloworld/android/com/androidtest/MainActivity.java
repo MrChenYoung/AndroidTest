@@ -10,14 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.ImageSwitcher;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.androidtest.thirdlib.AndroidPullToRefreshActivity;
 import com.androidtest.thirdlib.SlidingmenuActivity;
-
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     // 列表数据
@@ -47,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             "Sensor用法",
 
             "XML存储与解析",
+            "JSON数据储存与解析",
             "assets用法",
 
             "SharedPreferences存储数据",
@@ -60,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             "动画",
 
 
-            "UI线程阻塞解决方案",
+            "多线程使用",
             "Notification用法",
 
             "配置方式生成线性布局",
@@ -110,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if (convertView == null){
                     textView = new TextView(MainActivity.this);
-                    textView.setHeight(70);
+                    textView.setHeight(100);
                     textView.setTextSize(14);
                     textView.setGravity(Gravity.CENTER_VERTICAL);
                     textView.setPadding(10,0,0,0);
@@ -137,9 +135,9 @@ public class MainActivity extends AppCompatActivity {
                         // ListViewyo用法介绍
                         intent.setClass(MainActivity.this,ListViewActivity.class);
                         break;
-                    case "UI线程阻塞解决方案":
+                    case "多线程使用":
                         // UI线程阻塞解决方案
-                        intent.setClass(MainActivity.this,UIThreadTestActivity.class);
+                        intent.setClass(MainActivity.this,MultiThreadActivity.class);
                         break;
                     case "Toast用法":
                         // Toast用法
@@ -287,6 +285,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "动画":
                         intent.setClass(MainActivity.this,AnimationActivity.class);
+                        break;
+                    case "JSON数据储存与解析":
+                        intent.setClass(MainActivity.this,JsonResoveActivity.class);
                         break;
                 }
 

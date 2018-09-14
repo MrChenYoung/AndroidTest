@@ -40,7 +40,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ButtonTestActivity" />
-        <activity android:name=".UIThreadTestActivity" />
+        <activity android:name=".MultiThreadActivity" />
         <activity android:name=".ToastTestActivity" />
         <activity android:name=".NotificationActivity" />
         <activity android:name=".TextViewActivity" />
@@ -86,6 +86,7 @@
         <activity android:name=".RecordActivity"/>
         <activity android:name=".AnimationActivity"/>
         <activity android:name=".AnimationListView"/>
+        <activity android:name=".JsonResoveActivity"/>
 
         <activity android:name=".Intent1Activity">
             <intent-filter>
