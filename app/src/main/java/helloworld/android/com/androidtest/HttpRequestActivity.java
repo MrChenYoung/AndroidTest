@@ -23,6 +23,13 @@ import java.net.URL;
 import javax.net.ssl.HttpsURLConnection;
 
 public class HttpRequestActivity extends Activity {
+    private MyHandle handler = new MyHandle();
+
+    private final String BASE_GET_URL = "http://tcc.taobao.com/cc/json/mobile_tel_segment.htm";
+    private final int LOAD_SUCCESS = 1;
+    private final int LOAD_ERROR = 2;
+
+
     private EditText editText;
     private ImageView imageView;
     private String BaseGetUrl = "http://tcc.taobao.com/cc/json/mobile_tel_segment.htm";
