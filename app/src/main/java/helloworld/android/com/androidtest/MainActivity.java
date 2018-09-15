@@ -16,6 +16,8 @@ import android.widget.TextView;
 import com.androidtest.thirdlib.AndroidPullToRefreshActivity;
 import com.androidtest.thirdlib.SlidingmenuActivity;
 
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
     // 列表数据
     private String[] list = {
@@ -59,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
 
             "多线程使用",
+            "网络请求",
+            "socket用法",
             "Notification用法",
 
             "配置方式生成线性布局",
@@ -107,11 +111,8 @@ public class MainActivity extends AppCompatActivity {
                 TextView textView;
 
                 if (convertView == null){
-                    textView = new TextView(MainActivity.this);
-                    textView.setHeight(100);
-                    textView.setTextSize(14);
-                    textView.setGravity(Gravity.CENTER_VERTICAL);
-                    textView.setPadding(10,0,0,0);
+                    View view = View.inflate(MainActivity.this,R.layout.activity_main_list_item,null);
+                    textView = view.findViewById(R.id.textView);
                 }else {
                     textView = (TextView) convertView;
                 }
@@ -288,6 +289,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "JSON数据储存与解析":
                         intent.setClass(MainActivity.this,JsonResoveActivity.class);
+                        break;
+                    case "网络请求":
+                        intent.setClass(MainActivity.this,HttpRequestActivity.class);
+                        break;
+                    case "socket用法":
+                        intent.setClass(MainActivity.this,SocketActivity.class);
                         break;
                 }
 

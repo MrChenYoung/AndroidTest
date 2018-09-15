@@ -87,6 +87,8 @@
         <activity android:name=".AnimationActivity"/>
         <activity android:name=".AnimationListView"/>
         <activity android:name=".JsonResoveActivity"/>
+        <activity android:name=".HttpRequestActivity"/>
+        <activity android:name=".SocketActivity"/>
 
         <activity android:name=".Intent1Activity">
             <intent-filter>
