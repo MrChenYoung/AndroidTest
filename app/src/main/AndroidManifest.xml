@@ -89,6 +89,8 @@
         <activity android:name=".JsonResoveActivity"/>
         <activity android:name=".HttpRequestActivity"/>
         <activity android:name=".SocketActivity"/>
+        <activity android:name=".ViewPagerActivity"/>
+        <activity android:name=".ViewPagerNomalActivity"/>
 
         <activity android:name=".Intent1Activity">
             <intent-filter>

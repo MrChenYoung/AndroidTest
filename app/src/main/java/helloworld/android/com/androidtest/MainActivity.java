@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             "ImageSwitcher用法",
             "SurfaceView用法",
             "Menu用法",
+            "ViewPager用法",
 
             "Sensor用法",
 
@@ -295,6 +296,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "socket用法":
                         intent.setClass(MainActivity.this,SocketActivity.class);
+                        break;
+                    case "ViewPager用法":
+                        intent.setClass(MainActivity.this,ViewPagerActivity.class);
                         break;
                 }
 
