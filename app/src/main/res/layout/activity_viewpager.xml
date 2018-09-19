@@ -11,4 +11,20 @@
         android:text="普通ViewPager"
         android:onClick="nomalClick"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3D画廊ViewPager"
+        android:onClick="gallery"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment Pager"
+        android:onClick="fragmentPage"
+        />
+
+
+
 </LinearLayout>

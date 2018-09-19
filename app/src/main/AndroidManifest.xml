@@ -91,6 +91,8 @@
         <activity android:name=".SocketActivity"/>
         <activity android:name=".ViewPagerActivity"/>
         <activity android:name=".ViewPagerNomalActivity"/>
+        <activity android:name=".ViewPagerGalleryActivity"/>
+        <activity android:name=".ViewPagerFragmentActivity"/>
 
         <activity android:name=".Intent1Activity">
             <intent-filter>

@@ -2,20 +2,11 @@ package helloworld.android.com.androidtest;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ViewPagerActivity extends Activity {
     @Override
@@ -44,5 +35,17 @@ public class ViewPagerActivity extends Activity {
             }
         });
         builder.show();
+    }
+
+    // 3D画廊样式
+    public void gallery(View view){
+        Intent intent = new Intent(ViewPagerActivity.this,ViewPagerGalleryActivity.class);
+        startActivity(intent);
+    }
+
+    // Fragment page
+    public void fragmentPage(View view){
+        Intent intent = new Intent(ViewPagerActivity.this,ViewPagerFragmentActivity.class);
+        startActivity(intent);
     }
 }

@@ -31,4 +31,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1'
     implementation 'com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1'
+
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
 }
