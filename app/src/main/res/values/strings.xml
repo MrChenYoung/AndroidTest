@@ -1,6 +1,138 @@
 <resources>
     <string name="app_name">AndroidTest</string>
 
+    <!--基础组件-->
+    <string-array name="controls">
+        <item>AlertDialog</item>
+        <item>AutoCompleteTextView</item>
+        <item>Button</item>
+        <item>DatePicker</item>
+        <item>DrawerLayout</item>
+        <item>EditText</item>
+        <item>Gallery</item>
+        <item>GridView</item>
+        <item>ImageView</item>
+        <item>ImageSwitcher</item>
+        <item>ListView</item>
+        <item>Menu</item>
+        <item>ProgressBar</item>
+        <item>RatingBar</item>
+        <item>ScrollView</item>
+        <item>SeekBar</item>
+        <item>Spinner</item>
+        <item>SurfaceView</item>
+        <item>TabHost</item>
+        <item>TextView</item>
+        <item>TimePicker</item>
+        <item>Toast</item>
+        <item>ViewPager</item>
+        <item>其他Button</item>
+    </string-array>
+    <string-array name="controls_activity">
+        <item>com.androidtest.controls.AlertDialogActivity</item>
+        <item>com.androidtest.controls.AutoCompleteTextViewActivity</item>
+        <item>com.androidtest.controls.ButtonTestActivity</item>
+        <item>com.androidtest.controls.DatePickerActivity</item>
+        <item>com.androidtest.controls.DrawerLayoutActivity</item>
+        <item>com.androidtest.controls.EditTextActivity</item>
+        <item>com.androidtest.controls.GalleryActivity</item>
+        <item>com.androidtest.controls.GridViewActivity</item>
+        <item>com.androidtest.controls.ImageViewActivity</item>
+        <item>com.androidtest.controls.ImageSwitcherActivity</item>
+        <item>com.androidtest.controls.ListViewActivity</item>
+        <item>com.androidtest.controls.MenuActivity</item>
+        <item>com.androidtest.controls.ProgressBarActivity</item>
+        <item>com.androidtest.controls.RatingBarActivity</item>
+        <item>com.androidtest.controls.ScrollViewActivity</item>
+        <item>com.androidtest.controls.SeekBarActivity</item>
+        <item>com.androidtest.controls.SpinnerActivity</item>
+        <item>com.androidtest.controls.SurfaceViewActivity</item>
+        <item>com.androidtest.controls.TabHostActivity</item>
+        <item>com.androidtest.controls.TextViewActivity</item>
+        <item>com.androidtest.controls.TimePickerActivity</item>
+        <item>com.androidtest.controls.ToastTestActivity</item>
+        <item>com.androidtest.controls.ViewPagerActivity</item>
+        <item>com.androidtest.controls.OtherButtonsActivity</item>
+    </string-array>
+    
+    <!--四大组件-->
+    <string-array name="element">
+        <item>Activity</item>
+        <item>BroadcastReceiver</item>
+        <item>ContentProvider</item>
+        <item>Service</item>
+    </string-array>
+    <string-array name="element_classes">
+        <item>com.androidtest.elements.MyActivity1</item>
+        <item>com.androidtest.elements.BroadcastActivity</item>
+        <item>com.androidtest.elements.ContentProviderActivity</item>
+        <item>com.androidtest.elements.ServiceActivity</item>
+    </string-array>
+
+    <!--第三方控件-->
+    <string-array name="third">
+        <item>Android-PullToRefresh</item>
+        <item>Slidingmenu</item>
+    </string-array>
+    <string-array name="third_classes">
+        <item>com.androidtest.thirdlib.AndroidPullToRefreshActivity</item>
+        <item>com.androidtest.thirdlib.SlidingmenuActivity</item>
+    </string-array>
+
+    <!--其他-->
+    <string-array name="other">
+        <item>Sensor</item>
+        <item>Intent</item>
+        <item>XML存储与解析</item>
+        <item>JSON数据储存与解析</item>
+        <item>assets资源解析</item>
+        <item>SharedPreferences</item>
+        <item>内部存储数据</item>
+        <item>外部(sd卡)存储数据</item>
+        <item>Sqlite存储数据</item>
+        <item>音频播放</item>
+        <item>视频播放</item>
+        <item>录音</item>
+        <item>动画</item>
+        <item>多线程使用</item>
+        <item>网络请求</item>
+        <item>Socket</item>
+        <item>Notification</item>
+        <item>配置方式生成线性布局</item>
+        <item>纯代码生成线性布局</item>
+        <item>代码和xml混合使用</item>
+        <item>相对布局</item>
+        <item>帧布局使用</item>
+        <item>表格布局使用</item>
+        <item>辅助功能</item>
+    </string-array>
+    <string-array name="other_classes">
+        <item>com.androidtest.other.SensorActivity</item>
+        <item>com.androidtest.other.IntentActivity</item>
+        <item>com.androidtest.other.XmlResoveActivity</item>
+        <item>com.androidtest.other.JsonResoveActivity</item>
+        <item>com.androidtest.other.AssetsActivity</item>
+        <item>com.androidtest.other.SharedPreferencesActivity</item>
+        <item>com.androidtest.other.InsideSaveDataActivity</item>
+        <item>com.androidtest.other.SdCardSaveDataActivity</item>
+        <item>com.androidtest.other.SqliteActivity</item>
+        <item>com.androidtest.other.AudioPlayActivity</item>
+        <item>com.androidtest.other.VideoPlayActivity</item>
+        <item>com.androidtest.other.RecordActivity</item>
+        <item>com.androidtest.other.AnimationActivity</item>
+        <item>com.androidtest.other.MultiThreadActivity</item>
+        <item>com.androidtest.other.HttpRequestActivity</item>
+        <item>com.androidtest.other.SocketActivity</item>
+        <item>com.androidtest.other.NotificationActivity</item>
+        <item>com.androidtest.other.LinearLayout1Activity</item>
+        <item>com.androidtest.other.LinearLayout2Activity</item>
+        <item>com.androidtest.other.LinearLayout3Activity</item>
+        <item>com.androidtest.other.RelativeLayoutActivity</item>
+        <item>com.androidtest.other.FrameLayoutActivity</item>
+        <item>com.androidtest.other.TableLayoutActivity</item>
+        <item>com.androidtest.other.AccessibilityActivity</item>
+    </string-array>
+
     <string-array name="data">
         <item>全国</item>
         <item>北京</item>
