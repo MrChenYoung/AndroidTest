@@ -46,6 +46,10 @@ public class TabActivity extends LinearLayout implements AdapterView.OnItemClick
                 strings = getResources().getStringArray(R.array.third);
                 classes = getResources().getStringArray(R.array.third_classes);
                 break;
+            case R.id.tab4:
+                strings = getResources().getStringArray(R.array.demos);
+                classes = getResources().getStringArray(R.array.demos_classes);
+                break;
             case R.id.tab5:
                 strings = getResources().getStringArray(R.array.other);
                 classes = getResources().getStringArray(R.array.other_classes);

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="helloworld.android.com.androidtest">
 
@@ -17,7 +16,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 录音权限 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
+    <!--手机震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!--唤醒权限-->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:allowBackup="true"
@@ -35,12 +37,12 @@
             </intent-filter>
         </activity>
 
-        <!--基础控件-->
+        <!-- 基础控件 -->
         <activity android:name="com.androidtest.controls.AlertDialogActivity" />
         <activity android:name="com.androidtest.controls.AutoCompleteTextViewActivity" />
         <activity android:name="com.androidtest.controls.ButtonTestActivity" />
         <activity android:name="com.androidtest.controls.DatePickerActivity" />
-        <activity android:name="com.androidtest.controls.DrawerLayoutActivity"/>
+        <activity android:name="com.androidtest.controls.DrawerLayoutActivity" />
         <activity android:name="com.androidtest.controls.EditTextActivity" />
         <activity android:name="com.androidtest.controls.GalleryActivity" />
         <activity android:name="com.androidtest.controls.GridViewActivity" />
@@ -67,26 +69,25 @@
         <activity android:name="com.androidtest.controls.ViewPagerFragmentActivity" />
         <activity android:name="com.androidtest.controls.OtherButtonsActivity" />
 
-
-        <!--四大组件-->
-        <activity android:name="com.androidtest.elements.MyActivity1"/>
+        <!-- 四大组件 -->
+        <activity android:name="com.androidtest.elements.MyActivity1" />
         <activity
             android:name="com.androidtest.elements.MyActivity2"
-            android:label="@string/title_activity_my2"/>
+            android:label="@string/title_activity_my2" />
         <activity android:name="com.androidtest.elements.BroadcastActivity" />
         <!-- 配置广播 -->
         <receiver android:name="com.androidtest.elements.BroadcastReceiverTest" />
+
         <activity android:name="com.androidtest.elements.ContentProviderActivity" />
         <activity android:name="com.androidtest.elements.ServiceActivity" />
         <!-- 配置服务 -->
         <service android:name="com.androidtest.elements.ServiceTestActivity" />
 
-        <!--第三方控件-->
+        <!-- 第三方控件 -->
         <activity android:name="com.androidtest.thirdlib.AndroidPullToRefreshActivity" />
         <activity android:name="com.androidtest.thirdlib.SlidingmenuActivity" />
 
-
-        <!--其他-->
+        <!-- 其他 -->
         <activity android:name="com.androidtest.other.SensorActivity" />
         <activity android:name="com.androidtest.other.XmlResoveActivity" />
         <activity android:name="com.androidtest.other.JsonResoveActivity" />
@@ -131,13 +132,13 @@
             </intent-filter>
         </activity>
 
-
-
-
-
-
-
-
+        <!-- demos -->
+        <activity android:name="com.androidtest.Demos.MyClock.mainClockActivity" />
+        <activity android:name="com.androidtest.Demos.MyClock.AlarmReceiverActivity"/>
+        <receiver
+            android:name="com.androidtest.Demos.MyClock.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"/>
     </application>
 
 </manifest>

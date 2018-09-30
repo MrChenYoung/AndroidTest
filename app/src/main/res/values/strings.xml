@@ -54,7 +54,7 @@
         <item>com.androidtest.controls.ViewPagerActivity</item>
         <item>com.androidtest.controls.OtherButtonsActivity</item>
     </string-array>
-    
+
     <!--四大组件-->
     <string-array name="element">
         <item>Activity</item>
@@ -131,6 +131,14 @@
         <item>com.androidtest.other.FrameLayoutActivity</item>
         <item>com.androidtest.other.TableLayoutActivity</item>
         <item>com.androidtest.other.AccessibilityActivity</item>
+    </string-array>
+
+    <!--demos-->
+    <string-array name="demos">
+        <item>时钟闹钟</item>
+    </string-array>
+    <string-array name="demos_classes">
+        <item>com.androidtest.Demos.MyClock.mainClockActivity</item>
     </string-array>
 
     <string-array name="data">
