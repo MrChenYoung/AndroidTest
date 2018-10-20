@@ -73,10 +73,12 @@
     <string-array name="third">
         <item>Android-PullToRefresh</item>
         <item>Slidingmenu</item>
+        <item>Glide</item>
     </string-array>
     <string-array name="third_classes">
         <item>com.androidtest.thirdlib.AndroidPullToRefreshActivity</item>
         <item>com.androidtest.thirdlib.SlidingmenuActivity</item>
+        <item>com.androidtest.thirdlib.GlideActivity</item>
     </string-array>
 
     <!--其他-->
@@ -136,9 +138,13 @@
     <!--demos-->
     <string-array name="demos">
         <item>时钟闹钟</item>
+        <item>网页源码查看器</item>
+        <item>多线程下载</item>
     </string-array>
     <string-array name="demos_classes">
         <item>com.androidtest.Demos.MyClock.mainClockActivity</item>
+        <item>com.androidtest.Demos.SourceCodeViewer.SourceCodeMainActivity</item>
+        <item>com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity</item>
     </string-array>
 
     <string-array name="data">

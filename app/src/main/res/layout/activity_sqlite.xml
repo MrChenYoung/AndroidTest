@@ -52,8 +52,8 @@
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="存储数据到数据库"
-        android:onClick="saveData"
+        android:text="增加记录"
+        android:onClick="addData"
         />
 
 
@@ -61,8 +61,24 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="从数据库读取数据"
-        android:onClick="readData"
+        android:text="删除记录"
+        android:onClick="deleteData"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改记录"
+        android:onClick="updateData"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询记录"
+        android:onClick="selectData"
         />
 
     <ListView

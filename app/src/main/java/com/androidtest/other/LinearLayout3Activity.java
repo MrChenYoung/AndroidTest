@@ -21,8 +21,21 @@ public class LinearLayout3Activity extends Activity {
         linearLayout.setOrientation(LinearLayout.VERTICAL);
 
         // 添加从xml配置好的字试图
-        LayoutInflater inflater = getLayoutInflater();
+
+        // 获取打气筒方式
+
+        // 方式一
+//        View view = View.inflate(this,R.layout.activity_linearlayoutinclude,null);
+
+        // 方式二
+//        View view = LayoutInflater.from(this).inflate(R.layout.activity_linearlayoutinclude,null);
+
+        // 方式三
+        LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.activity_linearlayoutinclude,null);
+
+
+
         linearLayout.addView(view);
 
         setContentView(linearLayout);

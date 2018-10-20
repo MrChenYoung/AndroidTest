@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity">
+
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/ed_threadCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入下载线程数"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多线程下载手机QQ"
+            android:onClick="startDownload"
+            />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/cover"
+        layout="@layout/loading_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

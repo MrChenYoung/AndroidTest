@@ -16,10 +16,10 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 录音权限 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <!--手机震动权限-->
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <!--唤醒权限-->
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 手机震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 唤醒权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -86,6 +86,7 @@
         <!-- 第三方控件 -->
         <activity android:name="com.androidtest.thirdlib.AndroidPullToRefreshActivity" />
         <activity android:name="com.androidtest.thirdlib.SlidingmenuActivity" />
+        <activity android:name="com.androidtest.thirdlib.GlideActivity" />
 
         <!-- 其他 -->
         <activity android:name="com.androidtest.other.SensorActivity" />
@@ -134,11 +135,16 @@
 
         <!-- demos -->
         <activity android:name="com.androidtest.Demos.MyClock.mainClockActivity" />
-        <activity android:name="com.androidtest.Demos.MyClock.AlarmReceiverActivity"/>
+        <activity android:name="com.androidtest.Demos.MyClock.AlarmReceiverActivity" />
+        <activity android:name="com.androidtest.Demos.SourceCodeViewer.SourceCodeMainActivity" />
+        <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity" />
+
         <receiver
             android:name="com.androidtest.Demos.MyClock.AlarmReceiver"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="true" />
+
+        <activity android:name="com.androidtest.thirdlib.SmartImageViewActivity" />
     </application>
 
 </manifest>

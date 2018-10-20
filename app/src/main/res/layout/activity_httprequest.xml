@@ -26,5 +26,11 @@
         android:text="POST请求"
         android:onClick="requestWithPost"/>
 
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
 
 </LinearLayout>

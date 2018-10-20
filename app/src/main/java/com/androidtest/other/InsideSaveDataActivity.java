@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
@@ -25,6 +26,8 @@ public class InsideSaveDataActivity extends Activity {
         editText = findViewById(R.id.editText);
 
         readData(null);
+
+        Log.v("log",getFilesDir().getPath());
     }
 
     // 保存数据
