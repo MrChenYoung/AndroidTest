@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="name" path="download" /> <!--apk路径 物理路径相当于Context.getFilesDir() + /download/-->
+</paths>

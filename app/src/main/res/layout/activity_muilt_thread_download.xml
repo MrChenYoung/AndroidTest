@@ -17,10 +17,11 @@
             android:layout_height="wrap_content"
             android:hint="请输入下载线程数"/>
         <Button
+            android:id="@+id/download_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="多线程下载手机QQ"
-            android:onClick="startDownload"
+            android:text="下载手机QQ"
+            android:onClick="download"
             />
     </LinearLayout>
 

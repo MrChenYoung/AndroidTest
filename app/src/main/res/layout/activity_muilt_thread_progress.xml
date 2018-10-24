@@ -7,12 +7,14 @@
         android:id="@+id/threadName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         />
 
     <ProgressBar
         android:id="@+id/progressbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
         android:max="100"
         />
