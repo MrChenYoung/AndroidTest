@@ -15,7 +15,7 @@
             android:id="@+id/ed_threadCount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="请输入下载线程数"/>
+            android:hint="请输入下载线程数,默认开启3个线程下载"/>
         <Button
             android:id="@+id/download_btn"
             android:layout_width="match_parent"
@@ -23,6 +23,21 @@
             android:text="下载手机QQ"
             android:onClick="download"
             />
+        <TextView
+            android:id="@+id/timeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="总用时:"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/progressMainView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </ScrollView>
     </LinearLayout>
 
     <include

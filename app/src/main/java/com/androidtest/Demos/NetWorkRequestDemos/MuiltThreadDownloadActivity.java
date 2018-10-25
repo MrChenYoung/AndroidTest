@@ -1,5 +1,7 @@
 package com.androidtest.Demos.NetWorkRequestDemos;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -7,10 +9,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.content.FileProvider;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextPaint;
 import android.text.TextUtils;
 import android.text.format.Formatter;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,10 +23,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 
@@ -34,11 +36,14 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
     // 默认开启3个线程下载
     private int threadCount = 3;
     private Button downloadBtn;
+    private TextView timeView;
+    private LinearLayout progressMainView;
 
     // 手机QQ下载地址
-//    private String urlString = "http://sqdd.myapp.com/myapp/qqteam/tim/down/tim.apk";
-//    private String urlString = "https://dldir1.qq.com/qqfile/QQforMac/QQ_V6.5.1.dmg";
-    private String urlString = "http://acj3.pc6.com/pc6_soure/2018-10/com.taobao.taobao_214.apk";
+//    private String downloadUrl = "http://sqdd.myapp.com/myapp/qqteam/tim/down/tim.apk";
+//    private String downloadUrl = "https://dldir1.qq.com/qqfile/QQforMac/QQ_V6.5.1.dmg";
+//    private String downloadUrl = "http://acj3.pc6.com/pc6_soure/2018-10/com.taobao.taobao_214.apk";
+    public static final String downloadUrl = "https://dldir1.qq.com/qqfile/QQforMac/QQ_V6.5.1.dmg";
 
     // 加载loadingCover
     private View cover;
@@ -49,15 +54,15 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
     private long totalLength = 0;
     // 已经下载的大小
     private long downloadedLength = 0;
-    // 总下载进度条
-    private ProgressBar totalProgress;
-    // 总下载进度提示文字框
-    private TextView totalDownloadTextView;
+
+    // 开始下载时的时间戳
+    private long startTime;
 
     // 请求状态标识
     public static final int DOWNLOADSTART = -2;   // 开始下载
     public static final int DOWNLOADCOMPLETE = 1; // 下载完成
     public static final int DOWNLOADING = 2;      // 正在下载
+    public static final int DOWNLOADPARTCOMPLETE = 3; // 某一个线程下载完成
     public static final int REQUESTFAILE = 0;     // 请求失败
     public static final int REQUESTEXCEPTION = -1;// 请求出现异常
 
@@ -75,37 +80,53 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_muilt_thread_download);
 
-        // 下载的文件存储路径
-        File apkPath = new File(getFilesDir(),"download");
-        if (!apkPath.exists()){
-            apkPath.mkdirs();
-        }
-
-        savePath = new File(apkPath,"QQ.apk");
+        // 获取存储路径
+        savePath = MuiltThreadDownloadActivity.getDestPath(this);
         // 删除已经存在的安装包
         if (savePath.exists()){
             boolean deleteSuccess = savePath.delete();
             if (deleteSuccess){
-                Toast.makeText(this,"删除老文件成功",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"删除老文件成功",Toast.LENGTH_SHORT).show();
             }else {
-                Toast.makeText(this,"删除老文件失败",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"删除老文件失败",Toast.LENGTH_SHORT).show();
             }
         }
 
-        // 获取线程数
+        // 获取下载按钮和scrollView
+        progressMainView = findViewById(R.id.progressMainView);
         downloadBtn = findViewById(R.id.download_btn);
+        timeView = findViewById(R.id.timeView);
+
+        // 蒙版
+        cover = findViewById(R.id.cover);
+    }
+
+    // 获取下载文件存储路径
+    public static File getDestPath(final Context context){
+        // 创建download文件夹
+        File apkPath = new File(context.getFilesDir(),"download");
+        if (!apkPath.exists()){
+            apkPath.mkdirs();
+
+            // 设置download文件夹权限
+            chmodFile(context,apkPath.getAbsolutePath());
+        }
+
+
+        File path = new File(apkPath,"QQ.apk");
+
+        return path;
+    }
+
+    // 开启多线程下载
+    public void download(View view){
+        // 获取下载线程数
         EditText ed_threadCount = findViewById(R.id.ed_threadCount);
         String str = ed_threadCount.getText().toString();
         if (!TextUtils.isEmpty(str)){
             threadCount = Integer.parseInt(str);
         }
 
-        // 蒙版
-        cover = findViewById(R.id.cover);
-    }
-
-    // 开启多线程下载
-    public void download(View view){
         String text = downloadBtn.getText().toString();
         if (text.equals("暂停")){
             downloadBtn.setText("继续下载");
@@ -116,9 +137,29 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
             // 继续下载
             continueDownload();
         }else {
-            // 开始下载/重新下载
-            // 获取手机QQ文件大小
-            getTotalLength();
+            if (savePath.exists()){
+                new AlertDialog.Builder(this)
+                        .setTitle("温馨提示")
+                        .setMessage("安装包已经存在")
+                        .setNegativeButton("重新下载", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                savePath.delete();
+                                getTotalLength();
+                            }
+                        })
+                        .setPositiveButton("安装", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                installApk();
+                            }
+                        })
+                        .show();
+            }else {
+                // 开始下载/重新下载
+                // 获取手机QQ文件大小
+                getTotalLength();
+            }
         }
     }
 
@@ -131,7 +172,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
             public void run() {
                 HttpURLConnection connection = null;
                 try{
-                    URL url = new URL(urlString);
+                    URL url = new URL(downloadUrl);
                     connection = (HttpURLConnection) url.openConnection();
                     connection.setRequestMethod("GET");
                     int code = connection.getResponseCode();
@@ -172,7 +213,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
     // 安装apk
     private void installApk() {
         // 首先修改apk权限为可读写,否则会提示解析包出现问题
-        chmodFile(savePath.getAbsolutePath());
+        chmodFile(this,savePath.getAbsolutePath());
 
         // 安装apk
         Intent installIntent = new Intent(Intent.ACTION_VIEW);
@@ -202,12 +243,18 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
 
     // 开启下载手机QQ
     public void startDownload(){
+        // 获取当前时间戳
+        startTime = System.currentTimeMillis();
+
         // 计算每个线程应该下载的文件大小
         long everyLength = totalLength / threadCount;
 
         // 删除多余的缓存进度条
-        if (progressViewsMap.size() > threadCount){
-            for (int i = threadCount; i < progressViewsMap.size(); i++){
+        if (progressViewsMap.size() - 1 > threadCount){
+            int lastCount = progressViewsMap.size();
+            for (int i = threadCount + 1; i < lastCount; i++){
+                View v = progressViewsMap.get(String.valueOf(i));
+                progressMainView.removeView(v);
                 progressViewsMap.remove(String.valueOf(i));
             }
         }
@@ -223,7 +270,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
                 endIndex = totalLength - 1;
             }
 
-            MyThread thread = new MyThread(this,i + 1,startIndex,endIndex,urlString,savePath.getAbsolutePath(),handle);
+            MyThread thread = new MyThread(this,i + 1,startIndex,endIndex,downloadUrl,savePath.getAbsolutePath(),handle);
             thread.start();
             threadMap.put(String.valueOf(i + 1),thread);
 
@@ -253,9 +300,16 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
         View progressView = progressViewsMap.get(String.valueOf(threadId));
         if (progressView == null){
             progressView = getLayoutInflater().inflate(R.layout.activity_muilt_thread_progress,null);
-            LinearLayout mainView = findViewById(R.id.main_view);
-            mainView.addView(progressView);
+            progressMainView.addView(progressView);
             progressViewsMap.put(String.valueOf(threadId),progressView);
+        }
+
+        if (threadId == 0){
+            // 设置粗体
+            TextView textView = progressView.findViewById(R.id.threadName);
+            TextPaint paint = textView.getPaint();
+            paint.setFakeBoldText(true);
+//            textView.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
         }
     }
 
@@ -266,17 +320,18 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
 
         // 更新已下载大小
         long length = 0;
-        for (int i = 1; i < threadMap.size() + 1; i++){
+        for (int i = 1; i < threadCount + 1; i++){
             MyThread thread1 = threadMap.get(String.valueOf(i));
             length += thread1.getDownloadLength();
         }
+
         downloadedLength = length;
 
         if (downloadedLength == totalLength){
             // 下载完成
-            Message msg = Message.obtain();
-            msg.what = DOWNLOADCOMPLETE;
-            handle.sendMessage(msg);
+            Message mesg = Message.obtain();
+            mesg.what = DOWNLOADCOMPLETE;
+            handle.sendMessage(mesg);
         }
 
         // 更新总进程进度条
@@ -286,6 +341,9 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
         // 更新子线程进度条
         View progressView = progressViewsMap.get(String.valueOf(threadId));
         updateView(progressView,threadId,thread);
+
+        // 更新时间
+        updateTimeView();
     }
 
     //更新进度条
@@ -308,16 +366,83 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
         progressBar.setProgress((int)downloadProgress);
     }
 
+    // 刷新耗用的时间
+    public void updateTimeView(){
+        long currentTime = System.currentTimeMillis();
+
+        long time = currentTime - startTime;
+
+        String timeString = formaterTime(time);
+
+        timeView.setText("总用时:" + timeString);
+    }
+
+    public static String formaterTime(long millis){
+        // 时间差 单位毫秒
+        double time = (double) millis;
+
+        int year = (int)(time/1000.0/60.0/60.0/24.0/30.0/365.0);
+        int month = (int)((time - year * 365.0 * 30.0 * 24.0 * 60.0 * 60.0 * 1000.0)/1000.0/60.0/60.0/24.0/30.0);
+        int day = (int)((time - year * 365.0 * 30.0 * 24.0 * 60.0 * 60.0 * 1000.0 - month * 30.0 * 24.0 * 60.0 * 60.0 * 1000.0)/1000.0/60.0/60.0/24.0);
+        int hour = (int)((time - year * 365.0 * 30.0 * 24.0 * 60.0 * 60.0 * 1000.0 - month * 30.0 * 24.0 * 60.0 * 60.0 * 1000.0 - day * 24.0 * 60.0 * 60.0 * 1000.0)/1000.0/60.0/60.0);
+        int minute = (int)((time - year * 365.0 * 30.0 * 24.0 * 60.0 * 60.0 * 1000.0 - month * 30.0 * 24.0 * 60.0 * 60.0 * 1000.0 - day * 24.0 * 60.0 * 60.0 * 1000.0 - hour * 60.0 * 60.0 * 1000.0)/1000.0/60.0);
+        int second = (int)((time - year * 365.0 * 30.0 * 24.0 * 60.0 * 60.0 * 1000.0 - month * 30.0 * 24.0 * 60.0 * 60.0 * 1000.0 - day * 24.0 * 60.0 * 60.0 * 1000.0 - hour * 60.0 * 60.0 * 1000.0 - minute * 60.0 * 1000.0)/1000.0);
+
+        StringBuilder builder = new StringBuilder();
+        if (year > 0){
+            builder.append(year + "年");
+        }
+
+        if (month >0){
+            builder.append(month + "个月");
+        }
+
+        if (day > 0){
+            builder.append(day + "天");
+        }
+
+        if (hour > 0){
+            builder.append(hour + "小时");
+        }
+
+        if (minute > 0){
+            builder.append(minute + "分钟");
+        }
+
+        if (second > 0){
+            builder.append(second + "秒");
+        }
+
+        return builder.toString();
+    }
+
     // 修改文件/文件夹权限
-    public void chmodFile(String path){
+    public static void chmodFile(Context context,String path){
         String[] command = {"chmod", "777", path};
         ProcessBuilder builder = new ProcessBuilder(command);
         try {
             builder.start();
         } catch (IOException e) {
             e.printStackTrace();
-            Toast.makeText(this,"修改" + path + "权限失败",Toast.LENGTH_LONG).show();
+            Toast.makeText(context,"修改" + path + "权限失败",Toast.LENGTH_SHORT).show();
         }
+    }
+
+    // 销毁所有线程
+    public void closeAllThread(){
+        for (int i = 1; i < threadCount + 1; i++){
+            MyThread thread = threadMap.get(String.valueOf(i));
+            thread.closeThread();
+            thread = null;
+            threadMap.remove(String.valueOf(i));
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        closeAllThread();
     }
 
     public class DownloadHandle extends Handler{
@@ -331,7 +456,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
                     // 获取文件总大小成功，开始下载
                     // 修改下载按钮为暂停
                     downloadBtn.setText("暂停");
-                    Toast.makeText(MuiltThreadDownloadActivity.this,"开始下载",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MuiltThreadDownloadActivity.this,"开始下载",Toast.LENGTH_SHORT).show();
                     startDownload();
                     break;
                 case DOWNLOADING:
@@ -344,13 +469,35 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
                     // 请求失败
                     downloadBtn.setText("下载手机QQ");
                     String str = (String) msg.obj;
-                    Toast.makeText(MuiltThreadDownloadActivity.this,str,Toast.LENGTH_LONG).show();
+                    Toast.makeText(MuiltThreadDownloadActivity.this,str,Toast.LENGTH_SHORT).show();
                     break;
                 case DOWNLOADCOMPLETE:
-                    // 下载完成
-                    downloadBtn.setText("下载手机QQ");
-                    Toast.makeText(MuiltThreadDownloadActivity.this,"下载完成,开始安装",Toast.LENGTH_LONG).show();
-                    installApk();
+                    if (threadMap.size() != 0) {
+                        // 下载完成
+                        downloadBtn.setText("下载手机QQ");
+
+                        // 销毁所有线程
+                        closeAllThread();
+
+                        new AlertDialog.Builder(MuiltThreadDownloadActivity.this)
+                                .setTitle("温馨提示")
+                                .setMessage("下载完成,确定安装吗?")
+                                .setNegativeButton("取消",null)
+                                .setPositiveButton("安装", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        installApk();
+                                    }
+                                })
+                                .show();
+                    }
+
+                    break;
+                case DOWNLOADPARTCOMPLETE:
+                    // 某一个线程下载完成,停止线程
+                    int thrid = msg.arg1;
+                    MyThread thread = threadMap.get(String.valueOf(thrid));
+                    thread.pauseThread();
                     break;
             }
         }

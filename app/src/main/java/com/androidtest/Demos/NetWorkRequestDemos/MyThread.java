@@ -87,6 +87,12 @@ public class MyThread extends Thread {
                         onPause();
                     }
                 }
+
+                // 当前线程下载完成
+                Message msg = Message.obtain();
+                msg.what = MuiltThreadDownloadActivity.DOWNLOADPARTCOMPLETE;
+                msg.arg1 = threadId;
+                handle.sendMessage(msg);
             }else {
                 // 下载失败,发送消息给主线程提示用户
                 Message msg = Message.obtain();
@@ -143,6 +149,11 @@ public class MyThread extends Thread {
                 e.printStackTrace();
             }
         }
+    }
+
+    // 关闭线程
+    public void closeThread(){
+        interrupt();
     }
 
     public int getThreadId() {

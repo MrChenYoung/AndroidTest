@@ -140,11 +140,13 @@
         <item>时钟闹钟</item>
         <item>网页源码查看器</item>
         <item>多线程下载</item>
+        <item>断点续传</item>
     </string-array>
     <string-array name="demos_classes">
         <item>com.androidtest.Demos.MyClock.mainClockActivity</item>
         <item>com.androidtest.Demos.SourceCodeViewer.SourceCodeMainActivity</item>
         <item>com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity</item>
+        <item>com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity</item>
     </string-array>
 
     <string-array name="data">

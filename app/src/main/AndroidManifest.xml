@@ -20,6 +20,8 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <!-- 唤醒权限 -->
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--安装apk权限-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
 
     <application
         android:allowBackup="true"
@@ -138,6 +140,7 @@
         <activity android:name="com.androidtest.Demos.MyClock.AlarmReceiverActivity" />
         <activity android:name="com.androidtest.Demos.SourceCodeViewer.SourceCodeMainActivity" />
         <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity" />
+        <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity"/>
 
         <receiver
             android:name="com.androidtest.Demos.MyClock.AlarmReceiver"
