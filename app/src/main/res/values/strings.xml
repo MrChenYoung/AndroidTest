@@ -63,7 +63,7 @@
         <item>Service</item>
     </string-array>
     <string-array name="element_classes">
-        <item>com.androidtest.elements.MyActivity1</item>
+        <item>com.androidtest.elements.ActivityHomeActivity</item>
         <item>com.androidtest.elements.BroadcastActivity</item>
         <item>com.androidtest.elements.ContentProviderActivity</item>
         <item>com.androidtest.elements.ServiceActivity</item>
@@ -141,12 +141,14 @@
         <item>网页源码查看器</item>
         <item>多线程下载</item>
         <item>断点续传</item>
+        <item>电话监听器</item>
     </string-array>
     <string-array name="demos_classes">
         <item>com.androidtest.Demos.MyClock.mainClockActivity</item>
         <item>com.androidtest.Demos.SourceCodeViewer.SourceCodeMainActivity</item>
         <item>com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity</item>
         <item>com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity</item>
+        <item>com.androidtest.Demos.BroadcastDemos.BroadcastReceiverActivity</item>
     </string-array>
 
     <string-array name="data">

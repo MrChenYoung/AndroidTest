@@ -3,9 +3,16 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView8"
+    <EditText
+        android:id="@+id/tv_receive"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="测试Intent" />
+        android:hint="上个页面传过来的数据"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:onClick="back"/>
+
 </LinearLayout>

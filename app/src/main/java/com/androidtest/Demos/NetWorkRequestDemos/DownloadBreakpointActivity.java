@@ -1,6 +1,8 @@
 package com.androidtest.Demos.NetWorkRequestDemos;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -206,6 +208,13 @@ public class DownloadBreakpointActivity extends Activity {
     }
 
     @Override
+    protected void onPause() {
+        super.onPause();
+
+        thread.pauseThread();
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
 
@@ -221,11 +230,14 @@ public class DownloadBreakpointActivity extends Activity {
                     // 获取文件总大小成功,下载按钮可点击
                     downloadBtn.setEnabled(true);
                     cover.setVisibility(View.GONE);
-                    if (destinationPath.exists() && destinationPath.length() == totalLength){
-                        destinationPath.delete();
-                        startPoint = 0;
-                    }else if (destinationPath.length() < totalLength){
-                        downloadBtn.setText("从断点处继续下载");
+                    if (destinationPath.exists()){
+                        if (destinationPath.length() == totalLength){
+                            destinationPath.delete();
+                            startPoint = 0;
+                            downloadPoint = startPoint;
+                        }else {
+                            downloadBtn.setText("从断点处继续下载");
+                        }
                     }
                     initialProgressView();
                     break;
@@ -243,6 +255,18 @@ public class DownloadBreakpointActivity extends Activity {
                     // 下载完成
                     thread.pauseThread();
                     thread.destroyThread();
+                    downloadBtn.setText("开始下载");
+                    new AlertDialog.Builder(DownloadBreakpointActivity.this)
+                            .setTitle("温馨提示")
+                            .setMessage("下载完成，确定安装吗?")
+                            .setNegativeButton("取消",null)
+                            .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    MuiltThreadDownloadActivity.installApk(DownloadBreakpointActivity.this,destinationPath);
+                                }
+                            })
+                            .show();
                     break;
             }
         }
@@ -270,6 +294,7 @@ public class DownloadBreakpointActivity extends Activity {
                     RandomAccessFile raf = new RandomAccessFile(destinationPath,"rw");
                     raf.seek(startPoint);
 
+
                     inputStream = connection.getInputStream();
                     byte[] buffer = new byte[1024];
                     int length = -1;
@@ -287,6 +312,11 @@ public class DownloadBreakpointActivity extends Activity {
                             onPause();
                         }
                     }
+
+                    // 下载完成
+                    Message msg = Message.obtain();
+                    msg.what = DOWNLOADCOMPLETE;
+                    handle.sendMessage(msg);
                 }else {
                     Message msg = Message.obtain();
                     msg.what = REQUESTFAILE;

@@ -3,35 +3,48 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="广播监听"/>
     <Button
-        android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="注册广播"
-        android:onClick="registBroadcast"/>
+        android:text="监听广播事件"
+        android:onClick="monitorBroadarcast"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="自定义广播"/>
     <Button
-        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="注销广播"
-        android:onClick="unRegistBroadcast"/>
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="请输入要发送的广播内容"
-        android:textSize="14sp"/>
-
+        android:text="发送无序广播"
+        android:onClick="sendUnorderBrodarcast"/>
     <Button
-        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="发送广播消息"
-        android:onClick="sendBroadcast"/>
+        android:text="发送有序广播"
+        android:onClick="sendOrderBroadcast"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="特殊的广播接收者(手机锁屏和解锁,电量变化比较频繁的广播)"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="registBroadcast"
+        android:text="注册特殊广播"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="unregistBroadcast"
+        android:text="注销特殊广播"/>
 
 
 </LinearLayout>

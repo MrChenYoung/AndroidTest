@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.text.format.Formatter;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -43,7 +44,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
 //    private String downloadUrl = "http://sqdd.myapp.com/myapp/qqteam/tim/down/tim.apk";
 //    private String downloadUrl = "https://dldir1.qq.com/qqfile/QQforMac/QQ_V6.5.1.dmg";
 //    private String downloadUrl = "http://acj3.pc6.com/pc6_soure/2018-10/com.taobao.taobao_214.apk";
-    public static final String downloadUrl = "https://dldir1.qq.com/qqfile/QQforMac/QQ_V6.5.1.dmg";
+    public static final String downloadUrl = "http://acj3.pc6.com/pc6_soure/2018-10/com.taobao.taobao_214.apk";
 
     // 加载loadingCover
     private View cover;
@@ -57,6 +58,8 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
 
     // 开始下载时的时间戳
     private long startTime;
+    private long pauseTotalTime;
+    private long startPauseTime;
 
     // 请求状态标识
     public static final int DOWNLOADSTART = -2;   // 开始下载
@@ -129,10 +132,14 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
 
         String text = downloadBtn.getText().toString();
         if (text.equals("暂停")){
+            startPauseTime = System.currentTimeMillis();
+
             downloadBtn.setText("继续下载");
             // 暂停下载
             pauseDownload();
         }else if(text.equals("继续下载")) {
+            pauseTotalTime += System.currentTimeMillis() - startPauseTime;
+
             downloadBtn.setText("暂停");
             // 继续下载
             continueDownload();
@@ -151,7 +158,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
                         .setPositiveButton("安装", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                installApk();
+                                installApk(MuiltThreadDownloadActivity.this,savePath);
                             }
                         })
                         .show();
@@ -211,9 +218,9 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
     }
 
     // 安装apk
-    private void installApk() {
+    public static void installApk(Context context,File apkPath) {
         // 首先修改apk权限为可读写,否则会提示解析包出现问题
-        chmodFile(this,savePath.getAbsolutePath());
+        chmodFile(context,apkPath.getAbsolutePath());
 
         // 安装apk
         Intent installIntent = new Intent(Intent.ACTION_VIEW);
@@ -226,19 +233,19 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
             installIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 
             Uri contentUri = FileProvider.getUriForFile(
-                    getApplicationContext()
+                    context.getApplicationContext()
                     , "helloworld.android.com.androidtest.fileprovider"
-                    , savePath);
+                    , apkPath);
             installIntent.setDataAndType(contentUri, "application/vnd.android.package-archive");
 
 
         }else {
             // 小于7.0 版本
-            installIntent.setDataAndType(Uri.parse("file://" + savePath.getPath()),
+            installIntent.setDataAndType(Uri.parse("file://" + apkPath.getAbsolutePath()),
                     "application/vnd.android.package-archive");
         }
 
-        startActivity(installIntent);
+        context.startActivity(installIntent);
     }
 
     // 开启下载手机QQ
@@ -283,6 +290,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
     public void pauseDownload(){
         for (int i = 1; i < threadCount + 1;i++){
             MyThread thread = threadMap.get(String.valueOf(i));
+            if (thread == null) continue;
             thread.pauseThread();
         }
     }
@@ -322,6 +330,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
         long length = 0;
         for (int i = 1; i < threadCount + 1; i++){
             MyThread thread1 = threadMap.get(String.valueOf(i));
+            if (thread1 == null) continue;
             length += thread1.getDownloadLength();
         }
 
@@ -350,6 +359,8 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
     public void updateView(View progressView,int threadId,MyThread thread){
         TextView textView = progressView.findViewById(R.id.threadName);
 
+        if (thread == null && threadId > 0) return;
+
         // 格式化总大小和已下载大小
         long totalLen = threadId > 0 ? thread.getTotalLenth() : totalLength;
         long downloadLen = threadId > 0 ? thread.getDownloadLength() : downloadedLength;
@@ -370,7 +381,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
     public void updateTimeView(){
         long currentTime = System.currentTimeMillis();
 
-        long time = currentTime - startTime;
+        long time = currentTime - startTime - pauseTotalTime;
 
         String timeString = formaterTime(time);
 
@@ -432,6 +443,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
     public void closeAllThread(){
         for (int i = 1; i < threadCount + 1; i++){
             MyThread thread = threadMap.get(String.valueOf(i));
+            if (thread == null) continue;
             thread.closeThread();
             thread = null;
             threadMap.remove(String.valueOf(i));
@@ -439,9 +451,18 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onPause() {
+        super.onPause();
+
+        Log.e("tag",">>>>>>>>>>>>>>>>>pause");
+        pauseDownload();
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
 
+        Log.e("tag",">>>>>>>>>>>>>>>>>destroy");
         closeAllThread();
     }
 
@@ -486,7 +507,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
                                 .setPositiveButton("安装", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
-                                        installApk();
+                                        installApk(MuiltThreadDownloadActivity.this,savePath);
                                     }
                                 })
                                 .show();

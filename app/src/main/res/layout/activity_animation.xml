@@ -66,6 +66,12 @@
                 android:onClick="addAnimationToListView"
                 android:text="给listView设置动画" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="帧动画"
+                android:onClick="frameAnimation"/>
+
         </LinearLayout>
     </ScrollView>
 

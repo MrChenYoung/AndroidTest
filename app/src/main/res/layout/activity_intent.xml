@@ -1,56 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="跳转到下个页面"
-        android:onClick="click"
-        />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button2"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--隐式意图和显示意图-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="隐式和显式意图"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="隐式意图跳转到下个页面"
+                android:onClick="implicitSkip"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="显式意图跳转到下个页面"
+                android:onClick="explicitSkip"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="调用系统或者自己的图片浏览器"/>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打开图片浏览器"
+                android:onClick="openPhotoBrowser"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打开网页"/>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打开百度首页"
+                android:onClick="openWebView"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="拨打电话"/>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打电话(跳转到打电话界面)"
+                android:onClick="callPhone1"/>
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打电话(直接拨打)"
+                android:onClick="callPhone2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发送短信"/>
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发送短信(跳转到发短信页面)"
+                android:onClick="sendMessage1"/>
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发送短信(直接发送)"
+                android:onClick="sendMessage2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="页面之间数据传递"/>
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入姓名"/>
+
+            <EditText
+                android:id="@+id/ed_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="请输入年龄"/>
+
+            <EditText
+                android:id="@+id/ed_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="上个页面返回的内容"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="跳转到下个页面"
+                android:onClick="nextPage"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/cover"
+        layout="@layout/loading_cover"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开图片浏览器"
-        android:onClick="click2"/>
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开百度首页"
-        android:onClick="click4"/>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打电话(跳转到打电话界面)"
-        android:onClick="click3"/>
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打电话(直接拨打)"
-        android:onClick="click5"/>
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="发送短信(跳转到发短信页面)"
-        android:onClick="click6"/>
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="发送短信(直接发送)"
-        android:onClick="click7"/>
-
-</LinearLayout>
+</RelativeLayout>

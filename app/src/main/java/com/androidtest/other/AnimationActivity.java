@@ -161,4 +161,10 @@ public class AnimationActivity extends Activity {
         intent.setClass(this,AnimationListView.class);
         startActivity(intent);
     }
+
+    // 帧动画
+    public void frameAnimation(View view){
+        Intent intent = new Intent(this,AnimationFrameActivity.class);
+        startActivity(intent);
+    }
 }
