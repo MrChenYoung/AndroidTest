@@ -148,7 +148,7 @@
         <item>com.androidtest.Demos.SourceCodeViewer.SourceCodeMainActivity</item>
         <item>com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity</item>
         <item>com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity</item>
-        <item>com.androidtest.Demos.BroadcastDemos.BroadcastReceiverActivity</item>
+        <item>com.androidtest.Demos.SevicesDemos.PhoneRecordActivity</item>
     </string-array>
 
     <string-array name="data">

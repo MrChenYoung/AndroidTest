@@ -1,42 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="开启服务"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:onClick="startService"
-        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="关闭服务"
-        android:layout_below="@+id/button1"
-        android:onClick="stopService"
-        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="android中进程的分类\n
+                              按照优先级从高到低排序:\n
+                              前台进程(Foreground progress)\n
+                              可视进程(Visible progress)\n
+                              服务进程(Service progress)\n
+                              后台进程(Background progress)\n
+                              空进程(Empty progress)"/>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="绑定服务"
-        android:layout_below="@+id/button2"
-        android:onClick="bindService"
-        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="服务的生命周期"/>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="解绑服务"
-        android:layout_below="@+id/button3"
-        android:onClick="unBindService"
-        />
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="开启服务查看生命周期"
+                android:onClick="startService"
+                />
 
-</RelativeLayout>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="关闭服务查看生命周期"
+                android:onClick="stopService"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="开启/关闭服务的方式"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="start方式开启服务"
+                android:textAllCaps="false"
+                android:onClick="startService1"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="stop方式关闭服务"
+                android:onClick="stopService1"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定服务"
+                android:layout_below="@+id/button2"
+                android:onClick="bindService"
+                />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="解绑服务"
+                android:layout_below="@+id/button3"
+                android:onClick="unBindService"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -19,16 +19,28 @@ public class ServiceActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service);
 
-        intent = new Intent(this,ServiceTestActivity.class);
+        intent = new Intent(this,ServiceTest.class);
     }
 
-    // 开启服务
+    // 开启服务查看服务的生命周期
     public void startService(View view){
+        Intent intent1 = new Intent(this,ServiceTest.class);
+        startService(intent1);
+    }
+
+    // 关闭服务查看服务生命周期
+    public void stopService(View view){
+        Intent intent1 = new Intent(this,ServiceTest.class);
+        stopService(intent1);
+    }
+
+    // start方式开启服务
+    public void startService1(View view){
         startService(intent);
     }
 
-    // 关闭服务
-    public void stopService(View view){
+    // stop方式关闭服务
+    public void stopService1(View view){
         stopService(intent);
     }
 

@@ -7,9 +7,13 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <!-- sd卡挂载和卸载 -->
     <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> -->
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <!-- sd卡读写文件权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--获取电话状态权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <!-- 打电话权限 -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <!-- 发送短信权限 -->
@@ -18,8 +22,6 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <!-- 入网权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 录音权限 -->
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <!-- 手机震动权限 -->
     <uses-permission android:name="android.permission.VIBRATE" />
     <!-- 唤醒权限 -->
@@ -103,6 +105,8 @@
             android:label="@string/title_activity_my2" />
         <activity android:name="com.androidtest.elements.BroadcastActivity" />
         <activity android:name="com.androidtest.elements.BroadcastReceiverActivity" />
+        <activity android:name="com.androidtest.elements.ContentProviderActivity" />
+        <activity android:name="com.androidtest.elements.ServiceActivity" />
         <!-- 注册广播接收者 -->
         <receiver android:name="com.androidtest.elements.BroadcastReceiverMonitor">
             <intent-filter>
@@ -154,11 +158,8 @@
         </receiver>
         <!-- 配置广播 -->
         <receiver android:name="com.androidtest.elements.BroadcastReceiverTest" />
-
-        <activity android:name="com.androidtest.elements.ContentProviderActivity" />
-        <activity android:name="com.androidtest.elements.ServiceActivity" />
         <!-- 配置服务 -->
-        <service android:name="com.androidtest.elements.ServiceTestActivity" />
+        <service android:name="com.androidtest.elements.ServiceTest" />
 
         <!-- 第三方控件 -->
         <activity android:name="com.androidtest.thirdlib.AndroidPullToRefreshActivity" />
@@ -191,6 +192,7 @@
         <activity android:name="com.androidtest.other.TableLayoutActivity" />
         <activity android:name="com.androidtest.other.IntentActivity" />
         <activity android:name="com.androidtest.other.AccessibilityActivity" />
+        <activity android:name="com.androidtest.other.AnimationFrameActivity" />
         <activity android:name="com.androidtest.other.Intent1Activity">
             <intent-filter>
                 <action android:name="helloworld.android.com.androidtest.MyIntent" />
@@ -220,11 +222,15 @@
         <activity android:name="com.androidtest.Demos.SourceCodeViewer.SourceCodeMainActivity" />
         <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity" />
         <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity" />
+        <activity android:name="com.androidtest.Demos.SevicesDemos.PhoneRecordActivity"/>
 
         <receiver
             android:name="com.androidtest.Demos.MyClock.AlarmReceiver"
             android:enabled="true"
             android:exported="true" />
+
+        <!--电话监听器服务-->
+        <service android:name="com.androidtest.Demos.SevicesDemos.PhoneRecordServices"/>
 
         <activity android:name="com.androidtest.thirdlib.SmartImageViewActivity" />
 
@@ -239,7 +245,6 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name="com.androidtest.other.AnimationFrameActivity"></activity>
     </application>
 
 </manifest>
