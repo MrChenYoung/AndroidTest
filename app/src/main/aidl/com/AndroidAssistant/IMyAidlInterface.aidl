@@ -1,8 +1,8 @@
 // IMyAidlInterface.aidl
-package com.androidassistant;
+package com.AndroidAssistant;
 
 // Declare any non-default types here with import statements
 
 interface IMyAidlInterface {
-    boolean callCustomMethod(String name);
+   boolean callCustomMethod(String name);
 }
