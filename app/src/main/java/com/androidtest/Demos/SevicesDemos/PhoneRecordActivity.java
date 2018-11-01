@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.TelephonyManager;
 import android.text.format.Formatter;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -123,7 +124,9 @@ public class PhoneRecordActivity extends AppCompatActivity implements AdapterVie
             // 开始播放
             mediaPlayer.start();
         } catch (Exception e){
+            Log.e("tag","======================");
             e.printStackTrace();
+            Log.e("tag","======================");
         }
     }
 

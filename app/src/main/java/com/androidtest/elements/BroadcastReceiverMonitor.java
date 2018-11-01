@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.telephony.SmsMessage;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.androidtest.elements.BroadcastReceiverActivity;
@@ -79,9 +80,11 @@ public class BroadcastReceiverMonitor extends BroadcastReceiver {
             }else if (action.equals("android.intent.action.SCREEN_ON")){
                 // 屏幕解锁了
                 message = "监听到屏幕解锁了";
+                Log.e("tag","屏幕解锁了");
             }else if (action.equals("android.intent.action.SCREEN_OFF")){
                 // 屏幕锁屏了
                 message = "监听到屏幕锁屏了";
+                Log.e("tag","锁屏了");
             }else if (action.equals("android.intent.action.BATTERY_CHANGED")){
                 // 电池电量变化了
                 message = "监听到电池电量变化\n";

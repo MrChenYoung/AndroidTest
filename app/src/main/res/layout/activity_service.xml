@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="开启/关闭服务的方式"/>
+                android:text="开启/关闭服务的方式一"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,23 +64,89 @@
                 android:text="stop方式关闭服务"
                 android:onClick="stopService1"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="使用服务注册特殊的广播接收者"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="在服务中注册锁屏和解锁广播接收者"
+                android:onClick="registReceiver"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="开启/关闭服务的方式二"/>
             <Button
                 android:id="@+id/button3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="绑定服务"
+                android:text="bind绑定服务"
                 android:layout_below="@+id/button2"
                 android:onClick="bindService"
+                android:textAllCaps="false"
                 />
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="解绑服务"
+                android:text="unbind解绑服务"
                 android:layout_below="@+id/button3"
                 android:onClick="unBindService"
+                android:textAllCaps="false"
                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="调用服务里面的方法"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="通过bind服务调用"
+                android:onClick="callServiceMethod1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击接口方式调用前调用绑定服务"
+                android:textAllCaps="false"
+                android:onClick="bindInteService"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="通过接口方式调用"
+                android:onClick="callServiceMethod2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="想要服务在后台长期运行，同时想要调用服务里面的方法:
+                              \n 1.用startService方法开启服务(保证服务在后台长期运行)
+                              \n 2.调用bindService绑定服务(获取Binder,调用服务内部方法)
+                              \n 3.调用unbindService 解绑服务(服务并没有销毁)
+                              \n 4.利用绑定服务获取的Binder对象调用服务里面的方法"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="aidl(Andoroid Interface Definition language)接口描述语言,用于进程间通信"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="跳转到aidl页面"
+                android:textAllCaps="false"
+                android:onClick="toAidl"/>
+
         </LinearLayout>
     </ScrollView>
 

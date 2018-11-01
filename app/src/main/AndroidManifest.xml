@@ -12,8 +12,8 @@
     <!-- sd卡读写文件权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <!--获取电话状态权限-->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 获取电话状态权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 打电话权限 -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <!-- 发送短信权限 -->
@@ -107,6 +107,7 @@
         <activity android:name="com.androidtest.elements.BroadcastReceiverActivity" />
         <activity android:name="com.androidtest.elements.ContentProviderActivity" />
         <activity android:name="com.androidtest.elements.ServiceActivity" />
+        <activity android:name="com.androidtest.elements.ServiceAidlActivity"/>
         <!-- 注册广播接收者 -->
         <receiver android:name="com.androidtest.elements.BroadcastReceiverMonitor">
             <intent-filter>
@@ -222,15 +223,15 @@
         <activity android:name="com.androidtest.Demos.SourceCodeViewer.SourceCodeMainActivity" />
         <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity" />
         <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity" />
-        <activity android:name="com.androidtest.Demos.SevicesDemos.PhoneRecordActivity"/>
+        <activity android:name="com.androidtest.Demos.SevicesDemos.PhoneRecordActivity" />
 
         <receiver
             android:name="com.androidtest.Demos.MyClock.AlarmReceiver"
             android:enabled="true"
             android:exported="true" />
 
-        <!--电话监听器服务-->
-        <service android:name="com.androidtest.Demos.SevicesDemos.PhoneRecordServices"/>
+        <!-- 电话监听器服务 -->
+        <service android:name="com.androidtest.Demos.SevicesDemos.PhoneRecordServices" />
 
         <activity android:name="com.androidtest.thirdlib.SmartImageViewActivity" />
 
