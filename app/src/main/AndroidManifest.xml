@@ -20,6 +20,8 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <!-- 接收短信权限 -->
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!--读取短信权限-->
+    <uses-permission android:name="android.permission.READ_SMS"/>
     <!-- 入网权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 手机震动权限 -->
@@ -107,7 +109,7 @@
         <activity android:name="com.androidtest.elements.BroadcastReceiverActivity" />
         <activity android:name="com.androidtest.elements.ContentProviderActivity" />
         <activity android:name="com.androidtest.elements.ServiceActivity" />
-        <activity android:name="com.androidtest.elements.ServiceAidlActivity"/>
+        <activity android:name="com.androidtest.elements.ServiceAidlActivity" />
         <!-- 注册广播接收者 -->
         <receiver android:name="com.androidtest.elements.BroadcastReceiverMonitor">
             <intent-filter>
@@ -224,6 +226,7 @@
         <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity" />
         <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity" />
         <activity android:name="com.androidtest.Demos.SevicesDemos.PhoneRecordActivity" />
+        <activity android:name="com.androidtest.Demos.ContentProviderDemos.SMSBackUp"/>
 
         <receiver
             android:name="com.androidtest.Demos.MyClock.AlarmReceiver"
