@@ -208,7 +208,6 @@ public class IntentActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
         // 获取数据
         String result = data.getStringExtra("result");
         EditText editText = findViewById(R.id.ed_result);

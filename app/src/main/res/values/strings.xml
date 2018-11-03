@@ -142,7 +142,9 @@
         <item>多线程下载</item>
         <item>断点续传</item>
         <item>电话监听器</item>
-        <item>短信备份</item>
+        <item>获取手机短信</item>
+        <item>获取手机联系人</item>
+        <item>打开系统通讯录</item>
     </string-array>
     <string-array name="demos_classes">
         <item>com.androidtest.Demos.MyClock.mainClockActivity</item>
@@ -151,6 +153,8 @@
         <item>com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity</item>
         <item>com.androidtest.Demos.SevicesDemos.PhoneRecordActivity</item>
         <item>com.androidtest.Demos.ContentProviderDemos.SMSBackUp</item>
+        <item>com.androidtest.Demos.ContentProviderDemos.ContactReadActivity</item>
+        <item>com.androidtest.Demos.ContentProviderDemos.SelectContactActivity</item>
     </string-array>
 
     <string-array name="data">

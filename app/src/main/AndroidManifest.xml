@@ -20,8 +20,8 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <!-- 接收短信权限 -->
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
-    <!--读取短信权限-->
-    <uses-permission android:name="android.permission.READ_SMS"/>
+    <!-- 读取短信权限 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
     <!-- 入网权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 手机震动权限 -->
@@ -226,7 +226,9 @@
         <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity" />
         <activity android:name="com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity" />
         <activity android:name="com.androidtest.Demos.SevicesDemos.PhoneRecordActivity" />
-        <activity android:name="com.androidtest.Demos.ContentProviderDemos.SMSBackUp"/>
+        <activity android:name="com.androidtest.Demos.ContentProviderDemos.SMSBackUp" />
+        <activity android:name="com.androidtest.Demos.ContentProviderDemos.ContactReadActivity" />
+        <activity android:name="com.androidtest.Demos.ContentProviderDemos.SelectContactActivity"/>
 
         <receiver
             android:name="com.androidtest.Demos.MyClock.AlarmReceiver"
@@ -248,7 +250,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
-
     </application>
 
 </manifest>

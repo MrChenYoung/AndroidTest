@@ -3,44 +3,68 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内容解析者"
+        android:layout_margin="10dp"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="通过内容提供者查询远端数据库"
+        android:text="通过内容解析者查询远端数据库"
         android:onClick="contentProviderQuery"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="通过内容提供者插入数据"
+        android:text="通过内容解析者插入数据"
         android:onClick="contentProviderInsert"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="通过内容提供者根据姓名修改数据库"
+        android:text="通过内容解析者根据姓名修改数据库"
         android:onClick="contentProviderUpdate"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="通过内容提供者删除远程数据库数据"
+        android:text="通过内容解析者删除远程数据库数据"
         android:onClick="contentProviderDelete"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内容观察者"/>
+
     <Button
-        android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="获取手机联系人"
-        android:onClick="getContacts"/>
+        android:text="注册所有操作的内容观察者"
+        android:onClick="registAllObserver"/>
 
-    <EditText
-        android:id="@+id/editText"
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="暂无联系人"
-        android:enabled="false"
-        />
+        android:text="注册查询数据库内容观察者"
+        android:onClick="registQueryObserver"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册插入数据内容观察者"
+        android:onClick="registInsertObserver"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册删除数据内容观察者"
+        android:onClick="registDeleteObserver"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册修改数据内容观察者"
+        android:onClick="registUpdateObserver"/>
 
 </LinearLayout>

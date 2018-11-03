@@ -75,8 +75,6 @@ public class SMSBackUp extends AppCompatActivity {
                 info.setDate(formateDate);
                 info.setType(type);
                 smsLists.add(info);
-
-                Toast.makeText(this,"person：" + person,Toast.LENGTH_LONG).show();
             }
 
             // 刷新表格数据
