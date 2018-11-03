@@ -144,7 +144,7 @@
         <item>电话监听器</item>
         <item>获取手机短信</item>
         <item>获取手机联系人</item>
-        <item>打开系统通讯录</item>
+        <item>从系统通讯录选择联系人</item>
     </string-array>
     <string-array name="demos_classes">
         <item>com.androidtest.Demos.MyClock.mainClockActivity</item>
