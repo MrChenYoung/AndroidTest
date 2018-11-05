@@ -196,6 +196,8 @@
         <activity android:name="com.androidtest.other.IntentActivity" />
         <activity android:name="com.androidtest.other.AccessibilityActivity" />
         <activity android:name="com.androidtest.other.AnimationFrameActivity" />
+        <activity android:name="com.androidtest.other.ImageHandleActivity" />
+        <activity android:name="com.androidtest.other.ImageCopyActivity"/>
         <activity android:name="com.androidtest.other.Intent1Activity">
             <intent-filter>
                 <action android:name="helloworld.android.com.androidtest.MyIntent" />
@@ -228,7 +230,7 @@
         <activity android:name="com.androidtest.Demos.SevicesDemos.PhoneRecordActivity" />
         <activity android:name="com.androidtest.Demos.ContentProviderDemos.SMSBackUp" />
         <activity android:name="com.androidtest.Demos.ContentProviderDemos.ContactReadActivity" />
-        <activity android:name="com.androidtest.Demos.ContentProviderDemos.SelectContactActivity"/>
+        <activity android:name="com.androidtest.Demos.ContentProviderDemos.SelectContactActivity" />
 
         <receiver
             android:name="com.androidtest.Demos.MyClock.AlarmReceiver"

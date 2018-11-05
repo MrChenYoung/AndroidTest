@@ -95,6 +95,7 @@
         <item>音频播放</item>
         <item>视频播放</item>
         <item>录音</item>
+        <item>图片处理</item>
         <item>动画</item>
         <item>多线程使用</item>
         <item>网络请求</item>
@@ -121,6 +122,7 @@
         <item>com.androidtest.other.AudioPlayActivity</item>
         <item>com.androidtest.other.VideoPlayActivity</item>
         <item>com.androidtest.other.RecordActivity</item>
+        <item>com.androidtest.other.ImageHandleActivity</item>
         <item>com.androidtest.other.AnimationActivity</item>
         <item>com.androidtest.other.MultiThreadActivity</item>
         <item>com.androidtest.other.HttpRequestActivity</item>

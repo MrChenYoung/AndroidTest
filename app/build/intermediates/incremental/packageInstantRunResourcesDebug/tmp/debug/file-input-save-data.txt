@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Fri Nov 02 17:18:50 CST 2018
+1.base=/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=ASSET
+0.path=test1.jpg
+0.set=ASSET
+0.base=/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+1.path=data

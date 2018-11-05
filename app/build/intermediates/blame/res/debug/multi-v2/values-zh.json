@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "map": [
+                {
+                    "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/Android-PullToRefresh-2.1.1.aar/02db4659e11f5943fdd14e4c97fe03fb/res/values-zh/values.xml",
+                    "from": {
+                        "startLines": "6,7,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "273,334,401",
+                        "endColumns": "60,66,64",
+                        "endOffsets": "329,396,461"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,116,183",
+                        "endColumns": "60,66,64",
+                        "endOffsets": "111,178,243"
+                    }
+                }
+            ]
+        }
+    ]
+}
