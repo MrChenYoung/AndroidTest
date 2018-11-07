@@ -15,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import java.io.File;
+
 import helloworld.android.com.androidtest.R;
 
 public class VideoPlayVideoViewActivity extends AppCompatActivity {
@@ -42,7 +44,9 @@ public class VideoPlayVideoViewActivity extends AppCompatActivity {
         // 获取上次播放位置
         sharedPreferences = getSharedPreferences("videoprogress1",MODE_PRIVATE);
         lastPlayPosition = sharedPreferences.getInt("progress",0);
-        Toast.makeText(this,"上次播放到:" + lastPlayPosition,Toast.LENGTH_SHORT).show();
+        if(lastPlayPosition > 0){
+            Toast.makeText(this,"已跳转到上次播放的位置",Toast.LENGTH_SHORT).show();
+        }
 
         // 找到指定控件
         videoView = findViewById(R.id.videoView);
@@ -154,10 +158,12 @@ public class VideoPlayVideoViewActivity extends AppCompatActivity {
 
     // 暂停播放
     public void pausePlay(){
-        videoView.pause();
+        if (MEDIAPLAYER_STATE == MEDIAPLAYER_IS_PLAYING){
+            videoView.pause();
 
-        MEDIAPLAYER_STATE = MEDIAPLAYER_IS_PAUSE;
-        btn_play.setImageResource(R.drawable.play);
+            MEDIAPLAYER_STATE = MEDIAPLAYER_IS_PAUSE;
+            btn_play.setImageResource(R.drawable.play);
+        }
     }
 
     // 继续播放
@@ -183,7 +189,9 @@ public class VideoPlayVideoViewActivity extends AppCompatActivity {
         pausePlay();
 
         // 保存播放位置
-        lastPlayPosition = videoView.getCurrentPosition();
+        if (MEDIAPLAYER_STATE != MEDIAPLAYER_IS_STOP){
+            lastPlayPosition = videoView.getCurrentPosition();
+        }
     }
 
     @Override

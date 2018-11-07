@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "F:\\AndroidProjects\\AndroidTest\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/Android-PullToRefresh-2.1.1.aar/02db4659e11f5943fdd14e4c97fe03fb/res/values-zh/values.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\Android-PullToRefresh-2.1.1.aar\\8a185242869b46bb8853cedfb40748ba\\res\\values-zh\\values.xml",
                     "from": {
                         "startLines": "6,7,8",
                         "startColumns": "4,4,4",

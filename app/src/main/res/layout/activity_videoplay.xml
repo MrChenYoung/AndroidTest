@@ -17,5 +17,12 @@
         android:onClick="playWithVideoView"
         android:textAllCaps="false"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="调用系统的播放器"
+        android:onClick="playWithSystemPlayer"
+        android:textAllCaps="false"/>
+
 
 </LinearLayout>

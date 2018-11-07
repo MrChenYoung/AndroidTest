@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /Users/mrchen/Desktop/AndroidTest/app/src/main/aidl/com/AndroidAssistant/IMyAidlInterface.aidl
+ * Original file: F:\\AndroidProjects\\AndroidTest\\app\\src\\main\\aidl\\com\\AndroidAssistant\\IMyAidlInterface.aidl
  */
 package com.AndroidAssistant;
 // Declare any non-default types here with import statements

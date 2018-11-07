@@ -39,7 +39,6 @@ public class VideoPlayMediaActivity extends AppCompatActivity {
     // 视频播放view
     private SurfaceView surfaceView;
     private SharedPreferences sharedPreferences;
-    private SurfaceHolder.Callback holdCallback;
     private SurfaceHolder surfaceHolder;
 
     @Override
@@ -50,6 +49,9 @@ public class VideoPlayMediaActivity extends AppCompatActivity {
         // 上次播放进度读取
         sharedPreferences = getSharedPreferences("videoProgress",MODE_PRIVATE);
         lastPlayPosition = sharedPreferences.getInt("progress",0);
+        if (lastPlayPosition > 0){
+            Toast.makeText(this,"已跳转到上次播放的位置",Toast.LENGTH_SHORT).show();
+        }
 
         // 初始化mediaplayer播放控件
         initalMediaPlayer();
@@ -65,7 +67,7 @@ public class VideoPlayMediaActivity extends AppCompatActivity {
         surfaceView = findViewById(R.id.surfaceView);
         surfaceHolder = surfaceView.getHolder();
         // surfaceHold准备好以后再设置mediaplay显示在SurfaceHolder上,否侧会出现异常
-        holdCallback = new SurfaceHolder.Callback() {
+        surfaceHolder.addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
                 // surfaceHold准备好以后再设置mediaplay显示在SurfaceHolder上,否侧会出现异常
@@ -81,40 +83,28 @@ public class VideoPlayMediaActivity extends AppCompatActivity {
 
             @Override
             public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(getApplicationContext(),"改变了",Toast.LENGTH_SHORT).show();
-                    }
-                });
+
             }
 
             @Override
             public void surfaceDestroyed(SurfaceHolder holder) {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(getApplicationContext(),"销毁了",Toast.LENGTH_SHORT).show();
-                    }
-                });
+
             }
-        };
-        surfaceHolder.addCallback(holdCallback);
+        });
 
         // 播放完成处理
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                // 停止播放
-                mediaStop();
-
+                // 标记到开始位置
                 lastPlayPosition = 0;
 
                 thumbnailImageView.setImageBitmap(getVideoThumbNail(lastPlayPosition));
                 btn_play.setImageResource(R.drawable.play);
+
+                MEDIAPLAYER_STATE = MEDIAPLAYER_IS_STOP;
             }
         });
-
     }
 
     // 设置视频缩略图
@@ -186,11 +176,13 @@ public class VideoPlayMediaActivity extends AppCompatActivity {
 
     // mediaplay暂停播放
     public void mediaPause(){
-        mediaPlayer.pause();
-        MEDIAPLAYER_STATE = MEDIAPLAYER_IS_PAUSE;
+        if (MEDIAPLAYER_STATE == MEDIAPLAYER_IS_PLAYING){
+            mediaPlayer.pause();
+            MEDIAPLAYER_STATE = MEDIAPLAYER_IS_PAUSE;
 
-        // 设置按钮图片
-        btn_play.setImageResource(R.drawable.play);
+            // 设置按钮图片
+            btn_play.setImageResource(R.drawable.play);
+        }
     }
 
     // mediaplay继续播放
@@ -206,17 +198,6 @@ public class VideoPlayMediaActivity extends AppCompatActivity {
         // 停止播放
         mediaPlayer.stop();
 
-        // 获取停止播放时的播放位置
-        lastPlayPosition = mediaPlayer.getCurrentPosition();
-
-        // 如果播放到最后就跳转到开头
-        if (lastPlayPosition == mediaPlayer.getDuration()){
-            lastPlayPosition = 0;
-        }
-
-        // 存储播放位置
-        sharedPreferences.edit().putInt("progress",lastPlayPosition).commit();
-
         MEDIAPLAYER_STATE = MEDIAPLAYER_IS_STOP;
     }
 
@@ -226,6 +207,11 @@ public class VideoPlayMediaActivity extends AppCompatActivity {
 
         // 暂停播放
         mediaPause();
+
+        // 获取停止播放时的播放位置
+        if (MEDIAPLAYER_STATE != MEDIAPLAYER_IS_STOP){
+            lastPlayPosition = mediaPlayer.getCurrentPosition();
+        }
     }
 
     @Override
@@ -234,6 +220,9 @@ public class VideoPlayMediaActivity extends AppCompatActivity {
         // 停止播放
         mediaStop();
         mediaPlayer.release();
+
+        // 存储播放位置
+        sharedPreferences.edit().putInt("progress",lastPlayPosition).commit();
     }
 
     // 获取视频缩略图
