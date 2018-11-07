@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_after19.jpg.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable/after19.jpg"
+    },
+    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-ldrtl-mdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -8,12 +12,12 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/fce337aaf8fcee524425203ccabed2e1/res/layout/notification_template_custom_big.xml"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/animator-v21_design_appbar_state_list_animator.xml.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/res/animator-v21/design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_third_normal.png.flat",
@@ -56,12 +60,12 @@
         "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable-v24/frame_anim.xml"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -80,12 +84,12 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/layout-v26/abc_screen_toolbar.xml"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_title_material.xml.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
@@ -104,16 +108,16 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_controls_selected.png.flat",
-        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable/controls_selected.png"
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_indicator_material.xml.flat",
+        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_indicator_material.xml.flat",
-        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable/abc_ratingbar_indicator_material.xml"
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_controls_selected.png.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable/controls_selected.png"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -124,12 +128,12 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
-        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
@@ -164,12 +168,12 @@
         "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/activity_activity_single_top_model.xml"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-v24_minus.png.flat",
-        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable-v24/minus.png"
-    },
-    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_a1.png.flat",
         "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable/a1.png"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-v24_minus.png.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable-v24/minus.png"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/interpolator-v21_mtrl_fast_out_linear_in.xml.flat",
@@ -576,6 +580,10 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-xhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_activity_video_play_media.xml.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/activity_video_play_media.xml"
+    },
+    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_select_dialog_singlechoice_material.xml.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/layout/select_dialog_singlechoice_material.xml"
     },
@@ -588,12 +596,12 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-v24_img01.png.flat",
-        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable-v24/img01.png"
-    },
-    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_activity_image_handle.xml.flat",
         "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/activity_image_handle.xml"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-v24_img01.png.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable-v24/img01.png"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -960,6 +968,10 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-xhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_drawing_board_bg.jpg.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable/drawing_board_bg.jpg"
+    },
+    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_light.xml.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable/tooltip_frame_light.xml"
     },
@@ -1298,6 +1310,10 @@
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_indicator_bg_top.xml.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/Android-PullToRefresh-2.1.1.aar/02db4659e11f5943fdd14e4c97fe03fb/res/drawable/indicator_bg_top.xml"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_pre19.jpg.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable/pre19.jpg"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_abc_ic_voice_search_api_material.xml.flat",
@@ -1768,12 +1784,12 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/res/color/mtrl_btn_bg_color_selector.xml"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_activity_service_aidl.xml.flat",
         "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/activity_service_aidl.xml"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_light.xml.flat",
@@ -1920,6 +1936,10 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-xxhdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_activity_video_play_video_view.xml.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/activity_video_play_video_view.xml"
+    },
+    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/color_abc_secondary_text_material_light.xml.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/color/abc_secondary_text_material_light.xml"
     },
@@ -1962,6 +1982,10 @@
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-xxxhdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_activity_rip_clothes.xml.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/activity_rip_clothes.xml"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -2476,12 +2500,12 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_design_menu_item_action_area.xml.flat",
-        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/res/layout/design_menu_item_action_area.xml"
-    },
-    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_sms_backup_item.xml.flat",
         "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/sms_backup_item.xml"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_design_menu_item_action_area.xml.flat",
+        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/res/layout/design_menu_item_action_area.xml"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -2490,6 +2514,10 @@
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_login_point_selected.png.flat",
         "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable/login_point_selected.png"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_play.png.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable/play.png"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -2590,6 +2618,10 @@
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/color_mtrl_btn_text_color_selector.xml.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/res/color/mtrl_btn_text_color_selector.xml"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_activity_drawing_board.xml.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/activity_drawing_board.xml"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_activity_tab_host.xml.flat",
@@ -2740,12 +2772,12 @@
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/color_mtrl_btn_text_btn_ripple_color.xml.flat",
-        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/res/color/mtrl_btn_text_btn_ripple_color.xml"
-    },
-    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_contacts_item.xml.flat",
         "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/contacts_item.xml"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/color_mtrl_btn_text_btn_ripple_color.xml.flat",
+        "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/res/color/mtrl_btn_text_btn_ripple_color.xml"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",

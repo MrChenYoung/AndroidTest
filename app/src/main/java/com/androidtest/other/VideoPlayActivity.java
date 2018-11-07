@@ -1,12 +1,23 @@
 package com.androidtest.other;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.media.Image;
+import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.Nullable;
+import android.util.DisplayMetrics;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -20,12 +31,6 @@ import helloworld.android.com.androidtest.R;
 
 public class VideoPlayActivity extends Activity {
 
-    private static final int MEDIAPLAYER_IS_PLAYING = 1;
-    private static final int MEDIAPLAYER_IS_PAUSE = 2;
-    private static final int MEDIAPLAYER_IS_STOP = 3;
-    private static int MEDIAPLAYER_STATE = MEDIAPLAYER_IS_STOP;
-    private MediaPlayer mediaPlayer;
-    private SurfaceHolder surfaceHolder;
     private VideoView videoView;
 
     @Override
@@ -33,26 +38,8 @@ public class VideoPlayActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_videoplay);
 
-        // MediaPlayer
-        mediaPlayer = MediaPlayer.create(this,R.raw.movie);
-//        mediaPlayer.prepareAsync();
-        surfaceHolder = ((SurfaceView)findViewById(R.id.surfaceView)).getHolder();
-//        surfaceHolder.setFixedSize(mediaPlayer.getVideoWidth(),
-//                mediaPlayer.getVideoHeight());
-
         // VideoView
         videoView = findViewById(R.id.videoView);
-    }
-
-    // MediaPlayer播放视频
-    public void playVideoWithMediaPlayer(View view){
-        if (MEDIAPLAYER_STATE == MEDIAPLAYER_IS_STOP || MEDIAPLAYER_STATE == MEDIAPLAYER_IS_PAUSE){
-            play();
-            MEDIAPLAYER_STATE = MEDIAPLAYER_IS_PLAYING;
-        }else if (MEDIAPLAYER_STATE == MEDIAPLAYER_IS_PLAYING) {
-            pause();
-            MEDIAPLAYER_STATE = MEDIAPLAYER_IS_PAUSE;
-        }
     }
 
     // VideoView播放视频
@@ -82,26 +69,27 @@ public class VideoPlayActivity extends Activity {
         videoView.start();
     }
 
-    // 播放
-    public void play(){
-        mediaPlayer.setDisplay(surfaceHolder);
-        mediaPlayer.start();
-    }
-
-    // 暂停
-    public void pause(){
-        mediaPlayer.pause();
-    }
-
-    // 停止
-    public void stop(){
-        mediaPlayer.stop();
-    }
-
     @Override
     protected void onPause() {
         super.onPause();
 
-        stop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+    }
+
+    // 用MediaPlayer播放
+    public void playWithMediaPlayer(View view){
+        Intent intent = new Intent(this,VideoPlayMediaActivity.class);
+        startActivity(intent);
+    }
+
+    // 用VideoView播放
+    public void playWithVideoView(View view){
+        Intent intent = new Intent(this,VideoPlayVideoViewActivity.class);
+        startActivity(intent);
     }
 }

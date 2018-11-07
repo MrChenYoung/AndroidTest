@@ -7,18 +7,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="用SoundPool播放单个音频"
+        android:textAllCaps="false"
         android:onClick="playWithSoundPool"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="用SoundPool播放多个音频"
+        android:textAllCaps="false"
         android:onClick="playWithSoundPool2"/>
 
     <Button
         android:id="@+id/button15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="用MediaPlayer从资源文件播放"
         android:onClick="playWithMediaPlayer1"/>
 
@@ -27,12 +30,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="用MediaPlayer从文件系统中播放"
+        android:textAllCaps="false"
         android:onClick="playWithMediaPlayer2"/>
 
     <Button
         android:id="@+id/button17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:text="用MediaPlayer播放网络音乐"
         android:onClick="playWithMediaPlayer3"/>
 

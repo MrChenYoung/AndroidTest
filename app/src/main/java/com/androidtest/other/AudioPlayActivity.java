@@ -181,14 +181,17 @@ public class AudioPlayActivity extends Activity {
         super.onPause();
 
         if (mediaPlayer != null){
+            mediaPlayer.stop();
             mediaPlayer.release();
         }
 
         if (mediaPlayer1 != null){
+            mediaPlayer1.stop();
             mediaPlayer1.release();
         }
 
         if (mediaPlayer2 != null) {
+            mediaPlayer2.stop();
             mediaPlayer2 = null;
         }
     }

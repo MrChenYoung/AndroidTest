@@ -6,28 +6,16 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="用MediaPlayer播放视频"
-        android:onClick="playVideoWithMediaPlayer"
-        />
-
-    <SurfaceView
-        android:id="@+id/surfaceView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:text="用MediaPlayer播放"
+        android:onClick="playWithMediaPlayer"
+        android:textAllCaps="false"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="用VideoView播放视频"
-        android:onClick="playVideoWithVideoView" />
-
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        />
+        android:text="用VideoView播放"
+        android:onClick="playWithVideoView"
+        android:textAllCaps="false"/>
 
 
 </LinearLayout>

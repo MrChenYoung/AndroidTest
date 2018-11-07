@@ -1059,6 +1059,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add
+drawable after19
 drawable arrow
 drawable avd_hide_password
 drawable avd_show_password
@@ -1075,6 +1076,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drawing_board_bg
 drawable element_normal
 drawable element_selected
 drawable empty
@@ -1142,6 +1144,8 @@ drawable pfb_tabbar_merchant_2x
 drawable pfb_tabbar_merchant_selected_2x
 drawable pfb_tabbar_mine_2x
 drawable pfb_tabbar_mine_selected_2x
+drawable play
+drawable pre19
 drawable scenery
 drawable sms_receive
 drawable sms_send
@@ -1309,12 +1313,15 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id iv_after
 id iv_copy
 id iv_inverted
 id iv_mirror
+id iv_pre
 id iv_rotate
 id iv_scale
 id iv_src
+id iv_thumbnail
 id iv_translate
 id labeled
 id largeLabel
@@ -1358,6 +1365,7 @@ id passWorldEditText
 id passWorldTextView
 id percent
 id pin
+id play
 id progress
 id progressMainView
 id progress_circular
@@ -1579,6 +1587,7 @@ layout activity_customdialog
 layout activity_datepicker
 layout activity_download_breakpoint
 layout activity_drawer_layout
+layout activity_drawing_board
 layout activity_edittext
 layout activity_framelayout
 layout activity_gallery
@@ -1614,6 +1623,7 @@ layout activity_progressbar
 layout activity_ratingbar
 layout activity_record
 layout activity_relativelayoyt
+layout activity_rip_clothes
 layout activity_scrollview
 layout activity_sdcardsavedata
 layout activity_seekbar
@@ -1643,6 +1653,8 @@ layout activity_test_main2
 layout activity_textview
 layout activity_timepicker
 layout activity_toast
+layout activity_video_play_media
+layout activity_video_play_video_view
 layout activity_videoplay
 layout activity_viewpagenomal
 layout activity_viewpager

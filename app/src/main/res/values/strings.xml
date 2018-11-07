@@ -147,6 +147,8 @@
         <item>获取手机短信</item>
         <item>获取手机联系人</item>
         <item>从系统通讯录选择联系人</item>
+        <item>画画板</item>
+        <item>撕衣服</item>
     </string-array>
     <string-array name="demos_classes">
         <item>com.androidtest.Demos.MyClock.mainClockActivity</item>
@@ -157,6 +159,8 @@
         <item>com.androidtest.Demos.ContentProviderDemos.SMSBackUp</item>
         <item>com.androidtest.Demos.ContentProviderDemos.ContactReadActivity</item>
         <item>com.androidtest.Demos.ContentProviderDemos.SelectContactActivity</item>
+        <item>com.androidtest.Demos.PaintDemos.DrawingBoardActivity</item>
+        <item>com.androidtest.Demos.PaintDemos.RipClothesActivity</item>
     </string-array>
 
     <string-array name="data">

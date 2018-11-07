@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-257:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-257:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-257:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-257:12
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-261:12
+INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-261:12
+INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-261:12
+INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-261:12
 MERGED from [com.android.support:design:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.hackware1993:MagicIndicator:1.5.0] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/MagicIndicator-1.5.0.aar/14cac558265650270536e4edcd5c2c8b/AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/AndroidManifest.xml:17:1-22:12
@@ -39,22 +39,22 @@ MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/mrchen/.gradle
 MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/aba327b5b58f9820a1e8287496664dd8/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/817690c5a6356ce5f232ef4e4671b499/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/511b684f5706af1e8fda4104b5319a7c/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-257:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-257:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-257:12
+INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-261:12
+INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-261:12
+INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-261:12
 	package
 		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:4:5-49
 		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-257:12
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-261:12
 		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-257:12
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-261:12
 		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:11-69
@@ -123,7 +123,7 @@ ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:38
 	android:name
 		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:38:22-62
 application
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:40:5-255:19
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:40:5-259:19
 MERGED from [com.android.support:design:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/AndroidManifest.xml:22:5-20
 MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/android-sliding-menu-1.0.1.aar/e6c5d6fee89087e0100965803a80ea1d/AndroidManifest.xml:6:5-8:19
@@ -399,7 +399,7 @@ ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:13
 	android:scheme
 		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:136:23-44
 	android:mimeType
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:208:21-45
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:210:21-45
 intent-filter#action:name:android.intent.action.PACKAGE_ADDED+action:name:android.intent.action.PACKAGE_REMOVED+data:scheme:package
 ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:138:13-147:29
 action#android.intent.action.PACKAGE_ADDED
@@ -555,101 +555,117 @@ ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:19
 	android:name
 		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:199:19-75
 activity#com.androidtest.other.ImageCopyActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:200:9-75
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:200:9-76
 	android:name
 		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:200:19-73
+activity#com.androidtest.other.VideoPlayMediaActivity
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:201:9-81
+	android:name
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:201:19-78
+activity#com.androidtest.other.VideoPlayVideoViewActivity
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:202:9-84
+	android:name
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:202:19-82
 activity#com.androidtest.other.Intent1Activity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:201:9-211:20
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:203:9-213:20
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:201:19-71
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:203:19-71
 intent-filter#action:name:helloworld.android.com.androidtest.MyIntent+category:name:android.intent.category.DEFAULT+data:mimeType:aa/bb+data:scheme:myintent
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:202:13-210:29
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:204:13-212:29
 action#helloworld.android.com.androidtest.MyIntent
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:203:17-86
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:205:17-86
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:203:25-83
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:205:25-83
 category#android.intent.category.DEFAULT
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:205:17-76
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:207:17-76
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:205:27-73
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:207:27-73
 activity#com.androidtest.other.IntentCustomImageView
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:212:9-222:20
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:214:9-224:20
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:212:19-77
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:214:19-77
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:image/*+data:scheme:file
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:213:13-221:29
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:215:13-223:29
 action#android.intent.action.VIEW
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:214:17-69
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:216:17-69
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:214:25-66
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:216:25-66
 activity#com.androidtest.Demos.MyClock.mainClockActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:225:9-84
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:227:9-84
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:225:19-81
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:227:19-81
 activity#com.androidtest.Demos.MyClock.AlarmReceiverActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:226:9-88
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:228:9-88
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:226:19-85
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:228:19-85
 activity#com.androidtest.Demos.SourceCodeViewer.SourceCodeMainActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:227:9-98
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:229:9-98
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:227:19-95
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:229:19-95
 activity#com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:228:9-106
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:230:9-106
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:228:19-103
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:230:19-103
 activity#com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:229:9-105
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:231:9-105
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:229:19-102
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:231:19-102
 activity#com.androidtest.Demos.SevicesDemos.PhoneRecordActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:230:9-91
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:232:9-91
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:230:19-88
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:232:19-88
 activity#com.androidtest.Demos.ContentProviderDemos.SMSBackUp
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:231:9-89
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:233:9-89
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:231:19-86
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:233:19-86
 activity#com.androidtest.Demos.ContentProviderDemos.ContactReadActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:232:9-99
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:234:9-99
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:232:19-96
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:234:19-96
 activity#com.androidtest.Demos.ContentProviderDemos.SelectContactActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:233:9-101
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:235:9-101
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:233:19-98
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:235:19-98
+activity#com.androidtest.Demos.PaintDemos.DrawingBoardActivity
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:236:9-90
+	android:name
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:236:19-87
+activity#com.androidtest.Demos.PaintDemos.RipClothesActivity
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:237:9-88
+	android:name
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:237:19-85
 receiver#com.androidtest.Demos.MyClock.AlarmReceiver
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:235:9-238:39
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:239:9-242:39
 	android:enabled
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:237:13-35
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:241:13-35
 	android:exported
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:238:13-36
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:242:13-36
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:236:13-71
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:240:13-71
 service#com.androidtest.Demos.SevicesDemos.PhoneRecordServices
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:241:9-90
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:245:9-90
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:241:18-87
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:245:18-87
 activity#com.androidtest.thirdlib.SmartImageViewActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:243:9-84
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:247:9-84
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:243:19-81
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:247:19-81
 provider#android.support.v4.content.FileProvider
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:246:9-254:20
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:250:9-258:20
 	android:grantUriPermissions
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:250:13-47
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:254:13-47
 	android:authorities
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:248:13-82
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:252:13-82
 	android:exported
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:249:13-37
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:253:13-37
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:247:13-67
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:251:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:251:13-253:54
+ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:255:13-257:54
 	android:resource
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:253:17-51
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:257:17-51
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:252:17-67
+		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:256:17-67
 uses-sdk
 INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
