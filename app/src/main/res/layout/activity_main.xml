@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="helloworld.android.com.androidtest.com.androidtest.main.MainActivity">
+    tools:context="helloworld.android.com.androidTest.com.androidtest.main.MainActivity">
 
     <TabHost
         android:id="@+id/tabHost"
@@ -21,40 +21,40 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
 
-                <com.androidtest.main.TabActivity
+                <com.androidTest.main.TabActivity
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                </com.androidtest.main.TabActivity>
+                </com.androidTest.main.TabActivity>
 
-                <com.androidtest.main.TabActivity
+                <com.androidTest.main.TabActivity
                     android:id="@+id/tab2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                </com.androidtest.main.TabActivity>
+                </com.androidTest.main.TabActivity>
 
-                <com.androidtest.main.TabActivity
+                <com.androidTest.main.TabActivity
                     android:id="@+id/tab3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                </com.androidtest.main.TabActivity>
+                </com.androidTest.main.TabActivity>
 
-                <com.androidtest.main.TabActivity
+                <com.androidTest.main.TabActivity
                     android:id="@+id/tab4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                </com.androidtest.main.TabActivity>
+                </com.androidTest.main.TabActivity>
 
-                <com.androidtest.main.TabActivity
+                <com.androidTest.main.TabActivity
                     android:id="@+id/tab5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
-                </com.androidtest.main.TabActivity>
+                </com.androidTest.main.TabActivity>
             </FrameLayout>
 
             <TabWidget

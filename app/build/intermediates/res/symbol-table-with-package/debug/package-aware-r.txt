@@ -1,4 +1,4 @@
-helloworld.android.com.androidtest
+com.androidTest
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1321,6 +1321,7 @@ id iv_pre
 id iv_rotate
 id iv_scale
 id iv_src
+id iv_takePicture
 id iv_thumbnail
 id iv_translate
 id labeled
@@ -1597,6 +1598,7 @@ layout activity_gridviewitem
 layout activity_httprequest
 layout activity_image_copy
 layout activity_image_handle
+layout activity_image_pick
 layout activity_imageswitcher
 layout activity_imageview
 layout activity_insidesavedata

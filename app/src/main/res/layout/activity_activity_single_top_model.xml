@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.androidtest.elements.ActivitySingleTopActivity">
+    tools:context="com.androidTest.elements.ActivitySingleTopActivity">
 
     <TextView
         android:layout_width="match_parent"

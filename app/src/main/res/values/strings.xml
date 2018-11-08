@@ -29,30 +29,30 @@
         <item>其他Button</item>
     </string-array>
     <string-array name="controls_activity">
-        <item>com.androidtest.controls.AlertDialogActivity</item>
-        <item>com.androidtest.controls.AutoCompleteTextViewActivity</item>
-        <item>com.androidtest.controls.ButtonTestActivity</item>
-        <item>com.androidtest.controls.DatePickerActivity</item>
-        <item>com.androidtest.controls.DrawerLayoutActivity</item>
-        <item>com.androidtest.controls.EditTextActivity</item>
-        <item>com.androidtest.controls.GalleryActivity</item>
-        <item>com.androidtest.controls.GridViewActivity</item>
-        <item>com.androidtest.controls.ImageViewActivity</item>
-        <item>com.androidtest.controls.ImageSwitcherActivity</item>
-        <item>com.androidtest.controls.ListViewActivity</item>
-        <item>com.androidtest.controls.MenuActivity</item>
-        <item>com.androidtest.controls.ProgressBarActivity</item>
-        <item>com.androidtest.controls.RatingBarActivity</item>
-        <item>com.androidtest.controls.ScrollViewActivity</item>
-        <item>com.androidtest.controls.SeekBarActivity</item>
-        <item>com.androidtest.controls.SpinnerActivity</item>
-        <item>com.androidtest.controls.SurfaceViewActivity</item>
-        <item>com.androidtest.controls.TabHostActivity</item>
-        <item>com.androidtest.controls.TextViewActivity</item>
-        <item>com.androidtest.controls.TimePickerActivity</item>
-        <item>com.androidtest.controls.ToastTestActivity</item>
-        <item>com.androidtest.controls.ViewPagerActivity</item>
-        <item>com.androidtest.controls.OtherButtonsActivity</item>
+        <item>com.androidTest.controls.AlertDialogActivity</item>
+        <item>com.androidTest.controls.AutoCompleteTextViewActivity</item>
+        <item>com.androidTest.controls.ButtonTestActivity</item>
+        <item>com.androidTest.controls.DatePickerActivity</item>
+        <item>com.androidTest.controls.DrawerLayoutActivity</item>
+        <item>com.androidTest.controls.EditTextActivity</item>
+        <item>com.androidTest.controls.GalleryActivity</item>
+        <item>com.androidTest.controls.GridViewActivity</item>
+        <item>com.androidTest.controls.ImageViewActivity</item>
+        <item>com.androidTest.controls.ImageSwitcherActivity</item>
+        <item>com.androidTest.controls.ListViewActivity</item>
+        <item>com.androidTest.controls.MenuActivity</item>
+        <item>com.androidTest.controls.ProgressBarActivity</item>
+        <item>com.androidTest.controls.RatingBarActivity</item>
+        <item>com.androidTest.controls.ScrollViewActivity</item>
+        <item>com.androidTest.controls.SeekBarActivity</item>
+        <item>com.androidTest.controls.SpinnerActivity</item>
+        <item>com.androidTest.controls.SurfaceViewActivity</item>
+        <item>com.androidTest.controls.TabHostActivity</item>
+        <item>com.androidTest.controls.TextViewActivity</item>
+        <item>com.androidTest.controls.TimePickerActivity</item>
+        <item>com.androidTest.controls.ToastTestActivity</item>
+        <item>com.androidTest.controls.ViewPagerActivity</item>
+        <item>com.androidTest.controls.OtherButtonsActivity</item>
     </string-array>
 
     <!--四大组件-->
@@ -63,10 +63,10 @@
         <item>Service</item>
     </string-array>
     <string-array name="element_classes">
-        <item>com.androidtest.elements.ActivityHomeActivity</item>
-        <item>com.androidtest.elements.BroadcastActivity</item>
-        <item>com.androidtest.elements.ContentProviderActivity</item>
-        <item>com.androidtest.elements.ServiceActivity</item>
+        <item>com.androidTest.elements.ActivityHomeActivity</item>
+        <item>com.androidTest.elements.BroadcastActivity</item>
+        <item>com.androidTest.elements.ContentProviderActivity</item>
+        <item>com.androidTest.elements.ServiceActivity</item>
     </string-array>
 
     <!--第三方控件-->
@@ -76,9 +76,9 @@
         <item>Glide</item>
     </string-array>
     <string-array name="third_classes">
-        <item>com.androidtest.thirdlib.AndroidPullToRefreshActivity</item>
-        <item>com.androidtest.thirdlib.SlidingmenuActivity</item>
-        <item>com.androidtest.thirdlib.GlideActivity</item>
+        <item>com.androidTest.thirdlib.AndroidPullToRefreshActivity</item>
+        <item>com.androidTest.thirdlib.SlidingmenuActivity</item>
+        <item>com.androidTest.thirdlib.GlideActivity</item>
     </string-array>
 
     <!--其他-->
@@ -95,6 +95,7 @@
         <item>音频播放</item>
         <item>视频播放</item>
         <item>录音</item>
+        <item>手机相机或相册调用</item>
         <item>图片处理</item>
         <item>动画</item>
         <item>多线程使用</item>
@@ -110,31 +111,32 @@
         <item>辅助功能</item>
     </string-array>
     <string-array name="other_classes">
-        <item>com.androidtest.other.SensorActivity</item>
-        <item>com.androidtest.other.IntentActivity</item>
-        <item>com.androidtest.other.XmlResoveActivity</item>
-        <item>com.androidtest.other.JsonResoveActivity</item>
-        <item>com.androidtest.other.AssetsActivity</item>
-        <item>com.androidtest.other.SharedPreferencesActivity</item>
-        <item>com.androidtest.other.InsideSaveDataActivity</item>
-        <item>com.androidtest.other.SdCardSaveDataActivity</item>
-        <item>com.androidtest.other.SqliteActivity</item>
-        <item>com.androidtest.other.AudioPlayActivity</item>
-        <item>com.androidtest.other.VideoPlayActivity</item>
-        <item>com.androidtest.other.RecordActivity</item>
-        <item>com.androidtest.other.ImageHandleActivity</item>
-        <item>com.androidtest.other.AnimationActivity</item>
-        <item>com.androidtest.other.MultiThreadActivity</item>
-        <item>com.androidtest.other.HttpRequestActivity</item>
-        <item>com.androidtest.other.SocketActivity</item>
-        <item>com.androidtest.other.NotificationActivity</item>
-        <item>com.androidtest.other.LinearLayout1Activity</item>
-        <item>com.androidtest.other.LinearLayout2Activity</item>
-        <item>com.androidtest.other.LinearLayout3Activity</item>
-        <item>com.androidtest.other.RelativeLayoutActivity</item>
-        <item>com.androidtest.other.FrameLayoutActivity</item>
-        <item>com.androidtest.other.TableLayoutActivity</item>
-        <item>com.androidtest.other.AccessibilityActivity</item>
+        <item>com.androidTest.other.SensorActivity</item>
+        <item>com.androidTest.other.IntentActivity</item>
+        <item>com.androidTest.other.XmlResoveActivity</item>
+        <item>com.androidTest.other.JsonResoveActivity</item>
+        <item>com.androidTest.other.AssetsActivity</item>
+        <item>com.androidTest.other.SharedPreferencesActivity</item>
+        <item>com.androidTest.other.InsideSaveDataActivity</item>
+        <item>com.androidTest.other.SdCardSaveDataActivity</item>
+        <item>com.androidTest.other.SqliteActivity</item>
+        <item>com.androidTest.other.AudioPlayActivity</item>
+        <item>com.androidTest.other.VideoPlayActivity</item>
+        <item>com.androidTest.other.RecordActivity</item>
+        <item>com.androidTest.other.ImagePickActivity</item>
+        <item>com.androidTest.other.ImageHandleActivity</item>
+        <item>com.androidTest.other.AnimationActivity</item>
+        <item>com.androidTest.other.MultiThreadActivity</item>
+        <item>com.androidTest.other.HttpRequestActivity</item>
+        <item>com.androidTest.other.SocketActivity</item>
+        <item>com.androidTest.other.NotificationActivity</item>
+        <item>com.androidTest.other.LinearLayout1Activity</item>
+        <item>com.androidTest.other.LinearLayout2Activity</item>
+        <item>com.androidTest.other.LinearLayout3Activity</item>
+        <item>com.androidTest.other.RelativeLayoutActivity</item>
+        <item>com.androidTest.other.FrameLayoutActivity</item>
+        <item>com.androidTest.other.TableLayoutActivity</item>
+        <item>com.androidTest.other.AccessibilityActivity</item>
     </string-array>
 
     <!--demos-->
@@ -151,16 +153,16 @@
         <item>撕衣服</item>
     </string-array>
     <string-array name="demos_classes">
-        <item>com.androidtest.Demos.MyClock.mainClockActivity</item>
-        <item>com.androidtest.Demos.SourceCodeViewer.SourceCodeMainActivity</item>
-        <item>com.androidtest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity</item>
-        <item>com.androidtest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity</item>
-        <item>com.androidtest.Demos.SevicesDemos.PhoneRecordActivity</item>
-        <item>com.androidtest.Demos.ContentProviderDemos.SMSBackUp</item>
-        <item>com.androidtest.Demos.ContentProviderDemos.ContactReadActivity</item>
-        <item>com.androidtest.Demos.ContentProviderDemos.SelectContactActivity</item>
-        <item>com.androidtest.Demos.PaintDemos.DrawingBoardActivity</item>
-        <item>com.androidtest.Demos.PaintDemos.RipClothesActivity</item>
+        <item>com.androidTest.Demos.MyClock.mainClockActivity</item>
+        <item>com.androidTest.Demos.SourceCodeViewer.SourceCodeMainActivity</item>
+        <item>com.androidTest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity</item>
+        <item>com.androidTest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity</item>
+        <item>com.androidTest.Demos.SevicesDemos.PhoneRecordActivity</item>
+        <item>com.androidTest.Demos.ContentProviderDemos.SMSBackUp</item>
+        <item>com.androidTest.Demos.ContentProviderDemos.ContactReadActivity</item>
+        <item>com.androidTest.Demos.ContentProviderDemos.SelectContactActivity</item>
+        <item>com.androidTest.Demos.PaintDemos.DrawingBoardActivity</item>
+        <item>com.androidTest.Demos.PaintDemos.RipClothesActivity</item>
     </string-array>
 
     <string-array name="data">

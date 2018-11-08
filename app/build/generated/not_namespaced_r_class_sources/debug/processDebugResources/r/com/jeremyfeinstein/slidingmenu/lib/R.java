@@ -36,16 +36,16 @@ public final class R {
         private id() {}
 
         public static final int fullscreen = 0x7f090089;
-        public static final int left = 0x7f0900ac;
-        public static final int margin = 0x7f0900b7;
-        public static final int right = 0x7f0900e6;
-        public static final int selected_view = 0x7f090104;
-        public static final int slidingmenumain = 0x7f09010b;
+        public static final int left = 0x7f0900ad;
+        public static final int margin = 0x7f0900b8;
+        public static final int right = 0x7f0900e7;
+        public static final int selected_view = 0x7f090105;
+        public static final int slidingmenumain = 0x7f09010c;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int slidingmenumain = 0x7f0c00af;
+        public static final int slidingmenumain = 0x7f0c00b0;
     }
     public static final class styleable {
         private styleable() {}

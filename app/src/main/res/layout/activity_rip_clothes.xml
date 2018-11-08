@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.androidtest.Demos.PaintDemos.RipClothesActivity">
+    tools:context="com.androidTest.Demos.PaintDemos.RipClothesActivity">
 
     <ImageView
         android:id="@+id/iv_after"

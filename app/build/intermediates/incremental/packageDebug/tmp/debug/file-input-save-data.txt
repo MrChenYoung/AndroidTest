@@ -1,15 +1,15 @@
 #Internal package file, do not edit.
-#Wed Nov 07 22:26:57 CST 2018
-1.base=F\:\\AndroidProjects\\AndroidTest\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+#Thu Nov 08 18:12:18 CST 2018
+1.base=/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/transforms/dexMerger/debug/0
 2.path=data
 0.baseType=DIRECTORY
-2.base=F\:\\AndroidProjects\\AndroidTest\\app\\build\\intermediates\\merged_assets\\debug\\mergeDebugAssets\\out
+2.base=/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 2.set=ASSET
 1.baseType=DIRECTORY
 count=3
-1.set=ASSET
-0.path=classes.dex
-0.set=DEX
-0.base=F\:\\AndroidProjects\\AndroidTest\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+1.set=DEX
+0.path=test1.jpg
+0.set=ASSET
+0.base=/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 2.baseType=DIRECTORY
-1.path=test1.jpg
+1.path=classes.dex

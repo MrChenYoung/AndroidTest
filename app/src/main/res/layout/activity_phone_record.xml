@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.androidtest.Demos.SevicesDemos.PhoneRecordActivity">
+    tools:context="com.androidTest.Demos.SevicesDemos.PhoneRecordActivity">
 
     <TextView
         android:layout_width="match_parent"
