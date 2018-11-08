@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.androidTest"
+    android:installLocation="auto"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -40,7 +41,9 @@
     <!-- 手机启动权限 -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <!-- 手机重启权限 -->
-    <uses-permission android:name="android.permission.REBOOT" />
+    <!-- <uses-permission android:name="android.permission.REBOOT" /> -->
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -50,6 +53,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.androidTest.main.MainActivity" >
             <intent-filter>

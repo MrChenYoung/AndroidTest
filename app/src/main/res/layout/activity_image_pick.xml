@@ -6,16 +6,48 @@
     android:layout_height="match_parent"
     tools:context="com.androidTest.other.ImagePickActivity">
 
-    <Button
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开相机拍照"
-        android:onClick="tackPicture"/>
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_takePicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/a1"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打开相机拍照(指定存储路径)"
+                android:onClick="tackPicture1"/>
+
+            <TextView
+                android:id="@+id/tv_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_takePicture1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D8BFD8"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="打开相机拍照(默认存储路径)"
+                android:onClick="tackPicture2"/>
+
+            <TextView
+                android:id="@+id/tv_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_takePicture2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#D8BFD8"/>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

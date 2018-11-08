@@ -1321,7 +1321,8 @@ id iv_pre
 id iv_rotate
 id iv_scale
 id iv_src
-id iv_takePicture
+id iv_takePicture1
+id iv_takePicture2
 id iv_thumbnail
 id iv_translate
 id labeled
@@ -1500,6 +1501,8 @@ id tv_receive
 id tv_result
 id tv_selected
 id tv_size
+id tv_text1
+id tv_text2
 id tv_top
 id uniform
 id unlabeled
