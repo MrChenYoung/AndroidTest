@@ -233,7 +233,7 @@ public class MuiltThreadDownloadActivity extends AppCompatActivity {
 
             Uri contentUri = FileProvider.getUriForFile(
                     context.getApplicationContext()
-                    , "helloworld.android.com.androidtest.fileprovider"
+                    , "com.androidtest.fileprovider"
                     , apkPath);
             installIntent.setDataAndType(contentUri, "application/vnd.android.package-archive");
 

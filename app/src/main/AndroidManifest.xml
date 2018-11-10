@@ -11,8 +11,8 @@
     <!-- 录音权限 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <!-- sd卡读写文件权限 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGITE_EXTERNAL_STORAE" />
     <!-- 获取电话状态权限 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 打电话权限 -->
@@ -253,13 +253,14 @@
         <!-- 适配android 7.0以上系统代码安装apk -->
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="helloworld.android.com.androidTest.fileprovider"
+            android:authorities="com.androidTest.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
     </application>
 
 </manifest>
