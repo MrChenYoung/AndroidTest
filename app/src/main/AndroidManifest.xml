@@ -13,6 +13,7 @@
     <!-- sd卡读写文件权限 -->
     <uses-permission android:name="android.permission.WRGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGITE_EXTERNAL_STORAE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <!-- 获取电话状态权限 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 打电话权限 -->
@@ -41,6 +42,7 @@
     <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
+        android:name=".main.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

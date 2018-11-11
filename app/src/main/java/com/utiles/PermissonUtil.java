@@ -6,9 +6,11 @@ import android.support.annotation.NonNull;
 
 import pub.devrel.easypermissions.EasyPermissions;
 
-public class Permissons {
+public class PermissonUtil {
     // 相机权限
     public static final int CAMERA = 100;
+    // 录音权限
+    public static final int RECORD = 200;
 
     /**
      * 检查是否有权限

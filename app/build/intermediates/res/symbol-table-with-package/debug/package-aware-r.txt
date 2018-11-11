@@ -1202,6 +1202,8 @@ id both
 id bottom
 id bt_openLaunchModel
 id bt_selectContact
+id bt_startRecord
+id bt_stopRecord
 id btn
 id btn2
 id btn_get
@@ -1496,6 +1498,7 @@ id tv_address
 id tv_body
 id tv_code
 id tv_date
+id tv_loading
 id tv_name
 id tv_phone
 id tv_receive

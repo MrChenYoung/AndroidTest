@@ -35,12 +35,12 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int fullscreen = 0x7f090089;
-        public static final int left = 0x7f0900af;
-        public static final int margin = 0x7f0900ba;
-        public static final int right = 0x7f0900e9;
-        public static final int selected_view = 0x7f090107;
-        public static final int slidingmenumain = 0x7f09010e;
+        public static final int fullscreen = 0x7f09008b;
+        public static final int left = 0x7f0900b1;
+        public static final int margin = 0x7f0900bc;
+        public static final int right = 0x7f0900eb;
+        public static final int selected_view = 0x7f090109;
+        public static final int slidingmenumain = 0x7f090110;
     }
     public static final class layout {
         private layout() {}

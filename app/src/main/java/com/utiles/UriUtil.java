@@ -10,6 +10,8 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.util.Log;
 
+import com.androidTest.main.App;
+
 /**
  * Author：mengyuan
  * Date  : 2017/7/27下午6:12
@@ -23,11 +25,6 @@ public class UriUtil {
      * Get a file path from a Uri. This will get the the path for Storage Access
      */
     public static String getPath( final Uri uri) {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
-            Log.e("tag","ceshi");
-        }
-
         // DocumentProvider
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && DocumentsContract.isDocumentUri(App.context, uri)) {
             // ExternalStorageProvider

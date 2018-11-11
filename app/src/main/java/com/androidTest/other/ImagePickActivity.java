@@ -2,28 +2,20 @@ package com.androidTest.other;
 
 import android.Manifest;
 import android.app.Activity;
-import android.content.ContentResolver;
-import android.content.ContentUris;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.Image;
-import android.media.MediaMetadataRetriever;
-import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.os.StrictMode;
-import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.format.Formatter;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -31,18 +23,13 @@ import android.widget.Toast;
 import android.widget.VideoView;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.net.URI;
 import java.util.List;
 
 import com.androidTest.R;
 import com.androidTest.main.PermissionBaseActivity;
-import com.utiles.Permissons;
+import com.utiles.PermissonUtil;
 import com.utiles.UriUtil;
-
-import org.w3c.dom.Text;
 
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
@@ -102,7 +89,7 @@ public class ImagePickActivity extends PermissionBaseActivity {
 
     // 打开相机拍照(设置照片存储路径,获取到的图片为原图，尺寸大)
     public void tackPicture1(View view) {
-        if (Permissons.hasPermissions(this,this,PERMISSION_CAMERA1,"请求使用相机",cameraPermission)){
+        if (PermissonUtil.hasPermissions(this,this,PERMISSION_CAMERA1,"请求使用相机",cameraPermission)){
             takePicture1();
         }else {
             // 没有权限
@@ -129,7 +116,7 @@ public class ImagePickActivity extends PermissionBaseActivity {
 
     // 打开系统相机(不设置存储路径,默认路径存储,获取到的图片为压缩后的照片,尺寸小)
     public void tackPicture2(View view) {
-        if (Permissons.hasPermissions(this,this,PERMISSION_CAMERA2,"请求使用相机",cameraPermission)){
+        if (PermissonUtil.hasPermissions(this,this,PERMISSION_CAMERA2,"请求使用相机",cameraPermission)){
             takePicture2();
         }else {
             // 没有权限
@@ -149,7 +136,7 @@ public class ImagePickActivity extends PermissionBaseActivity {
     // 打开相机拍视频
     //@AfterPermissionGranted：权限授权回调，当用户在授权之后，会回调带有AfterPermissionGranted对应权限的方法
     public void takeVideo(View view) {
-        if (Permissons.hasPermissions(this,this,PERMISSION_CAMERA3,"请求使用相机",cameraPermission)){
+        if (PermissonUtil.hasPermissions(this,this,PERMISSION_CAMERA3,"请求使用相机",cameraPermission)){
             takeVideo();
         }else {
             // 没有权限 去申请
@@ -175,7 +162,7 @@ public class ImagePickActivity extends PermissionBaseActivity {
 
     // 打开系统相册
     public void openAlbum(View view) {
-        if (Permissons.hasPermissions(this,this,PERMISSION_WRITE_EXTERNAL_STORAGE,"请求存储权限",new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE})){
+        if (PermissonUtil.hasPermissions(this,this,PERMISSION_WRITE_EXTERNAL_STORAGE,"请求存储权限",new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE})){
             openAlbum();
         }else {
             // 没有权限
