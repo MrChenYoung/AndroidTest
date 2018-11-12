@@ -24,7 +24,7 @@ public class Fragment1 extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment2 fragment2 = (Fragment2) getActivity().getSupportFragmentManager().findFragmentById(R.id.fragment1);
+                Fragment2 fragment2 = (Fragment2) getActivity().getSupportFragmentManager().findFragmentById(R.id.fragment2);
                 fragment2.updateUI(editText.getText().toString());
             }
         });

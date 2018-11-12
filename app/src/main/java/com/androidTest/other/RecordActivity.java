@@ -127,34 +127,35 @@ public class RecordActivity extends PermissionBaseActivity {
 
     // 初始化录音器
     private void initialRecorder(){
+        if (mediaRecorder == null){
+            mediaRecorder = new MediaRecorder();
+            mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+//            mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);
+            mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+//            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);
+            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+        }
+    }
+
+    // 开始录音
+    public void startRecord(View view){
         // 检查录音权限
         if (PermissonUtil.hasPermissions(this,this,PermissonUtil.RECORD,"需要录音权限",new String[]{Manifest.permission.RECORD_AUDIO})){
             // 有录音权限
-            setRecorder();
+            startRecord();
         }else {
             // 没有录音权限
 
         }
     }
 
-    // 设置录音器
     @AfterPermissionGranted(PermissonUtil.RECORD)
-    private void setRecorder(){
-        if (mediaRecorder == null){
-            mediaRecorder = new MediaRecorder();
-            mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-            mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);
-            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);
-        }
-    }
-
-    // 开始录音
-    public void startRecord(View view){
+    private void startRecord(){
         // 初始化录音器
         initialRecorder();
 
         // 设置录音路径
-        File desPath = new File(recordDir,System.currentTimeMillis() + ".amr");
+        File desPath = new File(recordDir,System.currentTimeMillis() + ".m4a");
         mediaRecorder.setOutputFile(desPath.getAbsolutePath());
 
         // 开始录音
@@ -165,7 +166,7 @@ public class RecordActivity extends PermissionBaseActivity {
             tv_loading.setText("录音中...");
             cover.setVisibility(View.VISIBLE);
             reloadViews();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(this,"开启录音器失败",Toast.LENGTH_SHORT).show();
         }
@@ -176,10 +177,16 @@ public class RecordActivity extends PermissionBaseActivity {
         if (mediaRecorder != null){
             try {
                 mediaRecorder.stop();
+                mediaRecorder.release();
+                mediaRecorder = null;
                 isRecording = false;
                 cover.setVisibility(View.GONE);
                 reloadViews();
+                getHistoryRecords();
             }catch (Exception e){
+                mediaRecorder.reset();
+                mediaRecorder.release();
+                mediaRecorder = null;
                 Toast.makeText(this,"停止录音失败",Toast.LENGTH_SHORT).show();
             }
         }
@@ -265,8 +272,9 @@ public class RecordActivity extends PermissionBaseActivity {
 
             // 刷新列表
             adapter.notifyDataSetChanged();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
+            Toast.makeText(this,"读取文件失败",Toast.LENGTH_LONG).show();
         }
     }
 
