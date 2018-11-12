@@ -21,6 +21,10 @@
             android:onClick="stopRecord"
             android:text="停止录音" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="历史录音列表(点击可播放)"/>
         <ListView
             android:id="@+id/listView"
             android:layout_width="match_parent"

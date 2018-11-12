@@ -27,4 +27,10 @@ public class ActivityHomeActivity extends AppCompatActivity {
         Intent intent = new Intent(this,ActivityLaunchModelActivity.class);
         startActivity(intent);
     }
+
+    // 进入fragment的使用界面
+    public void openFragment(View view){
+        Intent intent = new Intent(this,FragmentHomeActivity.class);
+        startActivity(intent);
+    }
 }

@@ -13,7 +13,7 @@
     <!-- sd卡读写文件权限 -->
     <uses-permission android:name="android.permission.WRGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGITE_EXTERNAL_STORAE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- 获取电话状态权限 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 打电话权限 -->
@@ -37,9 +37,9 @@
     <!-- 手机启动权限 -->
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <!-- 手机重启权限 -->
-    <!--<uses-permission android:name="android.permission.REBOOT" />-->
-    <!--相机权限-->
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- <uses-permission android:name="android.permission.REBOOT" /> -->
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name=".main.App"
@@ -115,6 +115,11 @@
         <activity android:name=".elements.ContentProviderActivity" />
         <activity android:name=".elements.ServiceActivity" />
         <activity android:name=".elements.ServiceAidlActivity" />
+        <activity android:name=".elements.FragmentHomeActivity" />
+        <activity android:name=".elements.FragmentAddStaticActivity" />
+        <activity android:name=".elements.FragmentAddDynamicActivity" />
+        <activity android:name=".elements.FragmentLifecycleActivity" />
+        <activity android:name=".elements.FragmentCommActivity"/>
         <!-- 注册广播接收者 -->
         <receiver android:name=".elements.BroadcastReceiverMonitor">
             <intent-filter>
@@ -205,7 +210,7 @@
         <activity android:name=".other.ImageCopyActivity" />
         <activity android:name=".other.VideoPlayMediaActivity" />
         <activity android:name=".other.VideoPlayVideoViewActivity" />
-        <activity android:name=".other.ImagePickActivity"/>
+        <activity android:name=".other.ImagePickActivity" />
         <activity android:name=".other.Intent1Activity">
             <intent-filter>
                 <action android:name="helloworld.android.com.androidtest.MyIntent" />

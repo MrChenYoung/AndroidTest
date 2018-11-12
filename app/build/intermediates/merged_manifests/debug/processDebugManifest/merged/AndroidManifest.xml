@@ -122,6 +122,11 @@
         <activity android:name="com.androidTest.elements.ContentProviderActivity" />
         <activity android:name="com.androidTest.elements.ServiceActivity" />
         <activity android:name="com.androidTest.elements.ServiceAidlActivity" />
+        <activity android:name="com.androidTest.elements.FragmentHomeActivity" />
+        <activity android:name="com.androidTest.elements.FragmentAddStaticActivity" />
+        <activity android:name="com.androidTest.elements.FragmentAddDynamicActivity" />
+        <activity android:name="com.androidTest.elements.FragmentLifecycleActivity" />
+        <activity android:name="com.androidTest.elements.FragmentCommActivity" />
         <!-- 注册广播接收者 -->
         <receiver android:name="com.androidTest.elements.BroadcastReceiverMonitor" >
             <intent-filter>

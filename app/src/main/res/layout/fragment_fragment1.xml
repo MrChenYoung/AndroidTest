@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".elements.Fragment1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fragment1内容"
+        android:background="#D3D3D3"/>
+
+    <EditText
+        android:id="@+id/ed_para"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入要传到fragment2的内容"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="传数据到fragment2" />
+
+</LinearLayout>

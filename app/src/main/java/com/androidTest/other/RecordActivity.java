@@ -7,7 +7,11 @@ import android.media.MediaRecorder;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
+import android.text.format.Formatter;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -20,6 +24,9 @@ import com.utiles.PermissonUtil;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
@@ -36,6 +43,9 @@ public class RecordActivity extends PermissionBaseActivity {
 
     // 历史录音列表
     private ListView listView;
+    private ArrayList<RecordBean> recordList;
+    private RecordAdapter adapter;
+    private ArrayList<File> recordFiles = new ArrayList<>();
 
     // 录音控制按钮
     private Button bt_startRecord;
@@ -45,6 +55,7 @@ public class RecordActivity extends PermissionBaseActivity {
     private boolean isRecording = false;
     // 是否正在播放录音
     private boolean isPlayingRecord = false;
+    private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -57,9 +68,45 @@ public class RecordActivity extends PermissionBaseActivity {
         bt_startRecord = findViewById(R.id.bt_startRecord);
         bt_stopRecord = findViewById(R.id.bt_stopRecord);
         listView = findViewById(R.id.listView);
+        recordList = new ArrayList<>();
+        adapter = new RecordAdapter();
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                playRecord(position);
+            }
+        });
 
         // 设置录音存储位置
         setRecordSavePath();
+
+        // 创建播放器
+        mediaPlayer = new MediaPlayer();
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                // 播放完成
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(RecordActivity.this,"播放完成",Toast.LENGTH_SHORT).show();
+
+                        cover.setVisibility(View.GONE);
+                        isPlayingRecord = false;
+                        reloadViews();
+                    }
+                });
+            }
+        });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        // 刷新列表
+        getHistoryRecords();
     }
 
     // 设置录音存储位置
@@ -139,20 +186,27 @@ public class RecordActivity extends PermissionBaseActivity {
     }
 
     // 播放录音
-    public void playRecord(View view){
+    public void playRecord(int position){
 //        Intent intent = new Intent();
 //        intent.setAction(Intent.ACTION_VIEW);
 //        intent.setDataAndType(Uri.parse(desPath.getAbsolutePath()),"video/*");
 //        startActivity(intent);
 
-//        try {
-//            MediaPlayer mediaPlayer = new MediaPlayer();
-//            mediaPlayer.setDataSource(desPath.getAbsolutePath());
-//            mediaPlayer.prepare();
-//            mediaPlayer.start();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            // 播放路径
+            File desPath = recordFiles.get(position);
+            mediaPlayer.setDataSource(desPath.getAbsolutePath());
+            mediaPlayer.prepare();
+            mediaPlayer.start();
+
+            // 开启蒙版
+            tv_loading.setText("播放中");
+            cover.setVisibility(View.VISIBLE);
+            isPlayingRecord = true;
+            reloadViews();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     // 刷新界面
@@ -160,16 +214,100 @@ public class RecordActivity extends PermissionBaseActivity {
         if (isPlayingRecord){
             bt_startRecord.setEnabled(false);
             bt_stopRecord.setEnabled(false);
+            listView.setEnabled(false);
         }
 
         if (isRecording){
             bt_startRecord.setEnabled(false);
             bt_stopRecord.setEnabled(true);
+            listView.setEnabled(false);
         }
 
         if (!isRecording && !isPlayingRecord){
             bt_startRecord.setEnabled(true);
             bt_stopRecord.setEnabled(true);
+            listView.setEnabled(true);
+        }
+    }
+
+    // 获取历史录音
+    private void getHistoryRecords(){
+        try {
+            recordList.clear();
+            recordFiles.clear();
+            File[] records = recordDir.listFiles();
+            for (File record : records){
+                RecordBean recordBean = new RecordBean();
+                // 录音名字
+                String recordName = record.getName();
+                recordBean.setRecordName(recordName);
+
+                // 录音日期
+                String date = recordName.split("[.]")[0];
+                SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                long d = Long.parseLong(date);
+                Date recordDate = new Date(d);
+                String dateF = dateFormat.format(recordDate);
+                recordBean.setRecordDate(dateF);
+
+                // 录音文件大小
+                String recordSizeF = Formatter.formatFileSize(this,record.length());
+                recordBean.setRecordSize(recordSizeF);
+
+                // 录音时长
+                MediaPlayer mediaPlayer = new MediaPlayer();
+                mediaPlayer.setDataSource(record.getAbsolutePath());
+                String duration = mediaPlayer.getDuration()/1000/1000 + "s";
+                recordBean.setRecordDuration(duration);
+                recordList.add(recordBean);
+                recordFiles.add(record);
+            }
+
+            // 刷新列表
+            adapter.notifyDataSetChanged();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // 自定义adapter
+    private class RecordAdapter extends BaseAdapter {
+        @Override
+        public int getCount() {
+            return recordList.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return recordList.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            RelativeLayout item;
+            if (convertView == null){
+                item = (RelativeLayout) getLayoutInflater().inflate(R.layout.activity_record_item,null);
+            }else {
+                item = (RelativeLayout) convertView;
+            }
+
+            // 获取指定控件
+            TextView tv_name = item.findViewById(R.id.tv_name);
+            TextView tv_date = item.findViewById(R.id.tv_date);
+            TextView tv_size = item.findViewById(R.id.tv_size);
+
+            // 显示数据
+            RecordBean bean = recordList.get(position);
+            tv_name.setText(bean.getRecordName() + "(" + bean.getRecordDuration() + ")");
+            tv_date.setText(bean.getRecordDate());
+            tv_size.setText(bean.getRecordSize());
+
+            return item;
         }
     }
 }

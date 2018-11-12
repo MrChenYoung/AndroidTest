@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".elements.Fragment2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fragment2的内容"/>
+
+    <EditText
+        android:id="@+id/ed_receive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="fragment1传过来的内容"
+        android:enabled="false"/>
+
+</LinearLayout>
