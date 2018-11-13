@@ -218,6 +218,7 @@
         <activity android:name="com.androidTest.other.VideoPlayMediaActivity" />
         <activity android:name="com.androidTest.other.VideoPlayVideoViewActivity" />
         <activity android:name="com.androidTest.other.ImagePickActivity" />
+        <activity android:name="com.androidTest.other.AnimationTweenActivity" />
         <activity android:name="com.androidTest.other.Intent1Activity" >
             <intent-filter>
                 <action android:name="helloworld.android.com.androidtest.MyIntent" />
@@ -275,6 +276,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
+        <activity android:name="com.androidTest.other.AnimationPropertyActivity" />
         <activity
             android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
             android:exported="false"

@@ -11,14 +11,20 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim alpha
 anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim rotate
+anim scale
+anim set
 anim slide_in_from_bottom
 anim slide_in_from_top
 anim slide_out_to_bottom
 anim slide_out_to_top
+anim translate
+animator alpha
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -29,6 +35,10 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+animator rotate
+animator scale
+animator set
+animator translate
 array controls
 array controls_activity
 array data
@@ -1060,6 +1070,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add
 drawable after19
+drawable android
 drawable arrow
 drawable avd_hide_password
 drawable avd_show_password
@@ -1224,7 +1235,6 @@ id button5
 id button6
 id button7
 id button8
-id button9
 id buttonPanel
 id button_read
 id button_save
@@ -1320,6 +1330,7 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id iv_after
+id iv_animation
 id iv_copy
 id iv_inverted
 id iv_mirror
@@ -1424,6 +1435,7 @@ id seekBar2
 id select_dialog_listview
 id selected
 id selected_view
+id send_notification
 id shortcut
 id showCustom
 id showDialog
@@ -1590,6 +1602,8 @@ layout activity_alertdialog
 layout activity_android_pulltorefresh
 layout activity_animation
 layout activity_animation_frame
+layout activity_animation_property
+layout activity_animation_tween
 layout activity_assets
 layout activity_audioplay
 layout activity_autocompletetextview

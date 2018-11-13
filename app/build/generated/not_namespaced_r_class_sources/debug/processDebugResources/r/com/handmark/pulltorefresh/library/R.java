@@ -12,10 +12,10 @@ public final class R {
     public static final class anim {
         private anim() {}
 
-        public static final int slide_in_from_bottom = 0x7f010010;
-        public static final int slide_in_from_top = 0x7f010011;
-        public static final int slide_out_to_bottom = 0x7f010012;
-        public static final int slide_out_to_top = 0x7f010013;
+        public static final int slide_in_from_bottom = 0x7f010014;
+        public static final int slide_in_from_top = 0x7f010015;
+        public static final int slide_out_to_bottom = 0x7f010016;
+        public static final int slide_out_to_top = 0x7f010017;
     }
     public static final class attr {
         private attr() {}
@@ -52,20 +52,20 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int default_ptr_flip = 0x7f080067;
-        public static final int default_ptr_rotate = 0x7f080068;
-        public static final int indicator_arrow = 0x7f080098;
-        public static final int indicator_bg_bottom = 0x7f080099;
-        public static final int indicator_bg_top = 0x7f08009a;
+        public static final int default_ptr_flip = 0x7f080068;
+        public static final int default_ptr_rotate = 0x7f080069;
+        public static final int indicator_arrow = 0x7f080099;
+        public static final int indicator_bg_bottom = 0x7f08009a;
+        public static final int indicator_bg_top = 0x7f08009b;
     }
     public static final class id {
         private id() {}
 
         public static final int both = 0x7f09002d;
-        public static final int disabled = 0x7f090067;
-        public static final int fl_inner = 0x7f090088;
-        public static final int flip = 0x7f090089;
-        public static final int gridview = 0x7f090093;
+        public static final int disabled = 0x7f090066;
+        public static final int fl_inner = 0x7f090087;
+        public static final int flip = 0x7f090088;
+        public static final int gridview = 0x7f090092;
         public static final int manualOnly = 0x7f0900c0;
         public static final int pullDownFromTop = 0x7f0900e5;
         public static final int pullFromEnd = 0x7f0900e6;
@@ -77,13 +77,13 @@ public final class R {
         public static final int pull_to_refresh_text = 0x7f0900ec;
         public static final int rotate = 0x7f0900f3;
         public static final int scrollview = 0x7f0900fe;
-        public static final int webview = 0x7f090174;
+        public static final int webview = 0x7f090175;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int pull_to_refresh_header_horizontal = 0x7f0c00b6;
-        public static final int pull_to_refresh_header_vertical = 0x7f0c00b7;
+        public static final int pull_to_refresh_header_horizontal = 0x7f0c00b8;
+        public static final int pull_to_refresh_header_vertical = 0x7f0c00b9;
     }
     public static final class string {
         private string() {}

@@ -15,17 +15,20 @@ import android.view.View;
 import com.androidTest.R;
 
 public class NotificationActivity extends Activity {
+
+    private NotificationManager notificationMgr;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
 
+        // 获取到通知管理者
+        notificationMgr = (NotificationManager)this.getSystemService(Context.NOTIFICATION_SERVICE);
     }
 
     // 发送通知
     public void sendNotification(View view){
-
-        NotificationManager notificationMgr = (NotificationManager)this.getSystemService(Context.NOTIFICATION_SERVICE);
 
         NotificationCompat.Builder build = new NotificationCompat.Builder(this);
 
@@ -49,7 +52,18 @@ public class NotificationActivity extends Activity {
         // 创建通知
         Notification notification = build.build();
 
+        // 消息到来震动
+        notification.defaults = Notification.DEFAULT_ALL;
+
+        // 设置消息不可清除
+        notification.flags = Notification.FLAG_NO_CLEAR;
+
         // 发送通知
         notificationMgr.notify(1,notification);
+    }
+
+    // 取消通知
+    public void cancelNotification(View view){
+        notificationMgr.cancel(1);
     }
 }

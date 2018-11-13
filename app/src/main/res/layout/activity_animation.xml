@@ -21,32 +21,24 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="alphaAnimation"
-                android:text="透明度动画" />
+                android:text="补间动画"
+                android:textAllCaps="false"
+                android:onClick="tweenAnimation"
+                />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="rotationAnimation"
-                android:text="旋转动画" />
+                android:text="属性动画"
+                android:textAllCaps="false"
+                android:onClick="propertyAnimation"
+                />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="translateAnimation"
-                android:text="移动动画" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="scaleAnimation"
-                android:text="缩放动画" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="addAnimationListener"
-                android:text="监听动画事件" />
+                android:text="帧动画"
+                android:onClick="frameAnimation"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -64,13 +56,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="addAnimationToListView"
+                android:textAllCaps="false"
                 android:text="给listView设置动画" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="帧动画"
-                android:onClick="frameAnimation"/>
 
         </LinearLayout>
     </ScrollView>

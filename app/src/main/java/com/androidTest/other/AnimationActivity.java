@@ -33,82 +33,22 @@ public class AnimationActivity extends Activity {
         layoutAnimation();
     }
 
-    // 透明度动画
-    public void alphaAnimation(View view){
-        AlphaAnimation animation = new AlphaAnimation(0,1);
-        animation.setDuration(2000);
-        view.startAnimation(animation);
+    // 补间动画
+    public void tweenAnimation(View view){
+        Intent intent = new Intent(this,AnimationTweenActivity.class);
+        startActivity(intent);
     }
 
-    // 旋转动画
-    public void rotationAnimation(View view){
-        // 指定特定中心点旋转
-//        RotateAnimation rotateAnimation = new RotateAnimation(0,360,50,10);
-        // 指定围绕自己中心旋转
-        RotateAnimation rotateAnimation = new RotateAnimation(0,360,RotateAnimation.RELATIVE_TO_SELF,0.5f,RotateAnimation.RELATIVE_TO_SELF,0.5f);
-        rotateAnimation.setDuration(1000);
-        view.startAnimation(rotateAnimation);
+    // 属性动画
+    public void propertyAnimation(View view){
+        Intent intent = new Intent(this,AnimationPropertyActivity.class);
+        startActivity(intent);
     }
 
-    // 移动动画
-    public void translateAnimation(View view){
-        TranslateAnimation animation = new TranslateAnimation(0,100,0,200);
-        animation.setDuration(1000);
-        view.startAnimation(animation);
-    }
-
-    // 缩放动画
-    public void scaleAnimation(View view){
-
-        // 相对于自身左上角缩放
-//        ScaleAnimation animation = new ScaleAnimation(0,1,0,1);
-
-        // 指定缩放的中心点
-//        ScaleAnimation animation = new ScaleAnimation(0,1,0,1,500,20);
-
-        // 指定围绕自身中心点缩放
-        ScaleAnimation animation = new ScaleAnimation(0,1,0,1, Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
-
-        animation.setDuration(1000);
-        view.startAnimation(animation);
-    }
-
-    // 混合动画
-    public void multiAnimation(View view){
-        AnimationSet set = new AnimationSet(true);
-        set.setDuration(1000);
-
-        AlphaAnimation alphaAnimation = new AlphaAnimation(0,1);
-        set.addAnimation(alphaAnimation);
-
-        TranslateAnimation translateAnimation = new TranslateAnimation(0,200,0,200);
-        set.addAnimation(translateAnimation);
-        view.startAnimation(set);
-    }
-
-    // 监听动画事件
-    public void addAnimationListener(View view){
-        RotateAnimation rotateAnimation = new RotateAnimation(0,360,Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
-        rotateAnimation.setDuration(2000);
-        view.startAnimation(rotateAnimation);
-
-        // 添加监听
-        rotateAnimation.setAnimationListener(new Animation.AnimationListener() {
-            @Override
-            public void onAnimationStart(Animation animation) {
-                Toast.makeText(AnimationActivity.this,"动画开始",Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onAnimationEnd(Animation animation) {
-                Toast.makeText(AnimationActivity.this,"动画结束",Toast.LENGTH_SHORT).show();
-            }
-
-            @Override
-            public void onAnimationRepeat(Animation animation) {
-                Toast.makeText(AnimationActivity.this,"动画重复",Toast.LENGTH_SHORT).show();
-            }
-        });
+    // 帧动画
+    public void frameAnimation(View view){
+        Intent intent = new Intent(this,AnimationFrameActivity.class);
+        startActivity(intent);
     }
 
     // 自定义动画
@@ -159,12 +99,6 @@ public class AnimationActivity extends Activity {
     public void addAnimationToListView(View view){
         Intent intent = new Intent();
         intent.setClass(this,AnimationListView.class);
-        startActivity(intent);
-    }
-
-    // 帧动画
-    public void frameAnimation(View view){
-        Intent intent = new Intent(this,AnimationFrameActivity.class);
         startActivity(intent);
     }
 }

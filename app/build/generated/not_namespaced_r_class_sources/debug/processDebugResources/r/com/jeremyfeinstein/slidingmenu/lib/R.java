@@ -30,22 +30,22 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int ic_launcher = 0x7f080079;
+        public static final int ic_launcher = 0x7f08007a;
     }
     public static final class id {
         private id() {}
 
-        public static final int fullscreen = 0x7f09008f;
+        public static final int fullscreen = 0x7f09008e;
         public static final int left = 0x7f0900b5;
         public static final int margin = 0x7f0900c1;
         public static final int right = 0x7f0900f0;
         public static final int selected_view = 0x7f09010e;
-        public static final int slidingmenumain = 0x7f090115;
+        public static final int slidingmenumain = 0x7f090116;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int slidingmenumain = 0x7f0c00bb;
+        public static final int slidingmenumain = 0x7f0c00bd;
     }
     public static final class styleable {
         private styleable() {}

@@ -119,7 +119,7 @@
         <activity android:name=".elements.FragmentAddStaticActivity" />
         <activity android:name=".elements.FragmentAddDynamicActivity" />
         <activity android:name=".elements.FragmentLifecycleActivity" />
-        <activity android:name=".elements.FragmentCommActivity"/>
+        <activity android:name=".elements.FragmentCommActivity" />
         <!-- 注册广播接收者 -->
         <receiver android:name=".elements.BroadcastReceiverMonitor">
             <intent-filter>
@@ -211,6 +211,7 @@
         <activity android:name=".other.VideoPlayMediaActivity" />
         <activity android:name=".other.VideoPlayVideoViewActivity" />
         <activity android:name=".other.ImagePickActivity" />
+        <activity android:name=".other.AnimationTweenActivity" />
         <activity android:name=".other.Intent1Activity">
             <intent-filter>
                 <action android:name="helloworld.android.com.androidtest.MyIntent" />
@@ -268,6 +269,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
+        <activity android:name=".other.AnimationPropertyActivity"></activity>
     </application>
 
 </manifest>
