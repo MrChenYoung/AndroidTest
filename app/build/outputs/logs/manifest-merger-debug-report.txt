@@ -1,807 +1,807 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-275:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-275:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-275:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-275:12
-MERGED from [com.android.support:design:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/AndroidManifest.xml:17:1-24:12
-MERGED from [com.github.hackware1993:MagicIndicator:1.5.0] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/MagicIndicator-1.5.0.aar/14cac558265650270536e4edcd5c2c8b/AndroidManifest.xml:2:1-12:12
-MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/android-sliding-menu-1.0.1.aar/e6c5d6fee89087e0100965803a80ea1d/AndroidManifest.xml:2:1-10:12
-MERGED from [com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/Android-PullToRefresh-2.1.1.aar/02db4659e11f5943fdd14e4c97fe03fb/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc01.aar/209b0a9e38e9bb98e1df4f3e0f78c0e3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/396c278a96b0232e1c81aa38051e61d2/AndroidManifest.xml:2:1-11:12
-MERGED from [pub.devrel:easypermissions:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/easypermissions-1.0.1.aar/7068cffcaa3f9e30bd39a0da0befdc55/AndroidManifest.xml:2:1-19:12
-MERGED from [com.android.support:support-fragment:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc01.aar/3d192a14a41de5d51d5474819eafa6a6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc01.aar/9afc2cc0ca68ee0ac7a7ec0bc3ad7ccd/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc01.aar/5d6f028080ee27d83f48e90c025626c0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc01.aar/2d8b51db8cb8921b783690efac4cb17c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc01.aar/54299f9078dae1210237a9e349984194/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc01.aar/e4f8a5ac78d944c0441267a0fb0c2e39/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc01.aar/dc32cbf224085523e3ea014831c9f9c1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc01.aar/791dd7439459c035ed19408d8825e587/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc01.aar/f339fef675ca4fb5f147f00a7b9f69bc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc01.aar/a2849d3d859f358e12f4639d95fa4aa3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc01.aar/38201e388ca6252b049469e4b1d45a05/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc01.aar/b455107f67ea8920df21729f025b6fcb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc01.aar/fa8db586b68dcf7cd3757c9eb231007a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc01.aar/fad0e97942ae09bfae8aa0bad68facc2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc01.aar/2110f9b7db1818c6a0448627db1e6148/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc01.aar/887bb54eedb5c7d2deae5fa1d7d5d65b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/fce337aaf8fcee524425203ccabed2e1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/b41af3becb8ebdc6ff5badddebba864b/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cardview-v7:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc01.aar/17dfeae798f05c41ed83747060bc195b/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/996d8fab63c38db18c9a78b69f7baee5/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc01.aar/891a90a04abeed66cf61174b50d2a46e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc01.aar/4e2627df7c3e58d78c7c11bcea961583/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc01.aar/fca2ba6ecf4d8dbcc6989d552bd61543/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/9fec233e2b53d078104392620c813696/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc01.aar/39b9bf8c413694f98935e9d3c4b9df68/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/aba327b5b58f9820a1e8287496664dd8/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/817690c5a6356ce5f232ef4e4671b499/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/511b684f5706af1e8fda4104b5319a7c/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-275:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-275:12
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-275:12
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:2:1-275:12
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:2:1-275:12
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:2:1-275:12
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:2:1-275:12
+MERGED from [com.android.support:design:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc01.aar\9bede414aa4409a32e4bf6c711a5a876\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.hackware1993:MagicIndicator:1.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\MagicIndicator-1.5.0.aar\4bc6af2c04d19c56ef47ef1dec163006\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc01.aar\435db47413ac6dc032ae3e2f90247469\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\android-sliding-menu-1.0.1.aar\382deaf56084735bd73e1465d8765f93\AndroidManifest.xml:2:1-10:12
+MERGED from [com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\Android-PullToRefresh-2.1.1.aar\8a185242869b46bb8853cedfb40748ba\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-rc01.aar\24ee7263c9ba42b90c314b00966f5609\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\6585f398f61d34e3a7527fed91520197\AndroidManifest.xml:2:1-11:12
+MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c7cb11036001fb2e57f6f0c49321970a\AndroidManifest.xml:2:1-19:12
+MERGED from [com.android.support:support-fragment:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-rc01.aar\fb86d9362c2144d70145acb19dd315bc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-rc01.aar\82795e8b22bb9b48b75897f1cd28c1e7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-rc01.aar\3a97d3343500470b0dbb11618e104f3f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-rc01.aar\3c7676b105254bb77da3ea9f070a9bc7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-rc01.aar\3241f53803e96a39d2f0faf943b6bf7e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-rc01.aar\67ff68eec2d232371f0cf5070bcc3c6c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-rc01.aar\1e77856add89dcee5f832763b607f5df\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-rc01.aar\5e80d9f44e681e9880a7dbd70a5fd8e3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-rc01.aar\248426652e959f11208ae571d6fa6d08\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-rc01.aar\1ce56f7256d9b69ef7ba650637df04da\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-rc01.aar\9f3f270ceceaf22be553877515516a18\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-rc01.aar\07b9bdf558718454b64f87f7bfa0cd05\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-rc01.aar\d003b5035381053aa3e4a5fd30ccf7c4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-rc01.aar\4f5789badb3b966d293b9a54fe7ab375\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-rc01.aar\99e06689a4f8e902bd35ae838a792fdf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-rc01.aar\def126bcd8696277bb6810d8133289fc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\505fc6410454e7bda9671deccb57ca1e\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc01.aar\1f508a462bf98f67d366631bf18bdd3d\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cardview-v7:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-rc01.aar\4fc2999f27dc164acc0960cd2e95ce59\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\24ed4a09aae8a2c270af855456880d80\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-rc01.aar\e9819006984278f2ec3867cd06f25254\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-rc01.aar\5ecdbdb53d6a635157865fdb8c1e543a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\print-28.0.0-rc01.aar\dbda4e24696c3e799e0864406b774c23\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7096b286473a555872280fb6b93c58b9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-rc01.aar\6b70f98770b8c060b57dcad8511d1fb9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-rc01.aar\f682fbc24b2350976cda90ae1920da00\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\f7e6741d5ba09fe6762fc393fbdc6a84\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e7aa47bf4de2b3f106551969bfcc39b1\AndroidManifest.xml:17:1-22:12
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:2:1-275:12
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:2:1-275:12
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:2:1-275:12
 	package
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:4:5-30
-		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:4:5-30
+		INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-275:12
-		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
+		INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:2:1-275:12
+		INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:1-275:12
-		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
+		INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:2:1-275:12
+		INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:2:11-69
 	android:installLocation
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:5:5-35
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:5:5-35
 uses-permission#android.permission.READ_CONTACTS
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:8:5-72
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:8:5-72
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:8:22-69
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:8:22-69
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:12:5-71
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:12:5-71
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:12:22-68
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:12:22-68
 uses-permission#android.permission.WRGE
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:14:5-63
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:14:5-63
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:14:22-60
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:14:22-60
 uses-permission#android.permission.READ_EXTERNAL_STORAGITE_EXTERNAL_STORAE
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:15:5-98
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:15:5-98
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:15:22-95
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:15:22-95
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:16:5-81
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:16:22-78
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:16:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:18:5-75
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:18:5-75
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:18:22-72
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:18:22-72
 uses-permission#android.permission.CALL_PHONE
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:20:5-69
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:20:5-69
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:20:22-66
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:20:22-66
 uses-permission#android.permission.SEND_SMS
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:22:5-67
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:22:5-67
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:22:22-64
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:22:22-64
 uses-permission#android.permission.RECEIVE_SMS
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:24:5-70
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:24:5-70
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:24:22-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:24:22-67
 uses-permission#android.permission.READ_SMS
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:26:5-67
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:26:22-64
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:26:22-64
 uses-permission#android.permission.INTERNET
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:28:5-67
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:28:5-67
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:28:22-64
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:28:22-64
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:30:5-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:30:5-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:30:22-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:30:22-63
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:32:5-68
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:32:5-68
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:32:22-65
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:32:22-65
 uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:34:5-83
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:34:5-83
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:34:22-80
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:34:22-80
 uses-permission#android.permission.PROCESS_OUTGOING_CALLS
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:36:5-81
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:36:5-81
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:36:22-78
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:36:22-78
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:38:5-81
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:38:5-81
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:38:22-78
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:38:22-78
 uses-permission#android.permission.CAMERA
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:42:5-65
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:42:5-65
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:42:22-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:42:22-62
 application
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:44:5-273:19
-MERGED from [com.android.support:design:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/AndroidManifest.xml:22:5-20
-MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/android-sliding-menu-1.0.1.aar/e6c5d6fee89087e0100965803a80ea1d/AndroidManifest.xml:6:5-8:19
-MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/android-sliding-menu-1.0.1.aar/e6c5d6fee89087e0100965803a80ea1d/AndroidManifest.xml:6:5-8:19
-MERGED from [com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/Android-PullToRefresh-2.1.1.aar/02db4659e11f5943fdd14e4c97fe03fb/AndroidManifest.xml:9:5-20
-MERGED from [com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/Android-PullToRefresh-2.1.1.aar/02db4659e11f5943fdd14e4c97fe03fb/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/396c278a96b0232e1c81aa38051e61d2/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/396c278a96b0232e1c81aa38051e61d2/AndroidManifest.xml:9:5-20
-MERGED from [pub.devrel:easypermissions:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/easypermissions-1.0.1.aar/7068cffcaa3f9e30bd39a0da0befdc55/AndroidManifest.xml:11:5-17:19
-MERGED from [pub.devrel:easypermissions:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/easypermissions-1.0.1.aar/7068cffcaa3f9e30bd39a0da0befdc55/AndroidManifest.xml:11:5-17:19
-MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/fce337aaf8fcee524425203ccabed2e1/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/fce337aaf8fcee524425203ccabed2e1/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/b41af3becb8ebdc6ff5badddebba864b/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/b41af3becb8ebdc6ff5badddebba864b/AndroidManifest.xml:22:5-23:19
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:44:5-273:19
+MERGED from [com.android.support:design:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc01.aar\9bede414aa4409a32e4bf6c711a5a876\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc01.aar\9bede414aa4409a32e4bf6c711a5a876\AndroidManifest.xml:22:5-20
+MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\android-sliding-menu-1.0.1.aar\382deaf56084735bd73e1465d8765f93\AndroidManifest.xml:6:5-8:19
+MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\android-sliding-menu-1.0.1.aar\382deaf56084735bd73e1465d8765f93\AndroidManifest.xml:6:5-8:19
+MERGED from [com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\Android-PullToRefresh-2.1.1.aar\8a185242869b46bb8853cedfb40748ba\AndroidManifest.xml:9:5-20
+MERGED from [com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\Android-PullToRefresh-2.1.1.aar\8a185242869b46bb8853cedfb40748ba\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\6585f398f61d34e3a7527fed91520197\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\6585f398f61d34e3a7527fed91520197\AndroidManifest.xml:9:5-20
+MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c7cb11036001fb2e57f6f0c49321970a\AndroidManifest.xml:11:5-17:19
+MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c7cb11036001fb2e57f6f0c49321970a\AndroidManifest.xml:11:5-17:19
+MERGED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\505fc6410454e7bda9671deccb57ca1e\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\505fc6410454e7bda9671deccb57ca1e\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc01.aar\1f508a462bf98f67d366631bf18bdd3d\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc01.aar\1f508a462bf98f67d366631bf18bdd3d\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/fce337aaf8fcee524425203ccabed2e1/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\505fc6410454e7bda9671deccb57ca1e\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:50:9-35
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:50:9-35
 	android:label
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:48:9-41
-		REJECTED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/android-sliding-menu-1.0.1.aar/e6c5d6fee89087e0100965803a80ea1d/AndroidManifest.xml:6:82-109
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:48:9-41
+		REJECTED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\android-sliding-menu-1.0.1.aar\382deaf56084735bd73e1465d8765f93\AndroidManifest.xml:6:82-109
 	android:roundIcon
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:49:9-54
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:49:9-54
 	android:icon
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:47:9-43
-		REJECTED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/android-sliding-menu-1.0.1.aar/e6c5d6fee89087e0100965803a80ea1d/AndroidManifest.xml:6:45-81
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:47:9-43
+		REJECTED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\android-sliding-menu-1.0.1.aar\382deaf56084735bd73e1465d8765f93\AndroidManifest.xml:6:45-81
 	android:allowBackup
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:46:9-35
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:46:9-35
 	android:theme
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:51:9-40
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:51:9-40
 	tools:replace
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:52:9-35
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:52:9-35
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:45:9-33
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:45:9-33
 activity#com.androidTest.main.MainActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:53:9-59:20
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:53:9-59:20
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:53:19-52
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:53:19-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:54:13-58:29
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:54:13-58:29
 action#android.intent.action.MAIN
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:55:17-69
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:55:17-69
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:55:25-66
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:55:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:57:17-77
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:57:17-77
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:57:27-74
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:57:27-74
 activity#com.androidTest.controls.AlertDialogActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:62:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:62:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:62:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:62:19-63
 activity#com.androidTest.controls.AutoCompleteTextViewActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:63:9-75
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:63:9-75
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:63:19-72
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:63:19-72
 activity#com.androidTest.controls.ButtonTestActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:64:9-65
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:64:9-65
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:64:19-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:64:19-62
 activity#com.androidTest.controls.DatePickerActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:65:9-65
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:65:9-65
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:65:19-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:65:19-62
 activity#com.androidTest.controls.DrawerLayoutActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:66:9-67
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:66:9-67
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:66:19-64
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:66:19-64
 activity#com.androidTest.controls.EditTextActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:67:9-63
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:67:9-63
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:67:19-60
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:67:19-60
 activity#com.androidTest.controls.GalleryActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:68:9-62
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:68:9-62
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:68:19-59
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:68:19-59
 activity#com.androidTest.controls.GridViewActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:69:9-63
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:69:9-63
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:69:19-60
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:69:19-60
 activity#com.androidTest.controls.ImageViewActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:70:9-64
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:70:9-64
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:70:19-61
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:70:19-61
 activity#com.androidTest.controls.ImageSwitcherActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:71:9-68
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:71:9-68
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:71:19-65
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:71:19-65
 activity#com.androidTest.controls.ListViewActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:72:9-63
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:72:9-63
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:72:19-60
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:72:19-60
 activity#com.androidTest.controls.MenuActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:73:9-59
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:73:9-59
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:73:19-56
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:73:19-56
 activity#com.androidTest.controls.ProgressBarActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:74:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:74:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:74:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:74:19-63
 activity#com.androidTest.controls.RatingBarActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:75:9-64
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:75:9-64
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:75:19-61
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:75:19-61
 activity#com.androidTest.controls.ScrollViewActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:76:9-65
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:76:9-65
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:76:19-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:76:19-62
 activity#com.androidTest.controls.SeekBarActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:77:9-62
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:77:9-62
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:77:19-59
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:77:19-59
 activity#com.androidTest.controls.SpinnerActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:78:9-62
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:78:9-62
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:78:19-59
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:78:19-59
 activity#com.androidTest.controls.SurfaceViewActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:79:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:79:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:79:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:79:19-63
 activity#com.androidTest.controls.TabHostActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:80:9-62
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:80:9-62
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:80:19-59
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:80:19-59
 activity#com.androidTest.controls.TabHostHomeItemActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:81:9-70
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:81:9-70
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:81:19-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:81:19-67
 activity#com.androidTest.controls.TabHostNearItemActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:82:9-70
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:82:9-70
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:82:19-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:82:19-67
 activity#com.androidTest.controls.TabHostMineItemActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:83:9-70
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:83:9-70
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:83:19-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:83:19-67
 activity#com.androidTest.controls.TextViewActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:84:9-63
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:84:9-63
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:84:19-60
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:84:19-60
 activity#com.androidTest.controls.TimePickerActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:85:9-65
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:85:9-65
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:85:19-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:85:19-62
 activity#com.androidTest.controls.ToastTestActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:86:9-64
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:86:9-64
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:86:19-61
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:86:19-61
 activity#com.androidTest.controls.ViewPagerActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:87:9-64
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:87:9-64
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:87:19-61
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:87:19-61
 activity#com.androidTest.controls.ViewPagerNomalActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:88:9-69
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:88:9-69
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:88:19-66
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:88:19-66
 activity#com.androidTest.controls.ViewPagerGalleryActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:89:9-71
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:89:9-71
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:89:19-68
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:89:19-68
 activity#com.androidTest.controls.ViewPagerFragmentActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:90:9-72
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:90:9-72
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:90:19-69
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:90:19-69
 activity#com.androidTest.controls.OtherButtonsActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:91:9-67
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:91:9-67
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:91:19-64
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:91:19-64
 activity#com.androidTest.elements.ActivityHomeActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:94:9-67
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:94:9-67
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:94:19-64
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:94:19-64
 activity#com.androidTest.elements.ActivityLifeCycleActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:95:9-72
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:95:9-72
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:95:19-69
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:95:19-69
 activity#com.androidTest.elements.ActivityLaunchModelActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:96:9-74
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:96:9-74
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:96:19-71
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:96:19-71
 activity#com.androidTest.elements.ActivityStandardActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:97:9-99:45
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:97:9-99:45
 	android:launchMode
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:99:13-42
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:99:13-42
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:98:13-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:98:13-62
 activity#com.androidTest.elements.ActivitySingleTopActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:100:9-102:46
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:100:9-102:46
 	android:launchMode
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:102:13-43
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:102:13-43
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:101:13-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:101:13-63
 activity#com.androidTest.elements.ActivitySingleTaskActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:103:9-105:47
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:103:9-105:47
 	android:launchMode
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:105:13-44
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:105:13-44
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:104:13-64
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:104:13-64
 activity#com.androidTest.elements.ActivitySingleInstanceActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:106:9-108:51
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:106:9-108:51
 	android:launchMode
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:108:13-48
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:108:13-48
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:107:13-68
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:107:13-68
 activity#com.androidTest.elements.ActivityLaunchModelTestActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:109:9-78
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:109:9-78
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:109:19-75
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:109:19-75
 activity#com.androidTest.elements.ActivityTestPageActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:110:9-112:58
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:110:9-112:58
 	android:label
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:112:13-55
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:112:13-55
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:111:13-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:111:13-62
 activity#com.androidTest.elements.BroadcastActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:113:9-64
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:113:9-64
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:113:19-61
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:113:19-61
 activity#com.androidTest.elements.BroadcastReceiverActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:114:9-72
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:114:9-72
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:114:19-69
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:114:19-69
 activity#com.androidTest.elements.ContentProviderActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:115:9-70
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:115:9-70
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:115:19-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:115:19-67
 activity#com.androidTest.elements.ServiceActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:116:9-62
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:116:9-62
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:116:19-59
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:116:19-59
 activity#com.androidTest.elements.ServiceAidlActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:117:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:117:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:117:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:117:19-63
 activity#com.androidTest.elements.FragmentHomeActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:118:9-67
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:118:9-67
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:118:19-64
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:118:19-64
 activity#com.androidTest.elements.FragmentAddStaticActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:119:9-72
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:119:9-72
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:119:19-69
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:119:19-69
 activity#com.androidTest.elements.FragmentAddDynamicActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:120:9-73
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:120:9-73
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:120:19-70
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:120:19-70
 activity#com.androidTest.elements.FragmentLifecycleActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:121:9-72
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:121:9-72
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:121:19-69
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:121:19-69
 activity#com.androidTest.elements.FragmentCommActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:122:9-67
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:122:9-67
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:122:19-64
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:122:19-64
 receiver#com.androidTest.elements.BroadcastReceiverMonitor
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:124:9-158:20
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:124:9-158:20
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:124:19-68
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:124:19-68
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.LOCKED_BOOT_COMPLETED+action:name:android.intent.action.NEW_OUTGOING_CALL+action:name:android.intent.action.REBOOT+action:name:android.provider.Telephony.SMS_RECEIVED+action:name:com.custom.unorderBroadcast
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:125:13-137:29
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:125:13-137:29
 action#android.intent.action.NEW_OUTGOING_CALL
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:128:17-82
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:128:17-82
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:128:25-79
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:128:25-79
 action#android.provider.Telephony.SMS_RECEIVED
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:130:17-82
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:130:17-82
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:130:25-79
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:130:25-79
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:132:17-79
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:132:17-79
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:132:25-76
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:132:25-76
 action#android.intent.action.LOCKED_BOOT_COMPLETED
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:133:17-86
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:133:17-86
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:133:25-83
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:133:25-83
 action#android.intent.action.REBOOT
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:134:17-71
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:134:17-71
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:134:25-68
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:134:25-68
 action#com.custom.unorderBroadcast
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:136:17-70
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:136:17-70
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:136:25-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:136:25-67
 intent-filter#action:name:android.intent.action.MEDIA_MOUNTED+action:name:android.intent.action.MEDIA_UNMOUNTED+data:scheme:file
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:138:13-147:29
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:138:13-147:29
 action#android.intent.action.MEDIA_UNMOUNTED
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:141:17-80
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:141:17-80
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:141:25-77
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:141:25-77
 action#android.intent.action.MEDIA_MOUNTED
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:143:17-78
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:143:17-78
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:143:25-75
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:143:25-75
 data
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:146:17-47
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:146:17-47
 	android:scheme
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:146:23-44
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:146:23-44
 	android:mimeType
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:222:21-45
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:222:21-45
 intent-filter#action:name:android.intent.action.PACKAGE_ADDED+action:name:android.intent.action.PACKAGE_REMOVED+data:scheme:package
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:148:13-157:29
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:148:13-157:29
 action#android.intent.action.PACKAGE_ADDED
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:151:17-78
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:151:17-78
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:151:25-75
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:151:25-75
 action#android.intent.action.PACKAGE_REMOVED
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:153:17-80
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:153:17-80
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:153:25-77
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:153:25-77
 receiver#com.androidTest.elements.BroadcastReceiverOrder1
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:160:9-166:20
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:160:9-166:20
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:160:19-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:160:19-67
 intent-filter#action:name:com.custom.orderBroadcast
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:163:13-165:29
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:163:13-165:29
 	android:priority
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:163:28-51
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:163:28-51
 action#com.custom.orderBroadcast
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:164:17-68
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:164:17-68
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:164:25-65
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:164:25-65
 receiver#com.androidTest.elements.BroadcastReceiverOrder2
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:167:9-171:20
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:167:9-171:20
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:167:19-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:167:19-67
 receiver#com.androidTest.elements.BroadcastReceiverTest
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:173:9-68
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:173:9-68
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:173:19-65
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:173:19-65
 service#com.androidTest.elements.ServiceTest
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:175:9-57
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:175:9-57
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:175:18-54
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:175:18-54
 activity#com.androidTest.thirdlib.AndroidPullToRefreshActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:178:9-75
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:178:9-75
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:178:19-72
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:178:19-72
 activity#com.androidTest.thirdlib.SlidingmenuActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:179:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:179:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:179:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:179:19-63
 activity#com.androidTest.thirdlib.GlideActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:180:9-60
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:180:9-60
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:180:19-57
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:180:19-57
 activity#com.androidTest.other.SensorActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:183:9-58
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:183:9-58
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:183:19-55
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:183:19-55
 activity#com.androidTest.other.XmlResoveActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:184:9-61
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:184:9-61
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:184:19-58
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:184:19-58
 activity#com.androidTest.other.JsonResoveActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:185:9-62
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:185:9-62
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:185:19-59
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:185:19-59
 activity#com.androidTest.other.AssetsActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:186:9-58
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:186:9-58
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:186:19-55
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:186:19-55
 activity#com.androidTest.other.SharedPreferencesActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:187:9-69
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:187:9-69
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:187:19-66
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:187:19-66
 activity#com.androidTest.other.InsideSaveDataActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:188:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:188:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:188:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:188:19-63
 activity#com.androidTest.other.SdCardSaveDataActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:189:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:189:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:189:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:189:19-63
 activity#com.androidTest.other.SqliteActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:190:9-58
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:190:9-58
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:190:19-55
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:190:19-55
 activity#com.androidTest.other.AudioPlayActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:191:9-61
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:191:9-61
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:191:19-58
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:191:19-58
 activity#com.androidTest.other.VideoPlayActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:192:9-61
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:192:9-61
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:192:19-58
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:192:19-58
 activity#com.androidTest.other.RecordActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:193:9-58
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:193:9-58
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:193:19-55
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:193:19-55
 activity#com.androidTest.other.AnimationActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:194:9-61
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:194:9-61
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:194:19-58
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:194:19-58
 activity#com.androidTest.other.AnimationListView
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:195:9-61
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:195:9-61
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:195:19-58
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:195:19-58
 activity#com.androidTest.other.MultiThreadActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:196:9-63
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:196:9-63
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:196:19-60
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:196:19-60
 activity#com.androidTest.other.HttpRequestActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:197:9-63
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:197:9-63
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:197:19-60
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:197:19-60
 activity#com.androidTest.other.SocketActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:198:9-58
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:198:9-58
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:198:19-55
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:198:19-55
 activity#com.androidTest.other.NotificationActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:199:9-64
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:199:9-64
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:199:19-61
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:199:19-61
 activity#com.androidTest.other.LinearLayout1Activity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:200:9-65
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:200:9-65
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:200:19-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:200:19-62
 activity#com.androidTest.other.LinearLayout2Activity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:201:9-65
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:201:9-65
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:201:19-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:201:19-62
 activity#com.androidTest.other.LinearLayout3Activity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:202:9-65
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:202:9-65
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:202:19-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:202:19-62
 activity#com.androidTest.other.RelativeLayoutActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:203:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:203:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:203:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:203:19-63
 activity#com.androidTest.other.FrameLayoutActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:204:9-63
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:204:9-63
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:204:19-60
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:204:19-60
 activity#com.androidTest.other.TableLayoutActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:205:9-63
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:205:9-63
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:205:19-60
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:205:19-60
 activity#com.androidTest.other.IntentActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:206:9-58
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:206:9-58
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:206:19-55
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:206:19-55
 activity#com.androidTest.other.AccessibilityActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:207:9-65
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:207:9-65
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:207:19-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:207:19-62
 activity#com.androidTest.other.AnimationFrameActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:208:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:208:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:208:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:208:19-63
 activity#com.androidTest.other.ImageHandleActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:209:9-63
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:209:9-63
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:209:19-60
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:209:19-60
 activity#com.androidTest.other.ImageCopyActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:210:9-61
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:210:9-61
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:210:19-58
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:210:19-58
 activity#com.androidTest.other.VideoPlayMediaActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:211:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:211:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:211:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:211:19-63
 activity#com.androidTest.other.VideoPlayVideoViewActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:212:9-70
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:212:9-70
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:212:19-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:212:19-67
 activity#com.androidTest.other.ImagePickActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:213:9-61
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:213:9-61
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:213:19-58
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:213:19-58
 activity#com.androidTest.other.AnimationTweenActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:214:9-66
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:214:9-66
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:214:19-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:214:19-63
 activity#com.androidTest.other.Intent1Activity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:215:9-225:20
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:215:9-225:20
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:215:19-56
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:215:19-56
 intent-filter#action:name:helloworld.android.com.androidtest.MyIntent+category:name:android.intent.category.DEFAULT+data:mimeType:aa/bb+data:scheme:myintent
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:216:13-224:29
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:216:13-224:29
 action#helloworld.android.com.androidtest.MyIntent
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:217:17-86
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:217:17-86
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:217:25-83
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:217:25-83
 category#android.intent.category.DEFAULT
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:219:17-76
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:219:17-76
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:219:27-73
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:219:27-73
 activity#com.androidTest.other.IntentCustomImageView
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:226:9-236:20
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:226:9-236:20
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:226:19-62
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:226:19-62
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:image/*+data:scheme:file
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:227:13-235:29
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:227:13-235:29
 action#android.intent.action.VIEW
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:228:17-69
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:228:17-69
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:228:25-66
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:228:25-66
 activity#com.androidTest.Demos.MyClock.mainClockActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:239:9-69
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:239:9-69
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:239:19-66
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:239:19-66
 activity#com.androidTest.Demos.MyClock.AlarmReceiverActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:240:9-73
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:240:9-73
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:240:19-70
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:240:19-70
 activity#com.androidTest.Demos.SourceCodeViewer.SourceCodeMainActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:241:9-83
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:241:9-83
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:241:19-80
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:241:19-80
 activity#com.androidTest.Demos.NetWorkRequestDemos.MuiltThreadDownloadActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:242:9-91
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:242:9-91
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:242:19-88
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:242:19-88
 activity#com.androidTest.Demos.NetWorkRequestDemos.DownloadBreakpointActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:243:9-90
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:243:9-90
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:243:19-87
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:243:19-87
 activity#com.androidTest.Demos.SevicesDemos.PhoneRecordActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:244:9-76
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:244:9-76
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:244:19-73
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:244:19-73
 activity#com.androidTest.Demos.ContentProviderDemos.SMSBackUp
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:245:9-74
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:245:9-74
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:245:19-71
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:245:19-71
 activity#com.androidTest.Demos.ContentProviderDemos.ContactReadActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:246:9-84
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:246:9-84
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:246:19-81
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:246:19-81
 activity#com.androidTest.Demos.ContentProviderDemos.SelectContactActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:247:9-86
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:247:9-86
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:247:19-83
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:247:19-83
 activity#com.androidTest.Demos.PaintDemos.DrawingBoardActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:248:9-75
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:248:9-75
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:248:19-72
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:248:19-72
 activity#com.androidTest.Demos.PaintDemos.RipClothesActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:249:9-73
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:249:9-73
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:249:19-70
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:249:19-70
 receiver#com.androidTest.Demos.MyClock.AlarmReceiver
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:251:9-254:39
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:251:9-254:39
 	android:enabled
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:253:13-35
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:253:13-35
 	android:exported
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:254:13-36
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:254:13-36
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:252:13-56
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:252:13-56
 service#com.androidTest.Demos.SevicesDemos.PhoneRecordServices
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:257:9-75
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:257:9-75
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:257:18-72
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:257:18-72
 activity#com.androidTest.thirdlib.SmartImageViewActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:259:9-69
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:259:9-69
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:259:19-66
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:259:19-66
 provider#android.support.v4.content.FileProvider
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:262:9-270:20
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:262:9-270:20
 	android:grantUriPermissions
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:266:13-47
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:266:13-47
 	android:authorities
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:264:13-63
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:264:13-63
 	android:exported
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:265:13-37
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:265:13-37
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:263:13-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:263:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:267:13-269:54
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:267:13-269:54
 	android:resource
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:269:17-51
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:269:17-51
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:268:17-67
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:268:17-67
 activity#com.androidTest.other.AnimationPropertyActivity
-ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:272:9-78
+ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:272:9-78
 	android:name
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml:272:19-66
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml:272:19-66
 uses-sdk
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/AndroidManifest.xml:20:5-44
-MERGED from [com.github.hackware1993:MagicIndicator:1.5.0] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/MagicIndicator-1.5.0.aar/14cac558265650270536e4edcd5c2c8b/AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.hackware1993:MagicIndicator:1.5.0] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/MagicIndicator-1.5.0.aar/14cac558265650270536e4edcd5c2c8b/AndroidManifest.xml:8:5-10:41
-MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-rc01.aar/e56c4978a57223a767060716baeff6ef/AndroidManifest.xml:20:5-44
-MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/android-sliding-menu-1.0.1.aar/e6c5d6fee89087e0100965803a80ea1d/AndroidManifest.xml:4:5-72
-MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/android-sliding-menu-1.0.1.aar/e6c5d6fee89087e0100965803a80ea1d/AndroidManifest.xml:4:5-72
-MERGED from [com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/Android-PullToRefresh-2.1.1.aar/02db4659e11f5943fdd14e4c97fe03fb/AndroidManifest.xml:7:5-43
-MERGED from [com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/Android-PullToRefresh-2.1.1.aar/02db4659e11f5943fdd14e4c97fe03fb/AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:support-v4:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc01.aar/209b0a9e38e9bb98e1df4f3e0f78c0e3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0-rc01.aar/209b0a9e38e9bb98e1df4f3e0f78c0e3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/396c278a96b0232e1c81aa38051e61d2/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/396c278a96b0232e1c81aa38051e61d2/AndroidManifest.xml:5:5-7:41
-MERGED from [pub.devrel:easypermissions:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/easypermissions-1.0.1.aar/7068cffcaa3f9e30bd39a0da0befdc55/AndroidManifest.xml:7:5-9:41
-MERGED from [pub.devrel:easypermissions:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/easypermissions-1.0.1.aar/7068cffcaa3f9e30bd39a0da0befdc55/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-fragment:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc01.aar/3d192a14a41de5d51d5474819eafa6a6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0-rc01.aar/3d192a14a41de5d51d5474819eafa6a6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc01.aar/9afc2cc0ca68ee0ac7a7ec0bc3ad7ccd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0-rc01.aar/9afc2cc0ca68ee0ac7a7ec0bc3ad7ccd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc01.aar/5d6f028080ee27d83f48e90c025626c0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0-rc01.aar/5d6f028080ee27d83f48e90c025626c0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc01.aar/2d8b51db8cb8921b783690efac4cb17c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0-rc01.aar/2d8b51db8cb8921b783690efac4cb17c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc01.aar/54299f9078dae1210237a9e349984194/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0-rc01.aar/54299f9078dae1210237a9e349984194/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc01.aar/e4f8a5ac78d944c0441267a0fb0c2e39/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/transition-28.0.0-rc01.aar/e4f8a5ac78d944c0441267a0fb0c2e39/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc01.aar/dc32cbf224085523e3ea014831c9f9c1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/loader-28.0.0-rc01.aar/dc32cbf224085523e3ea014831c9f9c1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc01.aar/791dd7439459c035ed19408d8825e587/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0-rc01.aar/791dd7439459c035ed19408d8825e587/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc01.aar/f339fef675ca4fb5f147f00a7b9f69bc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0-rc01.aar/f339fef675ca4fb5f147f00a7b9f69bc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc01.aar/a2849d3d859f358e12f4639d95fa4aa3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0-rc01.aar/a2849d3d859f358e12f4639d95fa4aa3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc01.aar/38201e388ca6252b049469e4b1d45a05/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0-rc01.aar/38201e388ca6252b049469e4b1d45a05/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc01.aar/b455107f67ea8920df21729f025b6fcb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/customview-28.0.0-rc01.aar/b455107f67ea8920df21729f025b6fcb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc01.aar/fa8db586b68dcf7cd3757c9eb231007a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0-rc01.aar/fa8db586b68dcf7cd3757c9eb231007a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc01.aar/fad0e97942ae09bfae8aa0bad68facc2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0-rc01.aar/fad0e97942ae09bfae8aa0bad68facc2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc01.aar/2110f9b7db1818c6a0448627db1e6148/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0-rc01.aar/2110f9b7db1818c6a0448627db1e6148/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc01.aar/887bb54eedb5c7d2deae5fa1d7d5d65b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0-rc01.aar/887bb54eedb5c7d2deae5fa1d7d5d65b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/fce337aaf8fcee524425203ccabed2e1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-rc01.aar/fce337aaf8fcee524425203ccabed2e1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/b41af3becb8ebdc6ff5badddebba864b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0-rc01.aar/b41af3becb8ebdc6ff5badddebba864b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc01.aar/17dfeae798f05c41ed83747060bc195b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0-rc01.aar/17dfeae798f05c41ed83747060bc195b/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/996d8fab63c38db18c9a78b69f7baee5/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/996d8fab63c38db18c9a78b69f7baee5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc01.aar/891a90a04abeed66cf61174b50d2a46e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0-rc01.aar/891a90a04abeed66cf61174b50d2a46e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc01.aar/4e2627df7c3e58d78c7c11bcea961583/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0-rc01.aar/4e2627df7c3e58d78c7c11bcea961583/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc01.aar/fca2ba6ecf4d8dbcc6989d552bd61543/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/print-28.0.0-rc01.aar/fca2ba6ecf4d8dbcc6989d552bd61543/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/9fec233e2b53d078104392620c813696/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/9fec233e2b53d078104392620c813696/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc01.aar/39b9bf8c413694f98935e9d3c4b9df68/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0-rc01.aar/39b9bf8c413694f98935e9d3c4b9df68/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/aba327b5b58f9820a1e8287496664dd8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0-rc01] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0-rc01.aar/aba327b5b58f9820a1e8287496664dd8/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/817690c5a6356ce5f232ef4e4671b499/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/817690c5a6356ce5f232ef4e4671b499/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/511b684f5706af1e8fda4104b5319a7c/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/511b684f5706af1e8fda4104b5319a7c/AndroidManifest.xml:20:5-44
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc01.aar\9bede414aa4409a32e4bf6c711a5a876\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\design-28.0.0-rc01.aar\9bede414aa4409a32e4bf6c711a5a876\AndroidManifest.xml:20:5-44
+MERGED from [com.github.hackware1993:MagicIndicator:1.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\MagicIndicator-1.5.0.aar\4bc6af2c04d19c56ef47ef1dec163006\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.hackware1993:MagicIndicator:1.5.0] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\MagicIndicator-1.5.0.aar\4bc6af2c04d19c56ef47ef1dec163006\AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc01.aar\435db47413ac6dc032ae3e2f90247469\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0-rc01.aar\435db47413ac6dc032ae3e2f90247469\AndroidManifest.xml:20:5-44
+MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\android-sliding-menu-1.0.1.aar\382deaf56084735bd73e1465d8765f93\AndroidManifest.xml:4:5-72
+MERGED from [com.github.itsmechlark.android-sliding-menu:android-sliding-menu:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\android-sliding-menu-1.0.1.aar\382deaf56084735bd73e1465d8765f93\AndroidManifest.xml:4:5-72
+MERGED from [com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\Android-PullToRefresh-2.1.1.aar\8a185242869b46bb8853cedfb40748ba\AndroidManifest.xml:7:5-43
+MERGED from [com.loopeer.android.thirdparty.pulltorefresh:Android-PullToRefresh:2.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\Android-PullToRefresh-2.1.1.aar\8a185242869b46bb8853cedfb40748ba\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:support-v4:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-rc01.aar\24ee7263c9ba42b90c314b00966f5609\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0-rc01.aar\24ee7263c9ba42b90c314b00966f5609\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\6585f398f61d34e3a7527fed91520197\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.2.aar\6585f398f61d34e3a7527fed91520197\AndroidManifest.xml:5:5-7:41
+MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c7cb11036001fb2e57f6f0c49321970a\AndroidManifest.xml:7:5-9:41
+MERGED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c7cb11036001fb2e57f6f0c49321970a\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-rc01.aar\fb86d9362c2144d70145acb19dd315bc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0-rc01.aar\fb86d9362c2144d70145acb19dd315bc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-rc01.aar\82795e8b22bb9b48b75897f1cd28c1e7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0-rc01.aar\82795e8b22bb9b48b75897f1cd28c1e7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-rc01.aar\3a97d3343500470b0dbb11618e104f3f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0-rc01.aar\3a97d3343500470b0dbb11618e104f3f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-rc01.aar\3c7676b105254bb77da3ea9f070a9bc7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0-rc01.aar\3c7676b105254bb77da3ea9f070a9bc7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-rc01.aar\3241f53803e96a39d2f0faf943b6bf7e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0-rc01.aar\3241f53803e96a39d2f0faf943b6bf7e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-rc01.aar\67ff68eec2d232371f0cf5070bcc3c6c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\transition-28.0.0-rc01.aar\67ff68eec2d232371f0cf5070bcc3c6c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-rc01.aar\1e77856add89dcee5f832763b607f5df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\loader-28.0.0-rc01.aar\1e77856add89dcee5f832763b607f5df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-rc01.aar\5e80d9f44e681e9880a7dbd70a5fd8e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0-rc01.aar\5e80d9f44e681e9880a7dbd70a5fd8e3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-rc01.aar\248426652e959f11208ae571d6fa6d08\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0-rc01.aar\248426652e959f11208ae571d6fa6d08\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-rc01.aar\1ce56f7256d9b69ef7ba650637df04da\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0-rc01.aar\1ce56f7256d9b69ef7ba650637df04da\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-rc01.aar\9f3f270ceceaf22be553877515516a18\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0-rc01.aar\9f3f270ceceaf22be553877515516a18\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-rc01.aar\07b9bdf558718454b64f87f7bfa0cd05\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\customview-28.0.0-rc01.aar\07b9bdf558718454b64f87f7bfa0cd05\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-rc01.aar\d003b5035381053aa3e4a5fd30ccf7c4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0-rc01.aar\d003b5035381053aa3e4a5fd30ccf7c4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-rc01.aar\4f5789badb3b966d293b9a54fe7ab375\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0-rc01.aar\4f5789badb3b966d293b9a54fe7ab375\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-rc01.aar\99e06689a4f8e902bd35ae838a792fdf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0-rc01.aar\99e06689a4f8e902bd35ae838a792fdf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-rc01.aar\def126bcd8696277bb6810d8133289fc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0-rc01.aar\def126bcd8696277bb6810d8133289fc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\505fc6410454e7bda9671deccb57ca1e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0-rc01.aar\505fc6410454e7bda9671deccb57ca1e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc01.aar\1f508a462bf98f67d366631bf18bdd3d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0-rc01.aar\1f508a462bf98f67d366631bf18bdd3d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-rc01.aar\4fc2999f27dc164acc0960cd2e95ce59\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0-rc01.aar\4fc2999f27dc164acc0960cd2e95ce59\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\24ed4a09aae8a2c270af855456880d80\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\24ed4a09aae8a2c270af855456880d80\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-rc01.aar\e9819006984278f2ec3867cd06f25254\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0-rc01.aar\e9819006984278f2ec3867cd06f25254\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-rc01.aar\5ecdbdb53d6a635157865fdb8c1e543a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0-rc01.aar\5ecdbdb53d6a635157865fdb8c1e543a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\print-28.0.0-rc01.aar\dbda4e24696c3e799e0864406b774c23\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\print-28.0.0-rc01.aar\dbda4e24696c3e799e0864406b774c23\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7096b286473a555872280fb6b93c58b9\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\7096b286473a555872280fb6b93c58b9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-rc01.aar\6b70f98770b8c060b57dcad8511d1fb9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0-rc01.aar\6b70f98770b8c060b57dcad8511d1fb9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-rc01.aar\f682fbc24b2350976cda90ae1920da00\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0-rc01] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0-rc01.aar\f682fbc24b2350976cda90ae1920da00\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\f7e6741d5ba09fe6762fc393fbdc6a84\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\f7e6741d5ba09fe6762fc393fbdc6a84\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e7aa47bf4de2b3f106551969bfcc39b1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\e7aa47bf4de2b3f106551969bfcc39b1\AndroidManifest.xml:20:5-44
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
+INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
+		INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-		ADDED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/mrchen/Desktop/AndroidTest/app/src/main/AndroidManifest.xml
+		INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
+		ADDED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
+		INJECTED from F:\AndroidProjects\AndroidTest\app\src\main\AndroidManifest.xml
 activity#pub.devrel.easypermissions.AppSettingsDialogHolderActivity
-ADDED from [pub.devrel:easypermissions:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/easypermissions-1.0.1.aar/7068cffcaa3f9e30bd39a0da0befdc55/AndroidManifest.xml:12:9-16:66
+ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c7cb11036001fb2e57f6f0c49321970a\AndroidManifest.xml:12:9-16:66
 	android:label
-		ADDED from [pub.devrel:easypermissions:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/easypermissions-1.0.1.aar/7068cffcaa3f9e30bd39a0da0befdc55/AndroidManifest.xml:15:13-29
+		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c7cb11036001fb2e57f6f0c49321970a\AndroidManifest.xml:15:13-29
 	android:exported
-		ADDED from [pub.devrel:easypermissions:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/easypermissions-1.0.1.aar/7068cffcaa3f9e30bd39a0da0befdc55/AndroidManifest.xml:14:13-37
+		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c7cb11036001fb2e57f6f0c49321970a\AndroidManifest.xml:14:13-37
 	android:theme
-		ADDED from [pub.devrel:easypermissions:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/easypermissions-1.0.1.aar/7068cffcaa3f9e30bd39a0da0befdc55/AndroidManifest.xml:16:13-63
+		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c7cb11036001fb2e57f6f0c49321970a\AndroidManifest.xml:16:13-63
 	android:name
-		ADDED from [pub.devrel:easypermissions:1.0.1] /Users/mrchen/.gradle/caches/transforms-1/files-1.1/easypermissions-1.0.1.aar/7068cffcaa3f9e30bd39a0da0befdc55/AndroidManifest.xml:13:13-86
+		ADDED from [pub.devrel:easypermissions:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\easypermissions-1.0.1.aar\c7cb11036001fb2e57f6f0c49321970a\AndroidManifest.xml:13:13-86

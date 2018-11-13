@@ -21,6 +21,13 @@
             android:onClick="stopRecord"
             android:text="停止录音" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="清除无效录音文件"
+            android:onClick="clearInvalidFile"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
