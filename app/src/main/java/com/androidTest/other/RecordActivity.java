@@ -150,8 +150,10 @@ public class RecordActivity extends PermissionBaseActivity {
              * MPEG-4、RAW_AMR(只支持音频且音频编码要求为AMR_NB)
              */
             mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_WB);
-//            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
             mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);
+
+//            mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+//            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
         }
     }
 
