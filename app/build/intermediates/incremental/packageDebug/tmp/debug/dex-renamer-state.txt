@@ -1,4 +1,4 @@
-#Tue Nov 13 23:01:21 CST 2018
-base.0=F\:\\AndroidProjects\\AndroidTest\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Wed Nov 14 14:49:28 CST 2018
+base.0=/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

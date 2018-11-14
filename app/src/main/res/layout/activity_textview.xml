@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <!--
     宽高约束:
@@ -23,6 +26,10 @@
 
     -->
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置背景色文字颜色的textView"/>
+    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,15 +47,16 @@
         android:background="#0000ff"/>
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文字滚动的textView"/>
+    <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:width="150dp"
         android:text="跑马灯paomadeng跑马灯paomadeng"
         android:background="#00ff00"
-
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="20dp"
         android:singleLine="true"
 
 
@@ -58,9 +66,23 @@
         android:focusableInTouchMode="true"
         />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带阴影的textView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有阴影的文字"
+        android:textColor="#0000ff"
+        android:shadowDx="8"
+        android:shadowDy="8"
+        android:shadowColor="#FF0000"
+        android:shadowRadius="3"
+        android:textSize="40sp"/>
 
 
 
 
-
-</RelativeLayout>
+</LinearLayout>
