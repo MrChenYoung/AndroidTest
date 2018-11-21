@@ -1588,6 +1588,10 @@
         "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/activity_toast.xml"
     },
     {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_activity_map_and_location.xml.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/activity_map_and_location.xml"
+    },
+    {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/drawable_a4.png.flat",
         "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/drawable/a4.png"
     },
@@ -2166,6 +2170,10 @@
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/color_mtrl_text_btn_text_color_selector.xml.flat",
         "source": "/Users/mrchen/.gradle/caches/transforms-1/files-1.1/design-28.0.0-rc01.aar/3e9c3dca6314ded19ce248b07f5d7028/res/color/mtrl_text_btn_text_color_selector.xml"
+    },
+    {
+        "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_location_view.xml.flat",
+        "source": "/Users/mrchen/Desktop/AndroidTest/app/src/main/res/layout/location_view.xml"
     },
     {
         "merged": "/Users/mrchen/Desktop/AndroidTest/app/build/intermediates/res/merged/debug/layout_activity_activity_home.xml.flat",

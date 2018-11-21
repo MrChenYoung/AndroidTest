@@ -1169,6 +1169,7 @@ id CTRL
 id CheckBox1
 id CheckBox2
 id FUNCTION
+id GPS_location
 id ListView
 id META
 id RadioGroup
@@ -1207,6 +1208,7 @@ id async
 id auto
 id autoCompleteTextView
 id barrier
+id base_station_location
 id beginning
 id blocking
 id both
@@ -1370,6 +1372,7 @@ id multiply
 id nameEditText
 id nameTextView
 id navigation_header_container
+id net_location
 id never
 id none
 id normal
@@ -1515,7 +1518,9 @@ id tv_address
 id tv_body
 id tv_code
 id tv_date
+id tv_latitude
 id tv_loading
+id tv_longitude
 id tv_name
 id tv_phone
 id tv_receive
@@ -1526,6 +1531,7 @@ id tv_text1
 id tv_text2
 id tv_text3
 id tv_text4
+id tv_title
 id tv_top
 id uniform
 id unlabeled
@@ -1646,6 +1652,7 @@ layout activity_listview
 layout activity_main
 layout activity_main_clock
 layout activity_main_list_item
+layout activity_map_and_location
 layout activity_menu
 layout activity_muilt_thread_download
 layout activity_muilt_thread_progress
@@ -1724,6 +1731,7 @@ layout fragment_fragment_dynamic
 layout fragment_fragment_lifecycle
 layout fragment_static
 layout loading_cover
+layout location_view
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

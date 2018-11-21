@@ -6,8 +6,8 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -55,7 +55,7 @@ public class RipClothesActivity extends AppCompatActivity {
                         int floorX = (int)Math.floor(event.getX());
                         int floorY = (int)Math.floor(event.getY());
 
-                        int space = 10;
+                        int space = 20;
                         for (int i = -space; i < space; i++) {
                             for (int j = -space; j < space; j++) {
                                 if (Math.sqrt(i*i+j*j) < space){

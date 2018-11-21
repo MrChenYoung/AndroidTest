@@ -18,7 +18,7 @@ public class PermissonUtil {
      * @param host         请求授权的页面
      * @param requestCode  请求码(和AfterPermissionGranted(requestCode)里面的请求码一致)
      * @param rationale    请求权限描述
-     * @param permission   要请求的权限
+     * @param permissions   要请求的权限
      * @return             是否已经授权,已经授权返回true,没有授权返回false
      */
     public static boolean hasPermissions(Context context, @NonNull Activity host, int requestCode, @NonNull String rationale, @NonNull String...permissions){

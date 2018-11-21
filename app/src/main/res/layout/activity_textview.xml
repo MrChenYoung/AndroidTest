@@ -49,6 +49,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="none"
+        android:text="******************************************************************"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="文字滚动的textView"/>
     <TextView
         android:id="@+id/textView1"
@@ -69,6 +77,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="none"
+        android:text="******************************************************************"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="带阴影的textView"/>
 
     <TextView
@@ -82,7 +98,26 @@
         android:shadowRadius="3"
         android:textSize="40sp"/>
 
-
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="none"
+        android:text="******************************************************************"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="带图片的textView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有图片的textView"
+        android:gravity="center_vertical"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:drawableTop="@android:drawable/star_big_on"
+        android:drawableBottom="@android:drawable/star_big_on"
+        android:drawableRight="@android:drawable/star_big_on"/>
 
 </LinearLayout>

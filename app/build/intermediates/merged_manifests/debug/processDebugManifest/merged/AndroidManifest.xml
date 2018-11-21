@@ -45,6 +45,9 @@
     <!-- <uses-permission android:name="android.permission.REBOOT" /> -->
     <!-- 相机权限 -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name="com.androidTest.main.App"
@@ -219,6 +222,8 @@
         <activity android:name="com.androidTest.other.VideoPlayVideoViewActivity" />
         <activity android:name="com.androidTest.other.ImagePickActivity" />
         <activity android:name="com.androidTest.other.AnimationTweenActivity" />
+        <activity android:name="com.androidTest.other.MapAndLocationActivity" />
+        <activity android:name="com.androidTest.other.AnimationPropertyActivity" />
         <activity android:name="com.androidTest.other.Intent1Activity" >
             <intent-filter>
                 <action android:name="helloworld.android.com.androidtest.MyIntent" />
@@ -276,7 +281,6 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name="com.androidTest.other.AnimationPropertyActivity" />
         <activity
             android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
             android:exported="false"
