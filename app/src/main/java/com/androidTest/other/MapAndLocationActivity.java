@@ -13,11 +13,12 @@ import android.widget.Toast;
 
 import com.androidTest.R;
 import com.androidTest.main.PermissionBaseActivity;
+import com.utiles.LocationInterface;
 import com.utiles.PermissonUtil;
 
 import pub.devrel.easypermissions.AfterPermissionGranted;
 
-public class MapAndLocationActivity extends PermissionBaseActivity {
+public class MapAndLocationActivity extends PermissionBaseActivity implements LocationInterface {
 
     private TextView tv_net_lon;
     private TextView tv_net_lat;
@@ -25,7 +26,6 @@ public class MapAndLocationActivity extends PermissionBaseActivity {
     private TextView tv_station_lat;
     private TextView tv_gps_lon;
     private TextView tv_gps_lat;
-
 
     private final int REQUEST_LOCATION_GPS_CODE = 500;
     private final int REQUEST_LOCATION_STATION_CODE = 600;

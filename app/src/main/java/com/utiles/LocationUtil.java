@@ -7,7 +7,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.Message;
 
-public class LocationUtil implements LocationInterface {
+public class LocationUtil {
 
     private Context context;
     private MyHandler mHandler = new MyHandler();
