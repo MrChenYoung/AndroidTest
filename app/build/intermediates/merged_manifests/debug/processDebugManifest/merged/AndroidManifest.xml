@@ -46,9 +46,13 @@
     <!-- 相机权限 -->
     <uses-permission android:name="android.permission.CAMERA" />
     <!-- 定位权限 -->
+    <!-- 获取粗略位置坐标的权限(网络定位使用) -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取准确GPS坐标权限 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
+    <!-- 允许模拟器模拟位置权限 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/> -->
     <application
         android:name="com.androidTest.main.App"
         android:allowBackup="true"
@@ -224,6 +228,7 @@
         <activity android:name="com.androidTest.other.AnimationTweenActivity" />
         <activity android:name="com.androidTest.other.MapAndLocationActivity" />
         <activity android:name="com.androidTest.other.AnimationPropertyActivity" />
+        <activity android:name="com.androidTest.other.DeviceManagerActivity" />
         <activity android:name="com.androidTest.other.Intent1Activity" >
             <intent-filter>
                 <action android:name="helloworld.android.com.androidtest.MyIntent" />
@@ -246,6 +251,22 @@
                     android:scheme="file" />
             </intent-filter>
         </activity>
+
+        <!-- 申请设备管理器权限,注册权限监听器 -->
+        <receiver
+            android:name="com.androidTest.other.DeviceReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
 
         <!-- demos -->
         <activity android:name="com.androidTest.Demos.MyClock.mainClockActivity" />

@@ -110,6 +110,7 @@
         <item>表格布局使用</item>
         <item>辅助功能</item>
         <item>定位,地图</item>
+        <item>设备管理器</item>
     </string-array>
     <string-array name="other_classes">
         <item>com.androidTest.other.SensorActivity</item>
@@ -139,6 +140,7 @@
         <item>com.androidTest.other.TableLayoutActivity</item>
         <item>com.androidTest.other.AccessibilityActivity</item>
         <item>com.androidTest.other.MapAndLocationActivity</item>
+        <item>com.androidTest.other.DeviceManagerActivity</item>
     </string-array>
 
     <!--demos-->

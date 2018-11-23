@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".other.MapAndLocationActivity">
 
-    <include
-        android:id="@+id/net_location"
-        layout="@layout/location_view"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/GPS_location"
+            layout="@layout/location_view"/>
+
+        <include
+            android:id="@+id/base_station_location"
+            layout="@layout/location_view"/>
+
+        <include
+            android:id="@+id/net_location"
+            layout="@layout/location_view"/>
+
+        <include
+            android:id="@+id/best_location"
+            layout="@layout/location_view"/>
+
+        <include
+            android:id="@+id/s2c_location"
+            layout="@layout/location_view"/>
+    </LinearLayout>
 
     <include
-        android:id="@+id/base_station_location"
-        layout="@layout/location_view"/>
+        android:id="@+id/cover"
+        layout="@layout/loading_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
 
-    <include
-        android:id="@+id/GPS_location"
-        layout="@layout/location_view"/>
-
-</LinearLayout>
+</RelativeLayout>

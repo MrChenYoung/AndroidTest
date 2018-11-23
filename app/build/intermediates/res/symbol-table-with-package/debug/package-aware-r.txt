@@ -1210,9 +1210,11 @@ id autoCompleteTextView
 id barrier
 id base_station_location
 id beginning
+id best_location
 id blocking
 id both
 id bottom
+id bt_active
 id bt_openLaunchModel
 id bt_selectContact
 id bt_startRecord
@@ -1411,6 +1413,7 @@ id right
 id right_icon
 id right_side
 id rotate
+id s2c_location
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1620,6 +1623,7 @@ layout activity_contact_read
 layout activity_contentprovider
 layout activity_customdialog
 layout activity_datepicker
+layout activity_device_manager
 layout activity_download_breakpoint
 layout activity_drawer_layout
 layout activity_drawing_board
@@ -1763,6 +1767,7 @@ layout support_simple_spinner_dropdown_item
 menu main
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw axisoffset
 raw movie
 raw note1
 raw note2
@@ -2420,6 +2425,7 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml device_admin
 xml file_paths
 xml file_provider
 xml users
