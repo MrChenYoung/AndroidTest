@@ -7,22 +7,32 @@ import android.os.UserHandle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.androidTest.main.App;
+import com.utiles.ActivityUtil;
+import com.utiles.DeviceManager;
+
+import java.lang.ref.WeakReference;
+
 public class DeviceReceiver extends DeviceAdminReceiver implements DeviceCallback {
 
     @Override
     public void onEnabled(Context context, Intent intent) {
         super.onEnabled(context, intent);
 
+        // 设备被激活
+        updateUI();
+
         Toast.makeText(context,"设备可用",Toast.LENGTH_LONG).show();
-        Log.e("============",intent.toString());
     }
 
     @Override
     public void onDisabled(Context context, Intent intent) {
         super.onDisabled(context, intent);
 
+        // 设备取消激活
+        updateUI();
+
         Toast.makeText(context,"设备不可用",Toast.LENGTH_LONG).show();
-        Log.e("++++++===",intent.getExtras() + "");
     }
 
     @Override
@@ -54,4 +64,13 @@ public class DeviceReceiver extends DeviceAdminReceiver implements DeviceCallbac
     public void deviceActive(Context context) {
         Toast.makeText(context,"设备激活了=====",Toast.LENGTH_LONG).show();
     }
+
+    // 更新DeviceManagerActivity里面的内容
+    public void updateUI(){
+        // 获取DeviceManagerActivity对象
+        WeakReference<DeviceManagerActivity> deviceActivity = DeviceManagerActivity.mInstance;
+        DeviceManagerActivity activity = deviceActivity.get();
+        activity.updateUI();
+    }
+
 }

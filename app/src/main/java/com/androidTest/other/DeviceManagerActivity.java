@@ -8,8 +8,11 @@ import android.widget.Button;
 import com.androidTest.R;
 import com.utiles.DeviceManager;
 
+import java.lang.ref.WeakReference;
+
 public class DeviceManagerActivity extends AppCompatActivity {
 
+    public static WeakReference<DeviceManagerActivity> mInstance;
     private DeviceManager deviceManager;
 
     // 激活设备管理器按钮
@@ -27,12 +30,39 @@ public class DeviceManagerActivity extends AppCompatActivity {
         initUI();
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        // 保留当前activity，方便在DeviceReceiver类中获取，来更新当前界面
+        if (mInstance == null){
+            mInstance = new WeakReference<>(this);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        // 置空 防止内存泄漏
+        if (mInstance != null){
+            mInstance = null;
+        }
+    }
+
     /**
      * 初始化界面
      */
     private void initUI(){
         // 设置激活按钮
         bt_active = findViewById(R.id.bt_active);
+
+
+        // 更新UI
+        updateUI();
+    }
+
+    public void updateUI(){
         if (deviceManager.isActive()){
             bt_active.setText("取消激活设备管理器");
         }else {
@@ -53,6 +83,4 @@ public class DeviceManagerActivity extends AppCompatActivity {
             deviceManager.activateDeviceMgr();
         }
     }
-
-
 }

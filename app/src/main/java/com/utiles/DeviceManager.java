@@ -4,6 +4,9 @@ import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.androidTest.other.DeviceReceiver;
@@ -11,6 +14,9 @@ import com.androidTest.other.DeviceReceiver;
 public class DeviceManager {
     // 设置当前类为单利
     private static DeviceManager deviceInstance;
+
+    // 处理消息 (因为直接获取DevicePolicyManager的状态可能不准确,所以用handler延时获取)
+    private DeviceHandler handler = new DeviceHandler();
 
     // 上下文
     private Context context;
@@ -67,6 +73,9 @@ public class DeviceManager {
     public void unActivateDeviceMgr(){
         if (isActive()){
             devicePolicyManager.removeActiveAdmin(componentName);
+            if (isActive()){
+                Log.e("tag","====");
+            }
         }else {
             Toast.makeText(context,"设备管理器尚未激活,无法取消激活!",Toast.LENGTH_SHORT).show();
         }
@@ -78,10 +87,16 @@ public class DeviceManager {
      * @return 已经激活返回true 没有激活返回false
      */
     public boolean isActive(){
-        if (devicePolicyManager.isAdminActive(componentName)){
-            return true;
-        }else {
-            return false;
+        DevicePolicyManager manager = (DevicePolicyManager) context.getSystemService(Context.DEVICE_POLICY_SERVICE);
+        return manager.isAdminActive(componentName);
+    }
+
+    private class DeviceHandler extends Handler {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+
+
         }
     }
 }
