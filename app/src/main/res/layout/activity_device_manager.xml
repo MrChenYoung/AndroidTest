@@ -8,11 +8,75 @@
 
     <!--激活设备管理器-->
     <Button
-        android:id="@+id/bt_active"
+        android:id="@+id/btn_active"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="激活设备管理器"
         android:gravity="center"
         android:onClick="activeDeviceMgr"/>
+
+    <!--设置解锁方式(不需要激活设备管理器)-->
+    <Button
+        android:id="@+id/btn_set_lock_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置解锁方式(不需要激活设备管理器)"
+        android:gravity="center"
+        android:onClick="setLockMethod"/>
+
+    <!--设置解锁方式(需要激活设备管理器)-->
+    <Button
+        android:id="@+id/btn_set_lock_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置解锁方式(需要先激活设备管理器)"
+        android:gravity="center"
+        android:onClick="setLockMethodPwd"/>
+
+    <!--设置密码-->
+    <Button
+        android:id="@+id/btn_set_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置手机解锁密码"
+        android:gravity="center"
+        android:onClick="setLockPwd"/>
+
+    <!--立即锁屏-->
+    <Button
+        android:id="@+id/btn_lock_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="立即锁屏"
+        android:gravity="center"
+        android:onClick="lockPhone"/>
+
+    <!--5秒后锁屏-->
+    <Button
+        android:id="@+id/btn_lock_delay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5秒后锁屏"
+        android:gravity="center"
+        android:onClick="lockPhoneDelay"/>
+
+    <!--清空sd卡数据-->
+    <Button
+        android:id="@+id/btn_wipe_external_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空sd卡数据"
+        android:gravity="center"
+        android:onClick="wipeExternalData"/>
+
+    <!--清空手机内部存储卡上的所有内容-->
+    <Button
+        android:id="@+id/btn_wipe_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空手机内部存储数据"
+        android:gravity="center"
+        android:onClick="wipeData"/>
+
 
 </LinearLayout>

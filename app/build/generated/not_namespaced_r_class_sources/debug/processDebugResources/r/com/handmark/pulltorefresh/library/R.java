@@ -62,22 +62,22 @@ public final class R {
         private id() {}
 
         public static final int both = 0x7f090030;
-        public static final int disabled = 0x7f09006a;
-        public static final int fl_inner = 0x7f09008b;
-        public static final int flip = 0x7f09008c;
-        public static final int gridview = 0x7f090096;
-        public static final int manualOnly = 0x7f0900c4;
-        public static final int pullDownFromTop = 0x7f0900ea;
-        public static final int pullFromEnd = 0x7f0900eb;
-        public static final int pullFromStart = 0x7f0900ec;
-        public static final int pullUpFromBottom = 0x7f0900ed;
-        public static final int pull_to_refresh_image = 0x7f0900ee;
-        public static final int pull_to_refresh_progress = 0x7f0900ef;
-        public static final int pull_to_refresh_sub_text = 0x7f0900f0;
-        public static final int pull_to_refresh_text = 0x7f0900f1;
-        public static final int rotate = 0x7f0900f8;
-        public static final int scrollview = 0x7f090104;
-        public static final int webview = 0x7f09017e;
+        public static final int disabled = 0x7f090071;
+        public static final int fl_inner = 0x7f090092;
+        public static final int flip = 0x7f090093;
+        public static final int gridview = 0x7f09009d;
+        public static final int manualOnly = 0x7f0900cb;
+        public static final int pullDownFromTop = 0x7f0900f1;
+        public static final int pullFromEnd = 0x7f0900f2;
+        public static final int pullFromStart = 0x7f0900f3;
+        public static final int pullUpFromBottom = 0x7f0900f4;
+        public static final int pull_to_refresh_image = 0x7f0900f5;
+        public static final int pull_to_refresh_progress = 0x7f0900f6;
+        public static final int pull_to_refresh_sub_text = 0x7f0900f7;
+        public static final int pull_to_refresh_text = 0x7f0900f8;
+        public static final int rotate = 0x7f0900ff;
+        public static final int scrollview = 0x7f09010b;
+        public static final int webview = 0x7f090185;
     }
     public static final class layout {
         private layout() {}

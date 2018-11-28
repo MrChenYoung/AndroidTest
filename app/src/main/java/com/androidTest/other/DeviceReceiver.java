@@ -12,6 +12,8 @@ import com.utiles.ActivityUtil;
 import com.utiles.DeviceManager;
 
 import java.lang.ref.WeakReference;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class DeviceReceiver extends DeviceAdminReceiver implements DeviceCallback {
 
@@ -19,20 +21,26 @@ public class DeviceReceiver extends DeviceAdminReceiver implements DeviceCallbac
     public void onEnabled(Context context, Intent intent) {
         super.onEnabled(context, intent);
 
-        // 设备被激活
+        // 更新设备管理器状态
+        updateDeviceMgrState(context,true);
+
+        // 设备被激活,更新界面
         updateUI();
 
-        Toast.makeText(context,"设备可用",Toast.LENGTH_LONG).show();
+        Toast.makeText(context,"设备已激活",Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void onDisabled(Context context, Intent intent) {
         super.onDisabled(context, intent);
 
+        // 更新设备管理器状态
+        updateDeviceMgrState(context,false);
+
         // 设备取消激活
         updateUI();
 
-        Toast.makeText(context,"设备不可用",Toast.LENGTH_LONG).show();
+        Toast.makeText(context,"设备关闭激活",Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -65,7 +73,19 @@ public class DeviceReceiver extends DeviceAdminReceiver implements DeviceCallbac
         Toast.makeText(context,"设备激活了=====",Toast.LENGTH_LONG).show();
     }
 
-    // 更新DeviceManagerActivity里面的内容
+    /**
+     * 更新设备管理器的状态
+     * @param isActive 设备管理器是否开启
+     */
+    private void updateDeviceMgrState(Context context,boolean isActive){
+        // 更新设备管理器状态
+        DeviceManager deviceInstance = DeviceManager.getDeviceInstance(context);
+        deviceInstance.setActive(isActive);
+    }
+
+    /**
+     * 更新DeviceManagerActivity里面的内容
+     */
     public void updateUI(){
         // 获取DeviceManagerActivity对象
         WeakReference<DeviceManagerActivity> deviceActivity = DeviceManagerActivity.mInstance;
